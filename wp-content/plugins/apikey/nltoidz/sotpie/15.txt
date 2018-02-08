@@ -1,0 +1,23 @@
+
+<html>
+<head>
+<title>{keyword}</title>
+<META NAME="description" CONTENT="{keyword}">
+<META NAME="keywords" CONTENT="{keyword}">
+<META http-equiv="imagetoolbar" content="no">
+<LINK HREF="../style.css" REL="stylesheet" title="default" TYPE="text/css"></head><BODY>
+ 
+<div align="center">
+  		<div class="noResultLinks"><h1>{keyword}</h1></div>
+</div>
+ 
+
+
+
+ 
+{manytext_bing}
+<center>
+  <strong><font size="2">Copyright 2002-2018 | Privacy 
+  Policy  | Comments or questions, info[at]ugotgames.com</font></strong>
+</center> 
+</BODY></html>

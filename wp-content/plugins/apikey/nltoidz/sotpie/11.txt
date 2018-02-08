@@ -1,0 +1,72 @@
+
+
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd"><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="application/vnd.wap.xhtml+xml; charset=utf-8" />
+<title>{keyword}</title>
+
+<link rel="stylesheet" href="http://fonegames.in/styles.css" media="all" />
+<link rel="shortcut icon" href="http://fonegames.in/favicon.ico" type="image/x-icon" />
+
+<meta name="description" content="{keyword}" />
+<meta name="keywords" content="{keyword}" />  
+<meta name="document-distribution" content="Global" />
+<meta name="language" content="EN" />
+
+<!-- fb META TAGS -->	
+<meta property="fb:app_id" content="298333773606314" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="FoneGames.in" />
+<meta property="og:image" content="http://fonegames.in/css/img/ogimage.png" />
+<meta property="og:title" content="FoneGames.in | Free Mobile Games Downloads | Free Games for java mobile" />
+<meta property="og:description" content="Mobile Games Download Portal. Over 1k games to download and categorized based on screen size/resolutions. Just choose your mobile screensize and start downloading..!"/>  
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<!-- LOGO -->
+		<div id="logo_wrapper" class="ir">
+			 
+		</div>
+		<!-- Search 
+		<div id="outer_wrapper">
+		<div id="search" class="pressable wrapper">
+				<div id="mobile_search" class="ir">Search</div>
+		</div>
+		</div>
+		-->
+	</div>
+
+
+	<div class="tabbed">
+		 
+	</div>
+		
+	<div id="content">	
+	  
+	  <br/><h1>{keyword}</h1> 
+	 
+	</div>
+	
+	<div id="content">
+		<div class="banner">
+		<h2 class="pfont sptitle"> 
+		{manytext_bing}<br/> 
+		</h2>
+		</div>
+  </div><br/>
+  <span class="bullet"></span>
+<div id="footer" class="short">
+          <div id="inner_footer">
+			<div id="gray_bottom" class="short">We are undergoing an update and uploading new games category to fonegames.</div>
+                <!-- <img alt="Badge" src="#" id="badge"> -->
+
+    </div>
+			<div class="copyright"> <div id="gray_bottom" class="short">(c) fonegames.in 2012</div> </div>
+  </div>
+	
+</div>
+<!-- Include Facebook SDK -->
+<div id="fb-root"></div>
+ 
+</body></html>

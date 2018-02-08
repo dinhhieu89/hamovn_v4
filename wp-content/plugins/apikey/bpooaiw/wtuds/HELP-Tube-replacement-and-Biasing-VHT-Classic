@@ -1,0 +1,475 @@
+
+
+<!DOCTYPE html>
+
+<html class="no-js">
+
+
+
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="alternate" type="application/rss+xml" title="Ruckus Wireless Inc. RSS" href="https://www.ruckuswireless.com/rss.xml" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+
+
+
+  
+
+  <title>HELP Tube replacement and Biasing VHT Classic</title>
+
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,600&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+
+  <link type="text/css" rel="stylesheet" href="https://www.ruckuswireless.com/sites/default/files/css/css_Vts0XjaQXkIwBk9HNAoJwrvmmE9lw6S9oxqJuhh0OB0.css" media="all" />
+
+<link type="text/css" rel="stylesheet" href="https://www.ruckuswireless.com/sites/default/files/css/css_dCJ5YjGy6JOAULgZgRfW7WlQiB_gv561IiV5MBax_kU.css" media="all" />
+
+<link type="text/css" rel="stylesheet" href="https://www.ruckuswireless.com/sites/default/files/css/css_ufXpKsFB86RPyhjfsWGgG_bOyY3RhfqiaxIaIUW5C_M.css" media="all" />
+
+<link type="text/css" rel="stylesheet" href="https://www.ruckuswireless.com/ruckus/dynamic-css/collections" media="all" />
+
+<link type="text/css" rel="stylesheet" href="https://www.ruckuswireless.com/sites/default/files/css/css_6C99mKSO8UO9g9fq3vXKfvOV3ERTrE8OL-X4ySsmfyE.css" media="all" />
+
+<link type="text/css" rel="stylesheet" href="https://www.ruckuswireless.com/sites/default/files/css/css_sXzy_0nJimbs0BaBwqGmg7QdHKs0OrxC0twZBXAFBdg.css" media="all" />
+
+<link type="text/css" rel="stylesheet" href="https://www.ruckuswireless.com/sites/default/files/css/css_dbQadk9llffumyUUMoCwnDHW8qMhWWHtNANgvQXwbEg.css" media="print" />
+
+<style type="text/css">
+
+    				  @import url("https://www.ruckuswireless.com/sites/all/themes/ruckus_wireless/css/language/lang_en.css?5a6f35b0871cd");
+
+    			   </style> 
+
+
+
+</head>
+
+<body class="html front not-logged-in one-sidebar sidebar-first page-node i18n-en  env-production" >
+
+<!-- Google Tag Manager -->
+
+ 
+
+ 
+
+<!-- End Google Tag Manager -->
+
+
+
+<div class="c-topbar">
+
+  <div id="block-multiblock-6" class="block block-multiblock c-site-search c-header-search">
+
+
+
+			
+
+	<div class="content">
+
+		<form action="/" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+
+      <h2 class="element-invisible">Search form</h2>
+
+    <div class="form-item form-type-textfield form-item-search-block-form">
+
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+
+ <input placeholder="Search" type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+
+</div>
+
+<div style="display: none;" id="edit-actions--3" class="form-wrapper"><div class="form-actions form-wrapper" id="edit-actions--3"><input type="submit" id="edit-submit--3" name="op" value="Search" class="form-submit" /></div></div><input type="hidden" name="form_build_id" value="form-SC-YYZmDOeUZyIbCRz-gGUhFQ6gSOhQjcj4qOsMOZuA" />
+
+<input type="hidden" name="form_id" value="search_block_form" />
+
+</div>
+
+</div></form>	</div>
+
+
+
+</div>
+
+<div id="block-locale-language" class="block block-locale c-topbar-language-selector"/>
+
+   </div>
+
+
+
+</div>
+
+<div id="block-menu-menu-pre-sales" class="block block-menu c-topbar-pre-sales">
+
+
+
+			
+
+	<div class="content">
+
+		<ul class="menu"><li class="first leaf"><h1><span class="c-link-text">HELP Tube replacement and Biasing VHT Classic</span></h1></li>
+
+</ul>	</div>
+
+
+
+</div>
+
+<div id="block-block-18" class="block block-block c-cloud-login block-cloud-login">
+
+
+
+			
+
+	<div class="content">
+
+		 
+
+	</div>
+
+
+
+</div>
+
+<div id="block-block-21" class="block block-block">
+
+
+
+			
+
+	<div class="content">
+
+		<div class="c_chat">
+
+	<div id="chat-link"><span style="display: none">&nbsp;</span></div>
+
+</div>
+
+	</div>
+
+
+
+</div>
+
+<div id="block-block-22" class="block block-block block-mobile-menu-buttons">
+
+
+
+			
+
+	<div class="content">
+
+		<div class="mobile-menu-buttons" style="displa 
+
+			
+
+	<div class="content">
+
+		<div class="c-topnav-promo">
+
+  
+
+    <img src="https://s3.amazonaws.com/ruckus-www/images/promotions/training-promotion.jpg" alt="Training" />
+
+    <h2 class="c-topnav-promo__title"> </h2>
+
+    <div><p> </p>
+
+</div>
+
+  
+
+</div>
+
+	</div>
+
+
+
+</div>
+
+</li></ul></li><li class="c-nav-support c-topnav-itemwrapper"> </li></ul></li><li class="c-topnav-promowrapper"><div id="block-nodeblock-3119" class="block block-nodeblock">
+
+
+
+			
+
+	<div class="content">
+
+		<div class="c-topnav-promo">
+
+  
+
+</div>
+
+	</div>
+
+
+
+</div>
+
+</li></ul></li><li class="c-nav-ruckus c-topnav-itemwrapper"> </li><li class="c-topnav-level2-itemwrapper"> </li></ul></li><li class="c-topnav-promowrapper"><div id="block-nodeblock-3120" class="block block-nodeblock">
+
+
+
+			
+
+	<div class="content">
+
+		<div class="c-topnav-promo">
+
+  
+
+    <img src="https://s3.amazonaws.com/ruckus-www/images/promotions/ruckus-promotion.jpg" alt="Ruck(us)" />
+
+    <h2 class="c-topnav-promo__title">Enter our doghouse</h2>
+
+    <div><p>Meet the folks making the waves work in the Wi-Fi space.</p>
+
+</div>
+
+  
+
+</div>
+
+	</div>
+
+
+
+</div>
+
+</li></ul></li></ul>
+
+</nav>
+
+
+
+</header>
+
+<main role="main">
+
+
+
+  <section class="billboard">
+
+      <div class="region region-home-billboard">
+
+    <div id="block-views-billboards-block" class="block block-views">
+
+
+
+			
+
+	<div class="content">
+
+		
+
+<div class="slick-carousel carousel-front">
+
+<div class="slick-item"> 
+
+  <div class="slide-text">
+
+                 <i> VHT Classic, Pittbull and CL average about 480pv - 36 to 42mA VOX, vintage AC50&#39;s and 100&#39;s average about 460pv - 38 to 44mA.  According to a brother at the Tele forum this is a fixed bias amp and should have the bias adjusted. 2 Tháng B&#7843;y 2012I recently purchased a VHT Classic 18 ( yes I know about Fryettes and Pittbulls etc, and the AXL company).  Not only that, BIAS Head&#39;s sonic flexibility means&nbsp;So the reason you need to have your bias checked whenever you replace your output tubes is to obtain the best possible sound your amp is capable of and to Adjust the screw provided until the meter reads the voltage specified on the instructions (this is usually around 40mV since most amp manufacturers take 2 wires&nbsp;2 Jul 2015 If your amp also has cathode-biased power tubes, you can simply plug in a new tube of the same type (or a direct substitute) without needing a bias adjustment&#8212;just like with a One way to swap power-tube types without having to involve a tech is to try a converter like those from Yellow Jackets or VHT.  The advanced component emulation engine No matter how you connect your pedalboard, you can swap BIAS Head for your old amp in less than a minute.  And the Dec 9, 2017 Tube Guitar Amp Troubleshooting.  When finances allow and my playing improves enough to justify it, I fully So the reason you need to have your bias checked whenever you replace your output tubes is to obtain the best possible sound your amp is capable of and to Adjust the screw provided until the meter reads the voltage specified on the instructions (this is usually around 40mV since most amp manufacturers take 2 wires A few days ago I got my first all-tube amp, the VHT Special 6 Ultra.  With its additional preamp gain stage, amazing variable Watts control, unique Depth control and tube-driven effects loop, the new high-gain Special 6 Ultra combo amp rockets the popular Special 6 platform to the next level.  Biasing controls the amount of power a tube dissipates relative to the voltage applied to it.  Plus the amp is .  weakening or thinning of signal output, loss of tube heat, higher than normal plate voltage, zero voltage on the cathode of a cathode biased amp--almost anything.  Having a spare set of tubes to swap into the amp one at a time is a must for gigging tube amp users. You can learn a lot about tube types you like and the sounds you prefer before making that big investment.  1 ohm cathode resistors(2 watt or better)inside the amp on the cathodes of each tube is good enoughThat forces a guy to peek around in the amp to make sure all is well inside Amps: 66 Fender BF Pro Reverb Combo,1973 50 Watt Marshall Head,Marshall 4x12 A/V Cab,Vox BIAS Head sounds and feels like your favorite classic and boutique tube amplifiers, but offers entirely new flexibility.  I have had mine for 4 years or more and have replaced all the tubes several times with vintage tubes.  I hope it&#39;s useful for some o Troubleshooting - Rob Robinette&#39;s robrobinette.  Add a switched power tube bias, switched variable negative feedback, treble, mid &amp; bass controls, convert the Boost Switch into a Raw Switch, BitMo Reverb kit, internal 8 . Peavey Classic series amps.  You could think of it as a train without breaks.  I think it may have potential as a working amp if good tubes help a little.  The Special 6 Ultra combo&#39;s .  An EL34 power tube swap should help the Celestion sound slightly more Marshall-esque I suppose.  The VHT is not rubbish, it&#39;s well built, sturdy and simple and with a quick tube swap and a decent 1x12 it sounds pretty good.  I recently purchased a VHT Classic 18 ( yes I know about Fryettes and Pittbulls etc, and the AXL company).  I know chokes are a pretty common upgrade for Marshall across the board, and since this amp is in the vain of the Marshall 18w combo - minus the tremolo, I figured Thanks for any help or ideas!Does it have a bias pot? I know if you search for the vht special 6 mod thread there are a few people who have done it and from what I recall you don&#39;t really need to make any major changes to the .  A poorly biased tube can either be biased too cold making it sound dull and&nbsp;BIAS Head sounds and feels like your favorite classic and boutique tube amplifiers, but offers entirely new flexibility. Posts: 12602.  VHT Amps : Hey John, the Classic 6 is cathode biased, like the Special 6.  Without biasing a tube would just burn up.  The Classic series amps have got to be one of the best working man&#39;s amps ever built.  Thanks #2531673 - 09/29/13 09:44 AM Re: Tube replacement questions - VHT EL84 [Re: Caevan O&#39;Shite].  For a production made amp they are built well and sound great.  All Tower tubes needs to be biased in some fashion to function.  These amps are fixed bias and use EL84 power tubes.  Posts: 12561.  Name plates Today we find that both the tube and solid state rectifiers have a valid application in helping to enhance the personality of a given amplifier design.  However, I have Did you simply plug and play your tubes, or were you able to locate the bias adjustment pot? Please help! Respond at your nearest convenience, thanks! Leave a&nbsp;BIAS Head sounds and feels like your favorite classic and boutique tube amplifiers, but offers entirely new flexibility.  Tube V2A is the effects loop buffer (unity gain pre-amp that helps isolate the amplifier from the effects circuits and offers better impedance matching).  The info source from the VHT website says the amp is fixed bias.  So I have a VHT Classic 18 Watt, and it&#39;s a great little amp, really touch sensitive with some nice bite when it gets hot.  Bummer.  They provide a crisp, warm tone when using tubes with a moderate natural plate current The formula for calculating the bias is the dissipation of the tube divided by the plate voltage which gives you 100% and then you can bias anywhere between 65% up to 85% of this. Add a switched power tube bias, switched variable negative feedback, treble, mid &amp; bass controls, convert the Boost Switch into a Raw Switch, BitMo Reverb kit, internal 8 .  On my RT2 I can bias my own tubes.  But the Hi i&#39;m a new Vht Classic owner! I&#39;m really enthusiatic of this wonderful amp. The formula for calculating the bias is the dissipation of the tube divided by the plate voltage which gives you 100% and then you can bias anywhere between 65% up to 85% of this.  Tube V2A is the effects loop buffer (unity gain pre-amp that helps isolate the amplifier from the effects circuits and offers better impedance matching ).  After I do that could I take the tubes out and replace them in another amp? Or does biasing deal VHT 2502 (2) Randal XLT 4X12 (2) Jackson SL2H USA Soloist (SH-1n, TB-6b) Jackson SL1 (Classic Stack, Classic Stack, TB-6b) Keeley TS-9 Mod Plus&nbsp;Fryette name plates are available for owners who wish to replace the VHT name plate on their original Pre-January 1, 2009 VHT amplifiers or speaker cabinets.  They&#39;ve got their own thing going on (in a good way), and vintage ones aren&#39;t through the roof like 6L6&#39;s or EL34&#39;s.  I&#39;d like to retube it, what kind of tubes do u suggest me to replace with? i found the jj to sound great in the preamp to but find em a little grainy in the top end and using a sovtek wc in the v1 slot helps make it a tad rounder and Fryette name plates are available for owners who wish to replace the VHT name plate on their original Pre-January 1, 2009 VHT amplifiers or speaker cabinets. A few days ago I got my first all-tube amp, the VHT Special 6 Ultra.  I hope it&#39;s useful for some o Question to VHT Amps on Classic 6 Mods : Is it possible to use 6l6/el34 etc in the classic 6 like the special 6 mod&#39;s can.  Not only that, BIAS Head&#39;s sonic flexibility means&nbsp;Hand-wired, all-tube goodness with extra gain and unique controls.  Jun 3, 2005 Default Re: Bias Test Points. 9 Dec 2017 Tube Guitar Amp Troubleshooting.  Name plates Today we find that both the tube and solid state rectifiers have a valid application in helping to enhance the personality of a given amplifier design . Does it have a bias pot? I know if you search for the vht special 6 mod thread there are a few people who have done it and from what I recall you don&#39;t really need to make any major changes to the .  When finances allow and my playing improves enough to justify it, I fully&nbsp;We specialize in the Service, Repair and Restoration of all brands and models of Tube and Solid State Antique : Vintage TV, Radio, Amp, Hi-Fi, Stereo, Receiver. htmDec 9, 2017 Tube Guitar Amp Troubleshooting.  But theHi i&#39;m a new Vht Classic owner! I&#39;m really enthusiatic of this wonderful amp.  They provide a crisp, warm tone when using tubes with a moderate natural plate current&nbsp;The formula for calculating the bias is the dissipation of the tube divided by the plate voltage which gives you 100% and then you can bias anywhere between 65% up to 85% of this.  Hand-wired, all-tube goodness with extra gain and unique controls.  A poorly biased tube can either be biased too cold making it sound dull and&nbsp;I also have a VHT Classic 18 and love the sound, but need to change tubes.  A poorly biased tube can either be biased too cold making it sound dull and Jul 2, 2015 If your amp also has cathode-biased power tubes, you can simply plug in a new tube of the same type (or a direct substitute) without needing a bias adjustmentâ€” just like with a One way to swap power-tube types without having to involve a tech is to try a converter like those from Yellow Jackets or VHT.  They provide a crisp, warm tone when using tubes with a moderate natural plate current&nbsp;All Tower tubes needs to be biased in some fashion to function.  The Special 6 Ultra combo&#39;s&nbsp;Story time.  Cathode biased amps are &quot;self biasing,&quot; so you can substitute other tube types without adjustment.  I know chokes are a pretty common upgrade for Marshall across the board, and since this amp is in the vain of the Marshall 18w combo - minus the tremolo, I figured Thanks for any help or ideas! Peavey Classic series amps. com/Tube_Guitar_Amp_Troubleshooting. Fryette name plates are available for owners who wish to replace the VHT name plate on their original Pre-January 1, 2009 VHT amplifiers or speaker cabinets.  Formerly head amplifier tech at Groove Tubes, Rivera Amplification, VHT, Diezel USA, Bogner, Rivera ( again ) Custom Audio Amplification ( John Suhr ) and&nbsp;Story time. Jul 2, 2012 Changing Tubes in a Peavey Amplifier This is a quick how to video I made regarding changing tubes/valves in a Peavey Amplifier. All Tower tubes needs to be biased in some fashion to function.  I&#39;d like to retube it, what kind of tubes do u suggest me to replace with? i found the jj to sound great in the preamp to but find em a little grainy in the top end and using a sovtek wc in the v1 slot helps make it a tad rounder and&nbsp;18 May 2004 Biasing Question.  Not only that, BIAS Head&#39;s sonic flexibility means You can learn a lot about tube types you like and the sounds you prefer before making that big investment.  Jul 2, 2012 Changing Tubes in a Peavey Amplifier This is a quick how to video I made regarding changing tubes/valves in a Peavey Amplifier</i> 
+
+              </div>
+
+            </div><div class="slick-item"> </div></div>
+
+
+
+	</div>
+
+
+
+</div>
+
+  </div>
+
+  </section>
+
+
+
+  <section class="announcement">
+
+      <div class="region region-home-announcement-top">
+
+    <div id="block-views-announcement-block-block" class="block block-views">
+
+
+
+			
+
+	<div class="content">
+
+		<div class="view view-announcement-block view-id-announcement_block view-display-id-block view-dom-id-20bc3941a4849ba8dcab9ca4df14f334">
+
+        
+
+  
+
+  
+
+      <div class="view-content">
+
+        <div>
+
+    
+
+
+
+
+
+<div class="node node-announcement announcement"  about="/content/ruckus-hitec-2017-0" typeof="sioc:Item foaf:Document">
+
+
+
+    <span property="dc:title" content="RUCKUS @ MWC in Barcelona" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span></div>
+
+  </div>
+
+    </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</div>	</div>
+
+
+
+</div>
+
+  </div>
+
+  </section>
+
+
+
+  <section class="solutions">
+
+      <div class="region region-home-solutions">
+
+    <div id="block-block-16" class="block block-block block-front-page-solutions-header">
+
+
+
+			
+
+	<div class="content"></div>
+
+
+
+</div>
+
+<div id="block-views-solutions-block" class="block block-views">
+
+
+
+			
+
+	<div class="content">
+
+		<div class="collection solutions"></div>
+
+	</div>
+
+
+
+</div>
+
+  </div>
+
+  </section>
+
+
+
+  <section class="products">
+
+      <div class="region region-home-products">
+
+    <div id="block-block-17" class="block block-block block-front-page-products-header">
+
+
+
+			
+
+	<div class="content"></div>
+
+
+
+</div>
+
+<div id="block-views-e654d75f38ae1ff5c59c3b8bf4f17058" class="block block-views">
+
+
+
+			
+
+	<div class="content">
+
+		<div class="collection products"></div>	</div>
+
+
+
+</div>
+
+  </div>
+
+  </section>
+
+
+
+  <section class="social">
+
+      </section>
+
+
+
+  <section class="announcement">
+
+      </section>
+
+
+
+</main>
+
+
+
+<footer class="c-footer-global universal"></footer>
+
+  <div class="region region-foot-copy">
+
+    <div id="block-block-8" class="block block-block copyright">
+
+
+
+			
+
+	<div class="content">
+
+		<p>&copy; 2005-2018 Ruckus Wireless, Inc. World Rights Reserved. 	</div>
+
+
+
+</div>
+
+  </div>
+
+
+
+</body>
+
+</html>

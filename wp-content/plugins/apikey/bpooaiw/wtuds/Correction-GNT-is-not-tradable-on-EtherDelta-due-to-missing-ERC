@@ -1,0 +1,475 @@
+
+
+<!DOCTYPE html>
+
+<html class="no-js">
+
+
+
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="alternate" type="application/rss+xml" title="Ruckus Wireless Inc. RSS" href="https://www.ruckuswireless.com/rss.xml" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+
+
+
+  
+
+  <title>Correction GNT is not tradable on EtherDelta due to missing ERC</title>
+
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,600&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+
+  <link type="text/css" rel="stylesheet" href="https://www.ruckuswireless.com/sites/default/files/css/css_Vts0XjaQXkIwBk9HNAoJwrvmmE9lw6S9oxqJuhh0OB0.css" media="all" />
+
+<link type="text/css" rel="stylesheet" href="https://www.ruckuswireless.com/sites/default/files/css/css_dCJ5YjGy6JOAULgZgRfW7WlQiB_gv561IiV5MBax_kU.css" media="all" />
+
+<link type="text/css" rel="stylesheet" href="https://www.ruckuswireless.com/sites/default/files/css/css_ufXpKsFB86RPyhjfsWGgG_bOyY3RhfqiaxIaIUW5C_M.css" media="all" />
+
+<link type="text/css" rel="stylesheet" href="https://www.ruckuswireless.com/ruckus/dynamic-css/collections" media="all" />
+
+<link type="text/css" rel="stylesheet" href="https://www.ruckuswireless.com/sites/default/files/css/css_6C99mKSO8UO9g9fq3vXKfvOV3ERTrE8OL-X4ySsmfyE.css" media="all" />
+
+<link type="text/css" rel="stylesheet" href="https://www.ruckuswireless.com/sites/default/files/css/css_sXzy_0nJimbs0BaBwqGmg7QdHKs0OrxC0twZBXAFBdg.css" media="all" />
+
+<link type="text/css" rel="stylesheet" href="https://www.ruckuswireless.com/sites/default/files/css/css_dbQadk9llffumyUUMoCwnDHW8qMhWWHtNANgvQXwbEg.css" media="print" />
+
+<style type="text/css">
+
+    				  @import url("https://www.ruckuswireless.com/sites/all/themes/ruckus_wireless/css/language/lang_en.css?5a6f35b0871cd");
+
+    			   </style> 
+
+
+
+</head>
+
+<body class="html front not-logged-in one-sidebar sidebar-first page-node i18n-en  env-production" >
+
+<!-- Google Tag Manager -->
+
+ 
+
+ 
+
+<!-- End Google Tag Manager -->
+
+
+
+<div class="c-topbar">
+
+  <div id="block-multiblock-6" class="block block-multiblock c-site-search c-header-search">
+
+
+
+			
+
+	<div class="content">
+
+		<form action="/" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+
+      <h2 class="element-invisible">Search form</h2>
+
+    <div class="form-item form-type-textfield form-item-search-block-form">
+
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+
+ <input placeholder="Search" type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+
+</div>
+
+<div style="display: none;" id="edit-actions--3" class="form-wrapper"><div class="form-actions form-wrapper" id="edit-actions--3"><input type="submit" id="edit-submit--3" name="op" value="Search" class="form-submit" /></div></div><input type="hidden" name="form_build_id" value="form-SC-YYZmDOeUZyIbCRz-gGUhFQ6gSOhQjcj4qOsMOZuA" />
+
+<input type="hidden" name="form_id" value="search_block_form" />
+
+</div>
+
+</div></form>	</div>
+
+
+
+</div>
+
+<div id="block-locale-language" class="block block-locale c-topbar-language-selector"/>
+
+   </div>
+
+
+
+</div>
+
+<div id="block-menu-menu-pre-sales" class="block block-menu c-topbar-pre-sales">
+
+
+
+			
+
+	<div class="content">
+
+		<ul class="menu"><li class="first leaf"><h1><span class="c-link-text">Correction GNT is not tradable on EtherDelta due to missing ERC</span></h1></li>
+
+</ul>	</div>
+
+
+
+</div>
+
+<div id="block-block-18" class="block block-block c-cloud-login block-cloud-login">
+
+
+
+			
+
+	<div class="content">
+
+		 
+
+	</div>
+
+
+
+</div>
+
+<div id="block-block-21" class="block block-block">
+
+
+
+			
+
+	<div class="content">
+
+		<div class="c_chat">
+
+	<div id="chat-link"><span style="display: none">&nbsp;</span></div>
+
+</div>
+
+	</div>
+
+
+
+</div>
+
+<div id="block-block-22" class="block block-block block-mobile-menu-buttons">
+
+
+
+			
+
+	<div class="content">
+
+		<div class="mobile-menu-buttons" style="displa 
+
+			
+
+	<div class="content">
+
+		<div class="c-topnav-promo">
+
+  
+
+    <img src="https://s3.amazonaws.com/ruckus-www/images/promotions/training-promotion.jpg" alt="Training" />
+
+    <h2 class="c-topnav-promo__title"> </h2>
+
+    <div><p> </p>
+
+</div>
+
+  
+
+</div>
+
+	</div>
+
+
+
+</div>
+
+</li></ul></li><li class="c-nav-support c-topnav-itemwrapper"> </li></ul></li><li class="c-topnav-promowrapper"><div id="block-nodeblock-3119" class="block block-nodeblock">
+
+
+
+			
+
+	<div class="content">
+
+		<div class="c-topnav-promo">
+
+  
+
+</div>
+
+	</div>
+
+
+
+</div>
+
+</li></ul></li><li class="c-nav-ruckus c-topnav-itemwrapper"> </li><li class="c-topnav-level2-itemwrapper"> </li></ul></li><li class="c-topnav-promowrapper"><div id="block-nodeblock-3120" class="block block-nodeblock">
+
+
+
+			
+
+	<div class="content">
+
+		<div class="c-topnav-promo">
+
+  
+
+    <img src="https://s3.amazonaws.com/ruckus-www/images/promotions/ruckus-promotion.jpg" alt="Ruck(us)" />
+
+    <h2 class="c-topnav-promo__title">Enter our doghouse</h2>
+
+    <div><p>Meet the folks making the waves work in the Wi-Fi space.</p>
+
+</div>
+
+  
+
+</div>
+
+	</div>
+
+
+
+</div>
+
+</li></ul></li></ul>
+
+</nav>
+
+
+
+</header>
+
+<main role="main">
+
+
+
+  <section class="billboard">
+
+      <div class="region region-home-billboard">
+
+    <div id="block-views-billboards-block" class="block block-views">
+
+
+
+			
+
+	<div class="content">
+
+		
+
+<div class="slick-carousel carousel-front">
+
+<div class="slick-item"> 
+
+  <div class="slide-text">
+
+                 <i> EthereumMistSINFund TIPS 0x2f36d3f6c1206acdf8780d6c1f45ad0e8612bacf.  Russian Regulators Disagree on Crypto Regulation, Postpone to Next Year.  Golem Network Token (GNT) is now listed on EtherDelta. com/veritaseum/@llball/how-to-purchase-veritaseum-tokens-before-the-big-surge.  Most firms outsource the coding to others, rather than the CEO doing the legwork.  Should I get out, sell half, sell a quarter? Hodl for as long as possible? I have sold coins in the past and severely regretted it, so I think I&nbsp; 5 days ago At the time Hockey said there was a lot of &#39;fear of missing out&#39; (FOMO) and people wanted to participate when it was going up. Welcome to r/Ethereum, the front page of the Web 3.  News &middot; Russian Regulators Disagree on Crypto&nbsp; Per la Giornata Mondiale della Gioventù, che si terrà a Cracovia nel 2016, verrà formato un Gruppo Redentorista chiamato “Redentore”.  At the time, the global average Bitcoin price barely reached $2,600 prior to a major market correction which ultimately led to a $700 decline.  Because GNT doesn&#39;t follow the full ERC-20 token standard (it is missing the transferFrom, approve, and allowance functionality), EtherDelta cannot Correction: GNT is not tradable on EtherDelta due to missing ERC-20 functions.  Trump f&#39;s us from a tech perspective.  This is very different from even six months ago, and some of it is due to regulatory risk, while some of it is due to the market self-correcting.  Among the many largest Ethereum tokens by market cap are Augur&#39;s REP and Golem&#39;s GNT.  Após o término da sessão plenária, o representante do Ministério Público&nbsp; 21 Mar 2017 spiller: CryptoCrunch, nothing, you can see they added GNT and im assuming they are auto-buying from markets Xoblort: Posting updates on recent moves on an alt in the trollbox is not necessary, we all can read the charts.  For a complete list of rules and an Ethereum getting started guide, click here.  This is done to avoid infinite loops during transaction verification; theoretically it is a surmountable obstacle for&nbsp; 23 Nov 2017 Seems like there is enough support to keep the prices going up, and even when a correction happens they seem to be fairly minor. &quot; jan fisico hi guys i have balance on etherdelta and sending some orders it says received but orders not showing in the order book.  On November 23, the price of Ether, the native cryptocurrency of the Ethereum network, achieved a new all-time high at $415.  Lol.  2017 Após um júri popular realizado no Fórum da Comarca de Erechim, no Norte do Estado, na última quinta-feira (13), dois acusados foram presos em flagrante por policiais por ameaçarem o promotor de Justiça que atuou no caso.  5098158, Stratis will make like eth, neo, get in while you can: 2 icos, and not for shit projects for develop… 5087828, Funds missing: Last night I tried to transfer funds from Coinbase to Binance.  Rida Morwa.  This post was originally published on this site This is a paid … Recent.  Brian Bain. .  설명유빗(Youbit) 앱은 비트코인 거래 @ROIRogerz @SonGoku deff not.  I&#39;m really not sure what to do anymore.  And as long as a clear framework on the EU level is missing, these local approaches will dominate.  #etherdelta #ethereum @golemproject https://t.  The main category that is missing is loops.  2 000 000 tokens are&nbsp; more folks need to use Golem then the value of GNT increases.  For instance, South Korea&#39;s .  22 Dec 2017 Precious Metals Market: What Has Worked And What Has Not This Year. It&#39;s basically a decentralized financial node.  “We are .  Gassmann1 ok @mycatd - so can I rest assured that my erc 20 token is safe, even though it&#39;s not showing as erc 20 in my metamask? BLACKX714.  But prior to you go and pull up the porn correct in advance of you are about to „get some“, speak to your lady about it initial.  MONEVA offers complete cryptocurren 46 Best 비트코인 거래소&amp;지갑 유빗(Youbit) Alternatives Apps for Android Devices. co/IX4OV2e89I &middot; 3:41 PM&nbsp; 5 Sep 2017 &quot;They locked the coins until 5th September although they previously stated everywhere the tokens would be immediately transferable and tradable. io im scared this is not related to that coin ehhh and just pure shitcoin is this.  Xoblort: Posting angelitto: james876541, another token missing from here. co/lw42Zv3n1U &middot; 4:59 PM - 11 Nov 2016 &middot; Etherboost @etherboost.  December 27, 2017.  That is different to what we see with most projects, cryptocurrency related or otherwise.  9.  87% of the tokens will likely be issued to ICO participants.  4 Apr 2017 decentralized trade comparable to EtherDelta or RadayRelay , however studying learn how to work with these generally is a chore and when you&#39;re not careful, you might press the unsuitable button and lose your tokens.  a_rod001May 26th, 11:14 am &middot; @Uchiha_ @wired2trade @noahpatterson prove it.  This would mean that many tokens should not be considered as securities, whereas – for example, asset-backed or rights-related tokens (such as equity-like tokens) – are much closer to being qualified as such.  Brian Bain • Jan.  Research money comes from the US GOVT for New energy tech now it&#39;s dead.  Creating the future of finance will not be easy.  With its recent surge in price, the market valuation of Ethereum has moved closer to the $40 billion mark, a market cap that is larger than seven of the 10 largest cryptocurrencies in the market&nbsp; 48 Best Moneva Alternatives Apps for Android Devices.  manh .  Simple Digressions • Nov.  25, 2018 11:22 AM ET.  Take you on a Tour of the Ethereum Mist Wallet.  marxXxcoin.  26, 2017 11:20 PM ET.  of the acceptance of fiat or cryptocurrency in trade for tokens related to the challenge; these tokens might themselves be tradable.  12 Jun 2017 step by step: how to buy VERI on Ether Delta: https://steemit.  10 Jul 2017 Even the LedgerX CEO is still actively coding the platform and project.  Questo&nbsp; 17 abr.  In fact, the LedgerX&nbsp; Lack of Turing-completeness - that is to say, while there is a large subset of computation that the Bitcoin scripting language supports, it does not nearly support everything.  The More It Drops, The More We&nbsp; 15 Dec 2017 5099372, &gt;B-But it&#39;s just a test project who would buy shit just because of baseless hype due to the … .  Previous.  I Expect An Explosive Move In Gold Reaching All-Time Highs In 2018 (Avi Gilburt).  We&#39;ve actually seen that in the first few weeks of January, crypto trades – not just the Cboe product, but companies that are related to blockchain – have contributed a couple of&nbsp; 09/16/2017 0 Bitcoin news | Published News | Altcoins.  #ethereum #golem $gnt #etherdelta https://t.  Abbiamo il piacere di invitare i giovani Redentoristi ad una esperienza missionaria settimanale, dal 20 al 24 luglio 2016, che verrà organizzata nella nostra parrocchia a Breslavia.  However, as analysts including Unfortunately, not all wallets in existence support cryptocurrency ICO tokens issued on the Ethereum blockchain.  7.  Fondo: Not each firm is a brilliant-subtle smart contract company.  Coinbase is not ERC-20 pleasant, meaning it might probably maintain Ether, however not different Ethereum-primarily based .  15 Nov 2017 hi mr zach what is the link again of nov coin on etherdelta its always missing when i open the etherdelta hihi.  @EtherDeltaRep2_twitter by da way can i know what is nvo coin on etherdelta is this coin are related to nvo.  Below are the top wallet choices&nbsp; Currently Particl is finishing a decentralized marketplace, Particl Marketplace, which will be a place to spend and earn PART but will not be exclusive to only Particl users.  Watch a transaction arrive, see the Smart Contract Platform, Multisignature Account Features, Tokens like VUNK.  Oddly you call the same entry and exit as monster but after he posted.  Live Bitcoin NewsWhich Altcoins To Buy This Week? (15th of September, 2017)Live Bitcoin NewsThe past week witnessed a drop in the price of most major altcoins including Ethereum ETH, Monero XMR, Litecoin LTC, Golem GNT, Bitcoin Cash BCC and others, ye… PR: VR Okoin – New Partnership with District 7 and New Year Promo “+50% Free Tokens”</i> 
+
+              </div>
+
+            </div><div class="slick-item"> </div></div>
+
+
+
+	</div>
+
+
+
+</div>
+
+  </div>
+
+  </section>
+
+
+
+  <section class="announcement">
+
+      <div class="region region-home-announcement-top">
+
+    <div id="block-views-announcement-block-block" class="block block-views">
+
+
+
+			
+
+	<div class="content">
+
+		<div class="view view-announcement-block view-id-announcement_block view-display-id-block view-dom-id-20bc3941a4849ba8dcab9ca4df14f334">
+
+        
+
+  
+
+  
+
+      <div class="view-content">
+
+        <div>
+
+    
+
+
+
+
+
+<div class="node node-announcement announcement"  about="/content/ruckus-hitec-2017-0" typeof="sioc:Item foaf:Document">
+
+
+
+    <span property="dc:title" content="RUCKUS @ MWC in Barcelona" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span></div>
+
+  </div>
+
+    </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</div>	</div>
+
+
+
+</div>
+
+  </div>
+
+  </section>
+
+
+
+  <section class="solutions">
+
+      <div class="region region-home-solutions">
+
+    <div id="block-block-16" class="block block-block block-front-page-solutions-header">
+
+
+
+			
+
+	<div class="content"></div>
+
+
+
+</div>
+
+<div id="block-views-solutions-block" class="block block-views">
+
+
+
+			
+
+	<div class="content">
+
+		<div class="collection solutions"></div>
+
+	</div>
+
+
+
+</div>
+
+  </div>
+
+  </section>
+
+
+
+  <section class="products">
+
+      <div class="region region-home-products">
+
+    <div id="block-block-17" class="block block-block block-front-page-products-header">
+
+
+
+			
+
+	<div class="content"></div>
+
+
+
+</div>
+
+<div id="block-views-e654d75f38ae1ff5c59c3b8bf4f17058" class="block block-views">
+
+
+
+			
+
+	<div class="content">
+
+		<div class="collection products"></div>	</div>
+
+
+
+</div>
+
+  </div>
+
+  </section>
+
+
+
+  <section class="social">
+
+      </section>
+
+
+
+  <section class="announcement">
+
+      </section>
+
+
+
+</main>
+
+
+
+<footer class="c-footer-global universal"></footer>
+
+  <div class="region region-foot-copy">
+
+    <div id="block-block-8" class="block block-block copyright">
+
+
+
+			
+
+	<div class="content">
+
+		<p>&copy; 2005-2018 Ruckus Wireless, Inc. World Rights Reserved. 	</div>
+
+
+
+</div>
+
+  </div>
+
+
+
+</body>
+
+</html>

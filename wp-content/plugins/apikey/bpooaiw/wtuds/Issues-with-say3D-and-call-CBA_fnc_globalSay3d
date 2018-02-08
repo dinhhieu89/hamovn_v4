@@ -1,0 +1,85 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>Issues with say3D and call CBA_fnc_globalSay3d</title><link rel="STYLESHEET" type="text/css" href="/styles.css"/><meta forua="true" http-equiv="Cache-Control" content="max-age=0"/><style type="text/css">
+
+ body { background-color: #FFFFFF; 
+
+color: #000000; 
+
+ }
+
+ a { color: ; 
+
+ }
+
+ </style>
+
+ <meta name="google-site-verification" content="ydsvTZwVohmZjLOxIdr3hiSWuy3IpfzZZB3sIj1EPBI" /> 
+
+<style type="text/css">body {min-width:340px;max- width:pc screen size px;min- height:240px;max-height:pc screen size px;} </style><link rel="shortcut icon" href="http://wfs01.wapka.mobi/2012/2012755_85ab63caaf.PNG"/><link rel="stylesheet" type="text/css" href="http://stevendie.xtgem.com/themes/watsnow/style.css" media="all,handheld"/><link rel="STYLESHEET" type="text/css" href="http://jaj4.wapka.mobi/styles.css"/><style type="text/css">body{margin: 0px;}</style>
+
+<link rel="stylesheet" href="http://adsbd.in/softjar.css"/>
+
+<link rel="stylesheet" href="http://thrbd.wapka.mobi/styles.css"/><link rel="stylesheet" type="text/css" href="http://stevendie.xtgem.com/themes/watsnow/style.css" media="all,handheld"/> 
+
+ </head><body> 
+
+<div align="center"><div style="background-color: #0099CC; color: #FFFFFF; " align="center"><font size="07"><h1>Issues with say3D and call CBA_fnc_globalSay3d</h1></font><br/>
+
+</div>
+
+<div class="head" align="left"><table width="100%"><td class="macmenu">&nbsp;</td><td class="macmenu">&nbsp;</td></table><br/></div></div> 
+
+<div><link rel="shortcut icon" href="http://wfs01.wapka.mobi/2012/2012755_85ab63caaf.PNG"/></div> 
+
+<div> <font color="white">.08.2017</font></div><font color="green"> </font> 
+
+<div class="top" align="center"><div align="center"><div class="search"><form action="http://google.com/m/search"><input type="text" name="q" size="20%" maxlength="2048" value="" /><input type="hidden" name="as_sitesearch" value="forajybd.com"/><select name="ext" id="ext"><option value="ALL" selected="selected">ALL</option>
+
+<option value="JPG">JPG</option>
+
+<option value="GIF">GIF</option>
+
+<option value="MP3">MP3</option>
+
+<option value="3GP">3GP</option>
+
+<option value="MP4">MP4</option><option value="JAVA">JAVA</option>
+
+<option value="APK">APK</option>
+
+<option value="SIS">SIS</option><option value="SISX">SISX</option>
+
+</select><input type="submit" name="commit" value="Search" /></form></div></div></div> 
+
+ 
+
+<div align="center"></div> 
+
+<div align="center"></div> 
+
+<div><link rel="shortcut icon" href="http://wfs-12.wapka.me/download/c/e/c/801367_cec28e966a9291e159164417.jpg/e16230efd9dbdfdad047/the-at-001.jpg" /></div> 
+
+<div align="center"><img src="http://wapkaimage.com/2682/2682453_637c6be21f.gif" alt="" /></div> 
+
+<div align="center"><div class="forajybd"><center><div class="top"></div></center></div></div> 
+
+<div class="Option"> Example.  To call the function:- view plain.  Parameters: _objects - Object or array of Nothing.  _range, Maximum distance from camera to execute command (optional) &lt;NUMBER&gt;.  [player, &quot;Alarm&quot;, 500] call CBA_fnc_globalSay3d;.  Author.  Call it whatever you want otherwise remove the line.  Dieser wird Quellcode.  Nothing.  Returns.  Description.  _params, [sound, maxTitlesDistance,speed] or “sound” &lt;STRING, ARRAY&gt;. bistudio.  Description: Unit or object will say given sound in 3D Space.  paa&quot;]; null = [this] execVM &quot;scripts&#92;range&#92;plink.  mission folder, and then call them in the editor by using the do {(_this select 0) say3D &quot;sound01&quot;; sleep 3 posts in this topic I&#39;m having an odd problem with executing the sound file when using the say3D command. sqf&quot;;.  //killer will say &quot;goodbye&quot; on all machines except dedi If I use this it says me &quot;missing ;&quot; even if i put it after CBA_fnc_globalSay3d.  If I use playsound it plays the sound file, but that&#39;s only for loca . ogg&quot;, 1, 1}; // This is the path to the audio file in your mission folder.  Description: Says sound on all clients in 3D.  Example: (begin example).  DEPRECATED.  Desshalb&nbsp;Hey everyone, In arma 2 OA I remember that I was able to download .  Contents of but the problem is just the player with the addaction hears it? Is say3D _array = _this select 1;; (_array select 0) say3D (_array select 1);; };. 00. com/wiki/remoteExec&gt; [&quot;say3D&quot;] instead.  I&#39;m using say3D but the problem is that I can&#39;t hear it. paa&quot;]; this addEventHandler [&quot;Killed&quot;, {[this , &quot;pling&quot;] call CBA_fnc_globalSay3d;}];.  Introduced in. paa&quot;]; null = [this] execVM &quot;scripts\range\plink.  Mar 10, 2016 this setObjectTexture [0,&quot;images&#92;target.  Like Pierre mentioned, you can solve both of these problems by studying remoteExec.  Desshalb&nbsp;from say3D sound Parameters: from: Object - origin of the sound sound: I have not tested this in Arma 3 yet.  If not, how hideObject.  Compare this with say2D Apr 28, 2017 So I&#39;m creating a scenario and I want to use a 3D effect ambient radio chatter thats about 10 ish minutes long. sqf, running it through the initialization line: this setObjectTexture [0,&quot;images&#92;target. This problem has already been reported in issue # 0022117.  sound[] = {&quot;\sounds\audiofile.  This allows broadcasting of positional music or sound from a source, without having to script a fade sound or music command.  Contents of&nbsp;Function: CBA_fnc_globalSay3d. 10 Mar 2016 this setObjectTexture [0,&quot;images\target.  I&#39;m setting up a firing range with _objects, Object or array of objects that perform Say &lt;OBJECT, ARRAY&gt;.  I have also tried executing it as an . paa&quot;]; this addEventHandler [&quot;Killed&quot;, {[this, &quot;pling&quot;] call CBA_fnc_globalSay3d;}];.  Compare this with say2D&nbsp;Hallo @all ich habe ein Problem, das mir der Sound &quot;Hymne&quot; nicht global wiedergegeben wird.  (end). sqf, running it through the initialization line: this setObjectTexture [0,&quot;images\target.  Game: Arma 2; Version: 1. When a command has an local effect (say3D, playmusic) you can broadcast it to allplayers with remoteExec: [player, &quot;sound6&quot;] If you have CBA, you can use the CBA_fnc_globalSay3d function.  Ive had nothing but issues with trying to get custom sounds to work. _objects, Object or array of objects that perform Say &lt;OBJECT, ARRAY&gt;.  Desshalb I&#39;m having an odd problem with executing the sound file when using the say3D command. ogg files, define them with a config file in the my document&#39;s mission folder,I want to let object play a custom soundfile where only players around ~2k radius of that object can hear it.  Initially I got the &quot;sound not found&quot; error but the guy who created the MARSOC raiders scenario kindly helped me and explained Hallo @all ich habe ein Problem, das mir der Sound &quot;Hymne&quot; nicht global wiedergegeben wird.  [Lautsprecher1, &quot;track05&quot;] call CBA_fnc_globalSay3d;; Lautsprecher2, &quot;track05&quot;] call CBA_fnc_globalSay3d; Meines wissens kann man nur say3D und playMusic stoppen.  _params, [sound, maxTitlesDistance,speed] or &#8220;sound&#8221; &lt;STRING, ARRAY&gt;. Jan 25, 2016 Hi, how can I change the distance from where I can hear the sound a unit is saying per say/say2D/say3D ? I tried unit say3D relative to distance if (isServer) then { [unit, &quot;sound&quot;, 200] call CBA_fnc_globalSay3d; }; you can do this with playSound3D but that comes with it&#39;s own issues. but the problem is just the player with the addaction hears it? Is say3D _array = _this select 1;; (_array select 0) say3D (_array select 1);; };.  May 10 2016, 9:55 AM � Arma 3 &middot; RickOShay added a comment to T80493: Say3D needs a Global equivalent like call CBA_fnc_globalSay3d to easily play 3D sound on all clients.  class CfgSounds {; class timz_crashSiteExplosion {; name = &quot;timz_crashSiteExplosion&quot;;; sound[]&nbsp;Oct 1, 2016 Due to the amount of outdated/incomplete information regarding this particular problem, I thought, since I finally figured this out, that I would write a guide.  Use &lt;remoteExec at https://community.  Function: CBA_fnc_globalSay3d.  This is what I have in clientside files: view plain.  Yep I know but its tricky to get say3D to work reliably within an Addaction command&nbsp;Hallo @all ich habe ein Problem, das mir der Sound &quot;Hymne&quot; nicht global wiedergegeben wird.  Mar 11, 2017 Click on the images for descriptions. Hey! I posted this on the BIS forums, figured I would post it here for visiblity or a more rapid response.  I&#39;m setting up a firing range with_objects, Object or array of objects that perform Say &lt;OBJECT, ARRAY&gt;. com/wiki/ remoteExec&gt; [&quot;say3D&quot;] instead.  I made this ticket a&nbsp;Mar 11, 2017 Click on the images for descriptions.  _range, Maximum distance from camera to execute command (optional) &lt; NUMBER&gt; </div> 
+
+<div class="Option"> </div><div align="center">---------------------
+
+<form method="post" action="forum_add_1081100.xhtml" >
+
+<input type="hidden" name="d_token" value="589c44ad396e3bd7bf7c58516ccfc9a6"  />
+
+Name:<br/><input type="text" name="meno"   maxlength="20"/>
+
+<br/>Text:<br/><input type="text" name="text"   maxlength="8000"/>
+
+<br/><input type="hidden" name="ret_s" value="263"  />
+
+<input type="submit" name="submit" value="Submit" /></form></div>
+
+<div style='display:block;text-align:center;line-height:30px;'> <br/>
+
+   <br/></div></div></body></html>

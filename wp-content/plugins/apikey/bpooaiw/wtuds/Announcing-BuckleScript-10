@@ -1,0 +1,475 @@
+
+
+<!DOCTYPE html>
+
+<html class="no-js">
+
+
+
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="alternate" type="application/rss+xml" title="Ruckus Wireless Inc. RSS" href="https://www.ruckuswireless.com/rss.xml" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+
+
+
+  
+
+  <title>Announcing BuckleScript 10</title>
+
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,600&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+
+  <link type="text/css" rel="stylesheet" href="https://www.ruckuswireless.com/sites/default/files/css/css_Vts0XjaQXkIwBk9HNAoJwrvmmE9lw6S9oxqJuhh0OB0.css" media="all" />
+
+<link type="text/css" rel="stylesheet" href="https://www.ruckuswireless.com/sites/default/files/css/css_dCJ5YjGy6JOAULgZgRfW7WlQiB_gv561IiV5MBax_kU.css" media="all" />
+
+<link type="text/css" rel="stylesheet" href="https://www.ruckuswireless.com/sites/default/files/css/css_ufXpKsFB86RPyhjfsWGgG_bOyY3RhfqiaxIaIUW5C_M.css" media="all" />
+
+<link type="text/css" rel="stylesheet" href="https://www.ruckuswireless.com/ruckus/dynamic-css/collections" media="all" />
+
+<link type="text/css" rel="stylesheet" href="https://www.ruckuswireless.com/sites/default/files/css/css_6C99mKSO8UO9g9fq3vXKfvOV3ERTrE8OL-X4ySsmfyE.css" media="all" />
+
+<link type="text/css" rel="stylesheet" href="https://www.ruckuswireless.com/sites/default/files/css/css_sXzy_0nJimbs0BaBwqGmg7QdHKs0OrxC0twZBXAFBdg.css" media="all" />
+
+<link type="text/css" rel="stylesheet" href="https://www.ruckuswireless.com/sites/default/files/css/css_dbQadk9llffumyUUMoCwnDHW8qMhWWHtNANgvQXwbEg.css" media="print" />
+
+<style type="text/css">
+
+    				  @import url("https://www.ruckuswireless.com/sites/all/themes/ruckus_wireless/css/language/lang_en.css?5a6f35b0871cd");
+
+    			   </style> 
+
+
+
+</head>
+
+<body class="html front not-logged-in one-sidebar sidebar-first page-node i18n-en  env-production" >
+
+<!-- Google Tag Manager -->
+
+ 
+
+ 
+
+<!-- End Google Tag Manager -->
+
+
+
+<div class="c-topbar">
+
+  <div id="block-multiblock-6" class="block block-multiblock c-site-search c-header-search">
+
+
+
+			
+
+	<div class="content">
+
+		<form action="/" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+
+      <h2 class="element-invisible">Search form</h2>
+
+    <div class="form-item form-type-textfield form-item-search-block-form">
+
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+
+ <input placeholder="Search" type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+
+</div>
+
+<div style="display: none;" id="edit-actions--3" class="form-wrapper"><div class="form-actions form-wrapper" id="edit-actions--3"><input type="submit" id="edit-submit--3" name="op" value="Search" class="form-submit" /></div></div><input type="hidden" name="form_build_id" value="form-SC-YYZmDOeUZyIbCRz-gGUhFQ6gSOhQjcj4qOsMOZuA" />
+
+<input type="hidden" name="form_id" value="search_block_form" />
+
+</div>
+
+</div></form>	</div>
+
+
+
+</div>
+
+<div id="block-locale-language" class="block block-locale c-topbar-language-selector"/>
+
+   </div>
+
+
+
+</div>
+
+<div id="block-menu-menu-pre-sales" class="block block-menu c-topbar-pre-sales">
+
+
+
+			
+
+	<div class="content">
+
+		<ul class="menu"><li class="first leaf"><h1><span class="c-link-text">Announcing BuckleScript 10</span></h1></li>
+
+</ul>	</div>
+
+
+
+</div>
+
+<div id="block-block-18" class="block block-block c-cloud-login block-cloud-login">
+
+
+
+			
+
+	<div class="content">
+
+		 
+
+	</div>
+
+
+
+</div>
+
+<div id="block-block-21" class="block block-block">
+
+
+
+			
+
+	<div class="content">
+
+		<div class="c_chat">
+
+	<div id="chat-link"><span style="display: none">&nbsp;</span></div>
+
+</div>
+
+	</div>
+
+
+
+</div>
+
+<div id="block-block-22" class="block block-block block-mobile-menu-buttons">
+
+
+
+			
+
+	<div class="content">
+
+		<div class="mobile-menu-buttons" style="displa 
+
+			
+
+	<div class="content">
+
+		<div class="c-topnav-promo">
+
+  
+
+    <img src="https://s3.amazonaws.com/ruckus-www/images/promotions/training-promotion.jpg" alt="Training" />
+
+    <h2 class="c-topnav-promo__title"> </h2>
+
+    <div><p> </p>
+
+</div>
+
+  
+
+</div>
+
+	</div>
+
+
+
+</div>
+
+</li></ul></li><li class="c-nav-support c-topnav-itemwrapper"> </li></ul></li><li class="c-topnav-promowrapper"><div id="block-nodeblock-3119" class="block block-nodeblock">
+
+
+
+			
+
+	<div class="content">
+
+		<div class="c-topnav-promo">
+
+  
+
+</div>
+
+	</div>
+
+
+
+</div>
+
+</li></ul></li><li class="c-nav-ruckus c-topnav-itemwrapper"> </li><li class="c-topnav-level2-itemwrapper"> </li></ul></li><li class="c-topnav-promowrapper"><div id="block-nodeblock-3120" class="block block-nodeblock">
+
+
+
+			
+
+	<div class="content">
+
+		<div class="c-topnav-promo">
+
+  
+
+    <img src="https://s3.amazonaws.com/ruckus-www/images/promotions/ruckus-promotion.jpg" alt="Ruck(us)" />
+
+    <h2 class="c-topnav-promo__title">Enter our doghouse</h2>
+
+    <div><p>Meet the folks making the waves work in the Wi-Fi space.</p>
+
+</div>
+
+  
+
+</div>
+
+	</div>
+
+
+
+</div>
+
+</li></ul></li></ul>
+
+</nav>
+
+
+
+</header>
+
+<main role="main">
+
+
+
+  <section class="billboard">
+
+      <div class="region region-home-billboard">
+
+    <div id="block-views-billboards-block" class="block block-views">
+
+
+
+			
+
+	<div class="content">
+
+		
+
+<div class="slick-carousel carousel-front">
+
+<div class="slick-item"> 
+
+  <div class="slide-text">
+
+                 <i> fra Information Age.  19 Jun 2017 A presentation created with Slides. ipredator.  10 Jul 2016 10 July 2016.  paul evans store address christopher st new nylondon nov 10th thank you click here.  * Policies (diversity and anti-harassment): http://www.  [Links] - Everything was just a wild guess.  The first Closure Compiler was released back in 2009, but this JavaScript compiler will run under NodeJS with support for some build tools, according to Sam Thorogood, developer programs engineer at&nbsp; When we announced that RethinkDB is shutting down, I promised to write a post-mortem. 0); en Closure компілятор в JavaScript (Closure Compiler in JavaScript) (Browser Trends September 2016: Are the Browser Wars Over?) en В Safari 10 Додана підтримка WebDriver (WebDriver Support in Safari 10); en&nbsp; 2017-07-10T20:50:20Z https://react.  Firefoxの次世代Webエンジン「Project JavaScriptをOCamlから生成するトランスパイラ「BuckleScript 1.  15 Nov 2017 Finally the second React digest is going live with 28 talks from all the meetups we could find from July, August and September.  iTWire - Businesses not in good shape for digital platforms, many will fail… Google buys Eyefluence eye-tracking&nbsp; 函数式语言如何设计编写GUI库？328个最新问答，点击查看更多&gt;&gt; 25 juin 2017 Un épisode en petit comité:- Zoontek (https://twitter. com/builder/html/report-last.  My personal preference is react by a mile.  The npm Blog; Announcing Vue.  The sweeping blockchain mandate was announced by Hamdan bin Mohammed, the crown prince of Dubai, in October 2016. lambda. html&gt; opam-builder is a bot, that compiles all the versions of all the packages in the&nbsp; Medias and Tweets on @ccrisccris ( Cristiano Calcagno )&#39; s Twitter Profile. 0 ? monadic promises and concurrent I/O 8) PPX is harmful to our community in the long term 9) BuckleScript 1.  We&#39;ve added asciicinema snippets to show some features, improved the section on Calendar changes and also mentioned the compilation time improvements (expect at least 10% faster compilation).  In case you are&nbsp; Eliom and/or Opium? Could one share types between the server and the client of the app? And what FE-frameworks can I use from BuckleScript? Does it have React bindings, or did someone roll their own in OCaml/BuckleScript (probably using FFI to a virtual DOM lib in JS)?. 6.  Thanks to reason and bucklescript, that future looks to be fast approaching. 98,11.  To join our london group on facebooksmashing some thoughts from one of smashing conference an announcement about my first ever please remember subscribeforty meetings askgaryvee all curious know what typical the life looks.  Read on for the full news rundown.  While large companies announced important new Internet of Things (IoT) initiatives, the star of the exhibition hall may have been the Australian start-up &#39;s booth, which presented a demo of a smart city built with Legos and powered by&nbsp; 2017年9月18日 深阅读V8 Release 6. 13. .  We&#39;re excited to announce world&#39;s first Reason conference in Vienna, Austria There is a highly enthusiastic com… https://t.  October 1, 2017.  31 Aug 2016 I&#39;m on the Facebook Reason team, and we&#39;re using BuckleScript to compile OCaml into the best compiler output I&#39;ve ever seen.  9 Reactotron: A CLI and OS X app for inspecting your React JS and React Native apps &middot; Sacha Greif. com/posts/abandoning-async/) - [Cooperative Concurrency in OCaml: A Core. 8%.  2016年9月4日 OCaml to JavaScript &quot;Bloomberg announcing BuckleScript 1.  25 Apr 2017 3) OCaml jobs at genomics company in New York City 4) Ocaml 4.  [–] chenglou a year .  Radio Badger tech podcast hosted from London Old Street Roundabout studio.  Amazon&#39;s donation could have funded CSTA&#39;s current operations for ten years. 6-bin-linux.  BEST NYC SHUFFLE Meetup NYC OCaml Meetup - Bucklescript: integrate OCaml with Javascript platform seamlessly.  Part of the failure is /usr/bin/ld:&nbsp; 8 Sep 2016 Welcome to DeveloperEconomics&#39; weekly news roundup.  If you know Elm and want to add to your toolset a language, which actually has those higher abstractions that you&#39;ve heard Elm: in 0. github. 5; Eliom 4.  URL. gz ).  2 comments &middot; Sacha Greif &middot; laughingbubba &middot; 2Comments.  MIT launches new venture for world-changing entrepreneurs | MIT News Today MIT President L. io/bucklescript/js-demo/. html… posted at 18:03:35 &middot; 9月4日 &middot; @azu_re. 04.  Spacetime 0.  If you have a conference related to functional programming, contact me, and I will be happy to announce it.  Developer, be aware of what is happening around to get more friends, build career and codequer the world! May 13 2016, 4:40 AM The third took place in Santa Clara, California, USA on May 10-12. 0 is online and running on: &lt;http://opam.  Video.  Will this be announced on any email list I could subscribe to? Thanks! reply.  Each of these represents a compiles-to-JavaScript language with strong type support, but each has some different opinions, philosophies, and features.  The new PSA: the bitcoin pinata will be reduced by a large amount, the owner who lend the 10 btc wants to spent 9 on useful projects ownme.  Top 10 JavaScript animation library to use in 2016. 2 is filled with all sorts of developer-facing goodies.  And it takes a while to get confident that you&#39;re guessing pretty good.  Hi, it is not your issue, just I am really tired of such questions.  If you don&#39;t feel like reading, you can clone the code for this post and just follow the directions in the README and start playing Announcing PureScript 0.  CompuTekni: Cómo solucionar el error 0x803F7003 al descargar aplicaciones en Windows 10. 4%.  • Honey: A dataflow programming language&nbsp; Reason Mar 14th 2017 news.  for more information and to register.  #2291 (permalink). dell. pycon.  [10:53 PM] Francois Ward: I said it already: whatever data you need to generate the computed payload of your action (which is a side effect of the UI when you think about it), needs to come from the UI. 1 , the first major update for our IDE this year. co/nyAza0i0zr ReasonML is an alternate syntax for OCaml that uses Bucklescript compiler backend to Elm style, very friendly; Editor Project for Szymon S. html.  Here is the latest OCaml Weekly News, for the week of October 10 to 17, 2017.  thumb. 3)，理想情况下会在9月份发布并在12月份冻结发布日期。这表明现在Oracle愿意参与JCP流程。 然而，在JCP流程与SE版本协同的过程中存在一些已知的问题。特别是，当前的流程与第三方beta版本的构建存在问题，主要由于&nbsp; Medias and Tweets on vasayso ( vasily soshnikov ) &#39; s Twitter Profile.  | See more ideas about Charts.  It occupies a delightful sweet spot between high-level expressiveness and good performance.  [11:01 PM] JimBolla: I&nbsp; 19 hours ago PyCon Colombia 2018 will be taking place February 9th, 10th &amp; 11th in Medellin, Colombia.  More than 27 million people use GitHub to discover, fork, and contribute to over 76 million projects. com/mirage/capnp-rpc/releases/tag/v0.  On archlinux, trying to install bs 1.  Bethesda announced on April 6 that an open public beta will be held for the upcoming Doom beginning on April 15, which will last through the 17th.  112, 9.  T 続きを読む &middot; github.  There is no magic here, the BuckleScript compiler is written in OCaml which is compiled to blazing fast native code.  ▫ By now you&#39;ve installed OCaml and Near the top right of Eclipse, you should see an OCaml button and Java button, with the Ocaml button selected. 5. com/Zoontek)- Matthias (https://twitter.  Write type-safe, high .  bluebirdのコードから学ぶJavaScriptの最適化の話 &quot;Three JavaScript performance fundamentals that make Bluebird fast - Reaktor&quot;&nbsp; Hightower; Stop Applying to Jobs - Let Companies Apply to YouOn Hired, sign up in 10 minutes and get offers from top companies like Facebook, Uber, &amp; Stripe.  To put that in perspective, the total budget for the Computer Science Teachers Association is under $1 million a year.  However, it does not limit the availability of BuckleScript compiler: it is also compiled to a JS file&nbsp; 5 added VST support, 22 Sep 2017 Stockholm, Sweden, September 22, 2017 – Propellerhead Software today is thrilled to announce Reason 10, the biggest content update ever . 3](https://github. ocamlcore.  Search issue labels to find the right project for you! [announcement] Social Media Shortcuts class in NYC &amp; Meetup. 0.  For more information, and to register, visit https://www.  NYC MEETUP AND&nbsp; 梦婕贴吧,梦婕主页,梦婕首页,梦婕社区,梦婕论坛,梦婕兴趣,梦婕BBS,梦婕兔云家.  Старый 01. html V8 v6.  Js_of_ocaml 2. io/bucklescript/blog/index. 0 &middot; Sacha Greif. 17, 2/3 weeks before the&nbsp; 16 Oct 2017 As recognition of this great work, just last week Amazon announced a $10 million donation to Code.  Built by the same team that built React at Facebook, Reason is a&nbsp; Your city IT happenings and trends to boost career and get new friends.  My favorites; Ideas, Thoughts, comments and process; Agile; Architecture &amp; Software development practices .  eCommerce - Unit 2 Announcing BuckleScript 1.  22 hours ago PyCon Colombia 2018 will be taking place February 9th, 10th &amp; 11th in Medellin, Colombia. 0 RC版本在8月30日，微软公布了TypeScript 2.  London, England.  Rest assured that we do (and that we&#39;re not just js programmers), and that the Merlin and BuckleScript authors know very well what they&#39;re doing.  Engineers get an . 7. rs/s/4k6nkk #javascript #web &middot; 2 days ago &middot; Tux Machines @tuxmachines@mastodon. com; 10.  Click Examples see how the JS a year ago link. world/. 0; BuckleScript New Year release; Deprecating the Forge in 2017 (forge. infoworld.  Three years ago, I announced my belief that OCaml was the next big thing for JavaScript.  Sent on: Monday, April 10, 2017 11:46 PM Corporate sponsorships are welcome.  the most popular functional programming (FP) abstractions in JavaScript and demonstrates how to implement them in PureScript.  Come join the fun in the reasonml discord! 28 Nov 2017 Bob announced: BuckleScript is an optimizing compiler for OCaml to generate readable JavaScript, it was open sourced by Bloomberg [1] and also supported by Facebook Reason team.  [1] The following presentation .  The mind-blowing AI announcement from Google that you probably missed.  10 minute read&nbsp; 28 May 2017 4 posts published by Sergey Tihon during May 2017. 7; Tyxml 3.  . 5 &middot; BuckleScript 1.  In other words, you can use the functional, typed OCaml language to transpile to Javascript.  Visit https://osloelmday. Net &amp; C#; Javascript; NodeJs; Other Languages; Web&nbsp; 23 Mar 2017 However, if you do want to generate JS, use a language that elminiates runtime errors almost completely, such as Elm or OCaml (through bucklescript or js-of-ocaml).  So, Purescript.  Websites: OCaml Discussion Board &middot; Try OCaml in your browser &middot; INRIA&#39;s OCaml resources &middot; OCaml Community site. Std.  A much more detailed list of changes between 5.  6 Sep 2017 You, a web developer, have probably heard of Typescript, may have heard of Elm, and you might even have heard of Bucklescript/ReasonML as well.  OCaml compiler brings type safety to JavaScript Oct 6th 2016 www. Async Example](http://philtomson.  I have built multi-10k+ line applications in angular 1, 2 and react. no/ for more information and to and to keep updated visit http://www.  Why use OCaml? OCaml for the Masses.  This open&nbsp; Is it possible to update the link to the official announcement? Thank you! EDIT: We are done with the changes on the draft.  NYC Ethereum Meetup: Proof of London Meetup Nov 10th &amp; THANK YOU New York City! thumb. 0 &middot; BuckleScript 1.  Show HN: Gimme-Reason – The Scaffolding Tool for Reason Apps Oct 30th 2016 www.  Serverless FaunaDB Python example - How to build a serverless Python application with AWS + FaunaDB. ycombinator.  Not only that, a lot of the javascript ecosystem itself is based on other (ReasonML) vs Elm Announcing F# support for .  last year.  Fun fact: the wasm spec is written in OCaml and compiled using BuckleScript! · Tweetbot for iΟS · en UX CALENDAR – 10 Décembre – Podium des apps sportives ux-republic.  We&#39;re excited to announce world&#39;s first Reason conference in Vienna, Austria There is a highly enthusiastic community all around the world. co/.  16 likes.  2017年6月5日 前端每周清单第16 期：JavaScript 模块化现状；Node V8 与V6 真实性能对比；Nuxt.  Also, I&#39;d like to get an idea of it would take to integrate module aliases to any build system but comments like this scare me&nbsp; GitHub is where people build software. 2 &middot; Bloomberg announcing BuckleScript 1. io/blog/2014/07/09/core-dot-async-example/). 3), an OCaml implementation of the Cap&#39;n Proto RPC . 09.  7 Jul 2016 02:50 &lt;rgrinberg&gt; I&#39;m trying to understand a few things.  Tuesday, 18 October 2016.  Took more than 10 seconds to find this link:. 0 Aug 31st 2016 bloomberg. io/listening-to-naoufal-announce-react-native-payments-chainreact2017/ 2017-07-10T23:19:07Z 2017-10-31T14:45:36Z https://react.  Upvote. com/reasonml/reason-cli/archive/beta-v-1.  Thomas Coopman has been fascinated with computers since he was a kid.  The cool part is that BuckleScript is both readable (so if you&#39;re familiar with JS, it makes sense and is easier to debug),&nbsp; 13 Apr 2016 Today, Microsoft and Facebook announced at Facebook&#39;s developer conference, F8 2016, that we&#39;re adding Universal Windows Platform (UWP) support The new UWP support extends the reach of these native apps to a new market of 270 million active Windows 10 devices, and the opportunity to reach&nbsp; Announcing BuckleScript 1.  14 May 2017 I have literally seen recommendations to do this. com/support/home/us/en/04/product-support/servicetag/39lyl12/drivers&quot; // ; 22/10/17 https://www.  David Rosenthal: I&#39;ve been writing abut the slowing of Kryder&#39;s Law from 30-40%/yr to 10-20%/yr since at least 2014, and that projection has been verified.  Reason compiles to JavaScript thanks to our partner project, BuckleScript, which compiles OCaml/Reason into readable JavaScript with smooth interop.  Photo. 2016, 10:46 Компания Bloomberg представила открытый оптимизирующий компилятор BuckleScript *** Поигрался - офигенная штука! Ребята не просто сделали траспайлер, а полноценную реализацию с рантаймом (там и оптимизация&nbsp; OCaml is a statically typed functional programming language.  People didn&#39;t recognize Sounds great.  By the end of this post, I hope I will have convinced myself to face my fears and dive into clojurescript anyway :D.  • PyPy3 5.  Since day one we announced bucklescript, almost all responses we got from some OCaml programmers is “How is it different from js_of_ocaml” or “Why not contribute to jsoo directly”. 1 released 5) release of batteries-2. 0 release has arrived to compile OCaml to Javascript.  Current sponsors list forthcoming.  The evening will also feature a short (5-10 min) presentation about the recent MirageOS Marrakech Hack Retreat.  In June, I polled some Byobu users, asking of their interest in 16 Mar 2017 We are pleased to announce that we have just released Bacula version 7. blogspot.  Recently open-sourced BuckleScript, a JavaScript backend for OCaml, aims to bring OCaml type safe, high performance code to any JavaScript execution engine, .  org has no registration fee.  1 Sep 2016 Google announced its Closure Compiler is now available in pure JavaScript for use without Java.  The install of bs-platform fails if I have first installed reason-cli globally ( npm install -g https://github.  To install: npm install -g bs-platform 2 May 2017 Oslo Elm Day is a one-day conference about Elm taking place June 10th in Oslo, Norway.  org/ 10 Jul 2016 If you know Elm and&nbsp; 10 Mar 2006 Now, onto what you really wanted to know, the benefits and deficiencies of the languages.  New Documentation Site! BuckleScript 1.  Rapid A &#39;Rapid chess&#39; game is one where either all the moves must be completed in a fixed time of more than 10 minutes Free online Chess server.  I am one of the authors of BuckleScript, you can try BuckleScript in the browser: http://bloomberg. se&nbsp; The Chandra X-ray image is of the quasar PKS 1127-145, a highly luminous source of X-rays and visible light about 10 billion light years from Earth.  No comments. 9. 2. 3.  Org); Gcc 2.  23 Jan 2018 JavaScript Interop with Reason and BuckleScript staying in my comfort zone of javascript is easy, though it may be far less simple than the experience provided by clojurescript.  1 Nov 2017 material-components &middot; Components– Bottom sheets &middot; material-playground/ &middot; BuckleScript is a backend for the OCaml compiler which emits JavaScript .  How the reason build system works, namely things like this - https://github. 0 (Bloomberg announcing BuckleScript 1. 1.  Retweeted by Reason &middot; 10:17 PM - 22 Jan 2018 @Charles_Mangwa All 3 of our Reason, BuckleScript and ReasonReact have a hover effect! 9:55 PM - 22 Jan 2018 @reasonconf. 0 6) New release of Menhir (20170418) 7) Lwt 3.  List.  28 Apr 2016 Apr 28, 2016.  I&#39;ve started an email .  22nd.  前端每周清单专注前端领域内容，分为新闻热点、开发教程、工程实践、深度阅读、开源项目、巅峰人生等栏目。关注【前端之巅】微信公众号（ID：frontshow），及时获取前端每周清单。 2017年9月15日 在最近的JCP EC会议报告中，Oracle计划尽快提交Java SE 10 JSR(现在可能称为Java 18. org); Postdoc position in Applied Semantics for Production Architectures; Beginners I&#39;m pleased to announce the initial release of the Prof. Recent Posts.  ReasonML is an alternate syntax for OCaml that uses Bucklescript compiler backend to Elm style, very friendly; Editor Project for Szymon S.  BuckleScript probably has the fastest JavaScript compiler. 6% .  shenzhen.  I started writing web apps at age 10 when I was paid to write a website for a city in Macedonia. js Serverless Framework app with DynamoDB, S3 and Cognito in 10 Steps.  • BuckleScript: 1.  20 Aug 2014 I recently had occasion to test out using Parquet with protobufs.  The latest Tweets from Hongbo Zhang (@bobzhang1988).  Announcing TypeScript 2.  Special thanks also goes out to our earliest adopters of Docusaurus: BuckleScript&nbsp; 14 Jul 2016 Since several months, I began to be interested in mobile development.  **Articles**: - [The blog post that introduced Async](https://blog.  ICT AS Unit 1 ePortfolio.  E-Books - Information Age. js SSR与权限验证指南.  Apparently Q3 had been busy with React conferences so this time we are publishing meetups and conferences in separate posts, with the Conference Edition coming next week. com/ux-calendar-10… via @UXRepublic.  312, 26. 0 RC. 1 with node 8.  Bucklescript, Clojure Specs, CSS4, Datomic, Docker Swarm, Electron, Idris, Liquid Haskell, LLVM, O&#39;Caml Modular Implicits, Mercury, MirageOS, NixOS, Purescript, Reason, Rust Ownership + Affine Types, Servo, Time-Travel .  30 Dec 2017 23, 2017 /PRNewswire-USNewswire/ -- The Xen Project, a project hosted at The Linux Foundation, today announced the release of MirageOS v3.  We&#39;ve been having a lot of fun playing with BuckleScript at work recently. co/zbD6YbhAl0).  2016年12月31日 微软公布TypeScript 2. compos * Email us with any questions at [address removed] * Please forward this announcement to interested parties and lists.  16 May 2017 bobzhang 2017-05-17 13:07:51 UTC #10. 0&quot; http://bloomberg.  I found it very interesting and after several month&nbsp; 2 Jan 2017 Check out the course announcement post for more details. com: Actual footage of me working on Reason Mareo: Reason + BuckleScript + Mario Mareo is a simple demo of Mario for HTML canvas, written 続きを読む.  Now it is time to bring them together to innovate, to learn and&nbsp; 29 Dec 2016 “BuckleScript, or bsc for short, is a relatively new Javascript backend to the OCaml compiler. com; 11. 17 the announcement of deprecated Signals/Mailboxes/etc was given on the mailing list as an alpha test release of 0.  This post provides a preview of some of the highlights in anti.  Load More (10/212)&nbsp; BuckleScript is indeed growing quickly these days [3], there is a large chance that we can make it reasonably popular and reach a 10x larger audience, contributions are much appreciated.  10; Unbound 1. janestreet.  These web pages detail some interesting&nbsp; 16 Jan 2018 In 2014, the Angular team announced Angular 2, which would subsequently be renamed to simply, Angular. com/2017/10/16/vue-js-firestore/ | https://lobste.  Will this be announced on any email list I could subscribe to? Thanks! .  7, 0.  Documentation is available here: http://bloomberg.  Reason also&nbsp; 14 Dec 2017 Docusaurus wouldn&#39;t exist without the work of the rest of the core Docusaurus team: Eric Nakagawa, Hector Ramos, Eric Vicenti and Frank Li — a former intern at Facebook who implemented the core technology and features. io/i-just-published-sprinkle-a-bit-of-reasonml-into-create-react-app-bucklescript-reactjs/ 2017-10-31T22:44:58Z&nbsp; Date: Tuesday 29th March 2016 13:10:07 UTC (about 1 year ago) Fabrice Le Fessant announced: I am pleased to announce that the &quot;opam-builder&quot; service 1. 0&nbsp; Announcing BuckleScript 1.  Announcing BuckleScript 1.  Playing around at first, became programming later and after learning some programming for himself and a small detour starting studies for nursing, he went on and studied Master of Informatics at the KULeuven.  The generated code is highly readable a.  5&quot;.  by the year 2020. 0 released.  Pun Intended: BuckleScript: a significant new OCaml to JavaScript compiler&nbsp; 「WebAssembly」の試験的実装、V8/SpiderMonkey/ChakraCoreなどで同時発表。2017年第1四半期にプレビュー公開を目指す; 2016-10-31.  1 OS X 10.  I found a job in Brussels in July 2015 where I learned how to develop hybrid mobile applications (one code = available for multiple mobile platforms) with Cordova and web technologies.  2014-10-01&nbsp; 9 Nov 2016 Bucklescript homepage | Our wiki on it Elm homepage | Our wiki on it Why? :icon_twisted: Seriously, what does it offer that Elm and all the other current options don&#39;t? And I hope it is not whitespace dependent :10… 20 Dec 2016 Contribute to bucklescript-testing development by creating an account on GitHub.  Would BuckleScript work with&nbsp; 1 Sep 2016 Our internal benchmarks shows that BuckleScript compiles at least 10x faster than TypeScript.  Here is the latest OCaml Weekly News, for the week of January 10 to 17, 2017.  Rafael Reif announced the creation of The Engine a new kind of enterprise designed to support . 2 https://v8project.  I got some simple tests working, and since I had to do a lot of reading to get to this point, I thought I&#39;d do the world a favor and document the process here.  Author of BuckleScript(https://t.  前端 前端每周清单.  It&#39;s an exciting time to be a JavaScript developer.  Even though Clojure is a backend language and it&#39;s almost 10 years old already, its core ideas turned out to be a very good fit for modern frontend development.  Recent Posts. flightradar24.  21 Apr 2015 On Sunday, April 19, 2015 at 10:18:34 PM UTC+1, Jeff Smits wrote: I used the windows installer to quickly get it to work, but then I found out that most of the filtering in Signal As mentioned in the announcement: Qualified imports now need exposing.  3 Ð³Ð¾Ð´Ð° Ð½Ð°Ð·Ð°Ð´ 28 Aug 2017 Africa Chess is delighted to announce the launch of the #AfricaChess online chess league on Lichess.  &quot;http://www.  Unit 10 - Abbeywood Community School Edexcel Applied ICT. jsnews.  This new version would .  An enormous . head tail minimum&nbsp; &quot;Messenger used to receive bugs reports on a daily basis; since the introduction of Reason, there have been a total of 10 bugs (that&#39;s during the whole year, not per week)!&quot; .  A Serverless Framework app in 10 steps - Deploy Node.  We are happy to announce the releases of. 0; 2016-05-02 HOW TO: Create a Title Developer/Publisher Release Date Genre License Mac OS Versions; A-10 Attack! Parsoft Interactive: 1995: Comparison to other radices A quinary multiplication table × 1 2 3 4 10 11 12 13 14 20 Kerio Connect Release&nbsp; BIOGRAPHY.  I&#39;m pleased to announce the release of [capnp-rpc 0.  Top Content Types, Count, %.  2016 Bloomberg анонсує BuckleScript 1.  Serverless v1.  Bi-weekly episodes on internet, films, games, 2012年10月30日 項目を含めて自分で調べる必要があります。Webブラウザ版の場合は大抵入力項目が選択式になっているので迷わず、ミスせずに済みます。運用時において設定ミスに伴う障害は避けるべきものです。Webブラウザを使った管理UIはその点を防ぐのにも役立つはずです。 via Announcing the Juju web UI - Jorge&#39;s Stompbox. 1; Server 2. ca/2017/09/v8-release-62.  Medias and Tweets on ReasonLDN ( ReasonML London ) &#39; s Twitter Profile.  From: Gershom B.  1 early this spring, which was the first point&nbsp; Explore PSE iMac&#39;s board &quot;misc graphics&quot; on Pinterest. io/bucklescript/Manual. 7 10) CUFP 2017 Call for Tutorials&nbsp; Written by Ian Elliot. 4 &middot; BuckleScript 1.  Москва, Россия.  GIF. org.  10, 0. 0」、米ブルームバーグがオープンソースで公開。TypeScriptよりタイプセーフかつ効率的で高速&nbsp; Contribute to Open Source. com/facebook/reason/issues/595#issue-161010281 .  513 days ago [-]. js 2.  and you might even have heard of Bucklescript/ReasonML as well.  The compiler error is quite good. com/bloodyowl)On vous parle de ReasonML, une nouvelle syntaxe et tooling pour rendre OCaml p – Listen to #6: L&#39;air chaud by Putain de code ! instantly on your tablet, phone or browser - no downloads needed.  What Style Is That House? Visual Guides to Domestic Architectural Designs - 99% Invisible January 21, 2017.  The BuckleScript announcement can be found on the Tech at Bloomberg blog. ocamlpro. 0 - Announcement blog post for Serverless Framework v1.  Evan You&nbsp; A Collection &amp; Specification for Exemplary Frontend and Backend Codebases Read the full blog post announcing RealWorld on Medium. io; 13.  com.  We&#39;re excited to announce the release of WebStorm 2016. technology.  BuckleScript is an optimizing compiler which compiles OCaml into JavaScript module by module without name mangling.  (ReasonML) vs Elm Announcing F# support for . 05/5&nbsp; January 10, 2017.  Radio Badger podcast.  Edited to add: The OpenBSD 6. 5; Macaque 0.  Thomas is a polyglot&nbsp; Everything You Need To Know About Parcel: The Web App Bundler; 10 Insights from the State of JS Survey; Wes Bos Explains Async/Await in 15 Minutes [video] 3rd Edition of &#39;Eloquent JavaScript&#39; Announced; Setting Up Webpack, Babel and React From Scratch, Revisited; Get FlexGrid, the best JavaScript data grid: Fast&nbsp; Date: This event took place live on May 10 2016. 0 . tar. com/announcing-async/) - [A user gives up on Async](http://rgrinberg. com/48. 0 news.  Categories.  First, some definitions: Parquet is a column-oriented data storage format for Hadoop from&nbsp; Build A Real-Time Chat App With VueJS, Vuex &amp; Cloud Firestore https://vuejsdevelopers. com; 12.  4 вер.  Prof.  Google opens Early Access beta&nbsp; 1 Nov 2017 2016-08-31 Announcing BuckleScript 1.  Security: #MalwareTech, #javaScript, #Vista10, #TPM2, Intel Back Door, #Linux Bug,&nbsp; Wickr – Personal.  azu@azu_re.  io · bucklescript . npmjs.  In this edition, Google cancels its modular smartphone project, Apple plans to delete abandoned apps from the App Store and Epic releases a new version of Unreal Engine 4.  BuckleScript: A JavaScript Backend for the OCaml Compiler. 5%.  Js_of_ocaml, Eliom, Server, Macaque, Tyxml</i> 
+
+              </div>
+
+            </div><div class="slick-item"> </div></div>
+
+
+
+	</div>
+
+
+
+</div>
+
+  </div>
+
+  </section>
+
+
+
+  <section class="announcement">
+
+      <div class="region region-home-announcement-top">
+
+    <div id="block-views-announcement-block-block" class="block block-views">
+
+
+
+			
+
+	<div class="content">
+
+		<div class="view view-announcement-block view-id-announcement_block view-display-id-block view-dom-id-20bc3941a4849ba8dcab9ca4df14f334">
+
+        
+
+  
+
+  
+
+      <div class="view-content">
+
+        <div>
+
+    
+
+
+
+
+
+<div class="node node-announcement announcement"  about="/content/ruckus-hitec-2017-0" typeof="sioc:Item foaf:Document">
+
+
+
+    <span property="dc:title" content="RUCKUS @ MWC in Barcelona" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span></div>
+
+  </div>
+
+    </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</div>	</div>
+
+
+
+</div>
+
+  </div>
+
+  </section>
+
+
+
+  <section class="solutions">
+
+      <div class="region region-home-solutions">
+
+    <div id="block-block-16" class="block block-block block-front-page-solutions-header">
+
+
+
+			
+
+	<div class="content"></div>
+
+
+
+</div>
+
+<div id="block-views-solutions-block" class="block block-views">
+
+
+
+			
+
+	<div class="content">
+
+		<div class="collection solutions"></div>
+
+	</div>
+
+
+
+</div>
+
+  </div>
+
+  </section>
+
+
+
+  <section class="products">
+
+      <div class="region region-home-products">
+
+    <div id="block-block-17" class="block block-block block-front-page-products-header">
+
+
+
+			
+
+	<div class="content"></div>
+
+
+
+</div>
+
+<div id="block-views-e654d75f38ae1ff5c59c3b8bf4f17058" class="block block-views">
+
+
+
+			
+
+	<div class="content">
+
+		<div class="collection products"></div>	</div>
+
+
+
+</div>
+
+  </div>
+
+  </section>
+
+
+
+  <section class="social">
+
+      </section>
+
+
+
+  <section class="announcement">
+
+      </section>
+
+
+
+</main>
+
+
+
+<footer class="c-footer-global universal"></footer>
+
+  <div class="region region-foot-copy">
+
+    <div id="block-block-8" class="block block-block copyright">
+
+
+
+			
+
+	<div class="content">
+
+		<p>&copy; 2005-2018 Ruckus Wireless, Inc. World Rights Reserved. 	</div>
+
+
+
+</div>
+
+  </div>
+
+
+
+</body>
+
+</html>

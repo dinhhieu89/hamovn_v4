@@ -1,0 +1,213 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<head id="Head1"><title>
+	{keyword}
+</title><meta charset="UTF-8" />
+ 
+<link rel="stylesheet" href="/mobiles/css/bootstrap.css" media="screen" /><link id="tieinstastylegroupcss" rel="stylesheet" href="/mobiles/css/minify-b3-tie-insta-style.css?version1=new1" type="text/css" media="all" /><link rel="stylesheet" href="/mobiles/css/allstyles.css" type="text/css" media="all" />
+<!--[if IE]> <script type="text/javascript">jQuery(document).ready(function (){ jQuery(".menu-item").has("ul").children("a").attr("aria-haspopup", "true");});</script> <![endif]-->
+<!--[if lt IE 9]> <script src="/mobiles/js/html5.js"></script> <script src="/mobiles/js/selectivizr-min.js"></script> <![endif]-->
+<!--[if IE 9]> <link rel="stylesheet" type="text/css" media="all" href="/mobiles/css/ie9.css" /> <![endif]-->
+<!--[if IE 8]> <link rel="stylesheet" type="text/css" media="all" href="/mobiles/css/ie8.css" /> <![endif]-->
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" media="all" href="/mobiles/css/ie7.css" /> <![endif]-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+ 
+<style type="text/css">
+        #main-nav ul li
+        {
+        }
+        #main-nav .container
+        {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        #main-nav .main-menu
+        {
+            margin-left: 0px;
+        }
+        @media (min-width:900px) and (max-width:1024px)
+        {
+            #main-nav ul li
+            {
+                font-size: 10.5px;
+            }
+        }
+        #Home_Icon
+        {
+            display: none;
+            margin: 0;
+            position: absolute;
+            top: 33px;
+            right: 5px;
+            opacity: 1;
+            height: 33px;
+            width: 40px;
+            z-index: 505;
+        }
+        @media only screen and (max-width: 900px)
+        {
+            #Home_Icon
+            {
+                display: block;
+            }
+        }
+        @media only screen and (max-width: 500px)
+        {
+            #Home_Icon
+            {
+                top: 8px;
+            }
+        }
+        .btn-info
+        {
+            color: #ffffff;
+            background-color: #4E5D6C;
+            border: 1px solid #fff;
+            border-color: transparent;
+        }
+        .btn-info:hover, .btn-info:focus, .btn-info.focus, .btn-info:active, .btn-info.active, .open > .dropdown-toggle.btn-info
+        {
+            color: #ffffff;
+            background-color: #263C3C;
+            border-color: rgba(0, 0, 0, 0);
+        }
+        .scroll
+        {
+            background: #646464;
+            border-bottom: 1px solid #fff;
+            white-space: nowrap;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            -ms-overflow-style: -ms-autohiding-scrollbar;
+            width: 100%;
+        }
+        nav2
+        {
+            width: 100%;
+            height: 30px;
+        }
+        nav2 ul
+        {
+            margin: 0px;
+        }
+        
+        nav2 li
+        {
+            display: inline-block;
+            padding: 4px 5px;
+            background: #788B9E;
+        }
+        
+        nav2 li a
+        {
+            color: #FFF;
+            text-transform: uppercase;
+        }
+        #navi2.fixed
+        {
+            position: fixed;
+            top: 0;
+            z-index: 999;
+            white-space: nowrap;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            -ms-overflow-style: -ms-autohiding-scrollbar;
+            width: 100%;
+        }
+        .BG_body
+        {
+            background-image: url(/Oppo_Loreal.png);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center top;
+        }
+        
+    
+        #CatFish
+        {
+            z-index: 100;
+            position: fixed;
+            text-align: center;
+            padding-bottom: 0px;
+            background-color: white;
+            padding-left: 0px;
+            width: 320px;
+            bottom: 0px;
+            padding-right: 0px;
+            height: 50px;
+            padding-top: 0px;
+        }
+        * HTML #CatFish
+        {
+            position: absolute;
+        }
+    </style>
+ 
+<meta name="description" content="{keyword}" /><meta name="keywords" content="{keyword}" /></head>
+<body id="top" class="home page page-id-131 page-template-default lazy-enabled">
+<form method="post" action="/mobiles/mobile_games.aspx" id="form1">
+<div class="aspNetHidden">
+ 
+</div><div class="wrapper-outer"><div id="wrapper" class="boxed-all"><div class="inner-wrapper"><header id="theme-header" class="theme-header"><div class="header-content">
+<div id="navi2">
+  <div class="scroll">
+<nav2>
+<ul>
+<li><h1>{keyword}</h1></li>
+<li>{manytext_bing} </li>
+</ul>
+</nav2>
+</div>
+</div>
+<div class="e3lan e3lan-top alignright" style="padding-left:5px; padding-right:5px;  overflow:hidden;">
+</div>
+<div class="clear"></div>
+</div>
+<nav id="main-nav" class="fixed-enabled">
+<div class="container">
+<div class="main-menu">
+<ul id="Ul1" class="menu">
+<li id="Li1" class="menu-item">
+ <div class="footer-bottom"><div class="container">
+<div class="alignleft">
+Copyright &copy;
+2018
+Hamariweb.com All Rights Reserved.
+</div>
+<div class="clear spacer">
+</div>
+<div class="spacer">
+</div>
+</div>
+</div>
+<div id="topcontrol" class="fa fa-angle-up" title="Scroll To Top">
+</div>
+<div id="fb-root">
+</div>
+ <div id="live-search_sb" class="live-search_sb" style="position: absolute; display: none;
+        width: 315px; z-index: 9999;">
+<div class="live-search_sb_cont">
+<div class="live-search_sb_top">
+</div>
+<div id="live-search_results" style="width: 100%">
+<div id="live-search_val">
+</div>
+<div id="live-search_more">
+</div>
+</div>
+<div class="live-search_sb_bottom">
+</div>
+</div>
+</div>
+<div style="width: 100%;" id="CatFish" align="center" width="100%">
+<table cellspacing="0" cellpadding="0" width="100%" align="center">
+<tr>
+<td align="center">
+<div id='dfpunit6'>
+ 
+</div></td></tr></table></div></form>
+</body>
+</html>
+ 

@@ -1,0 +1,95 @@
+
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+
+
+
+
+<title>{keyword}</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="language" content="en" />
+    <meta name="description" content="{keyword}" />
+    <meta name="keywords" content="{keyword}" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="shortcut icon" href="http://www.bharatwap.Com/favicon.ico" />
+    <link rel="stylesheet" href="http://www.bharatwap.Com/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="http://www.bharatwap.Com/css/paging.css" type="text/css" />
+</head>
+
+
+
+
+
+
+
+
+<body>
+<!-- div class="content" -->
+<div class="ad2 tCenter">
+<div class="catRow"></div>
+<center>
+ 
+<div class="6b8a8c16793bf7418b62e5936765ef6d" id="6b8a8c16793bf7418b62e5936765ef6d"></div>
+  
+ <img
+src="http://adgup.com/Alibaba/image1.gif" alt="Fast Download"><br /> 
+ 
+</center>
+<div class='search'>
+<form method="get" action="http://www.google.com/search">
+<input type="hidden" name="sitesearch" value="www.bharatwap.com" />
+Search Files : <input alt="search" type="text" name="as_q" value="" onfocus="if(this.value == ' Enter a search keyword like: Bollywood, marathi.') { this.value = ''; }" onblur="if(this.value=='') { this.value=' Enter a search keyword like: Bollywood etc.'; }" id="txt" />
+<input type="submit" value="Search" />
+ 
+</form>
+
+
+			<div class="description">
+				<center>
+					<div class="6b8a8c16793bf7418b62e5936765ef6d" id="6b8a8c16793bf7418b62e5936765ef6d"></div>
+ 			</center>
+
+			</div>		
+		<!-- chintanhingrajiya@gmail.com :: Display category list -->	<center>
+			</center>
+	<div id='cateogry' align="left">
+		<h2>{keyword}</h2>
+		 <img
+src="http://adgup.com/Alibaba/image1.gif" alt="Fast Download"><br />  		<div class='catList' align="left">
+			<div class="odd">{manytext_bing}< </div>
+			<div class="even">  </div>
+			<div class="6b8a8c16793bf7418b62e5936765ef6d" id="6b8a8c16793bf7418b62e5936765ef6d"></div>
+ 		</div>
+</div>
+	<center>
+	<div class='pagination' align='center'><ul> 
+	</ul></div></center>
+
+<center>
+</center>
+<div class="catList" align="left">
+</div>
+<center>			
+  </center>
+<div>
+	<center>
+		
+	</center>
+</div>
+
+
+
+<h2>   
+
+
+
+
+</body>
+</html>

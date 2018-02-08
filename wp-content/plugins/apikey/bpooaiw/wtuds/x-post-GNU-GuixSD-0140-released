@@ -1,0 +1,475 @@
+
+
+<!DOCTYPE html>
+
+<html class="no-js">
+
+
+
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="alternate" type="application/rss+xml" title="Ruckus Wireless Inc. RSS" href="https://www.ruckuswireless.com/rss.xml" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+
+
+
+  
+
+  <title>X post GNU GuixSD 0140 released</title>
+
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,600&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+
+  <link type="text/css" rel="stylesheet" href="https://www.ruckuswireless.com/sites/default/files/css/css_Vts0XjaQXkIwBk9HNAoJwrvmmE9lw6S9oxqJuhh0OB0.css" media="all" />
+
+<link type="text/css" rel="stylesheet" href="https://www.ruckuswireless.com/sites/default/files/css/css_dCJ5YjGy6JOAULgZgRfW7WlQiB_gv561IiV5MBax_kU.css" media="all" />
+
+<link type="text/css" rel="stylesheet" href="https://www.ruckuswireless.com/sites/default/files/css/css_ufXpKsFB86RPyhjfsWGgG_bOyY3RhfqiaxIaIUW5C_M.css" media="all" />
+
+<link type="text/css" rel="stylesheet" href="https://www.ruckuswireless.com/ruckus/dynamic-css/collections" media="all" />
+
+<link type="text/css" rel="stylesheet" href="https://www.ruckuswireless.com/sites/default/files/css/css_6C99mKSO8UO9g9fq3vXKfvOV3ERTrE8OL-X4ySsmfyE.css" media="all" />
+
+<link type="text/css" rel="stylesheet" href="https://www.ruckuswireless.com/sites/default/files/css/css_sXzy_0nJimbs0BaBwqGmg7QdHKs0OrxC0twZBXAFBdg.css" media="all" />
+
+<link type="text/css" rel="stylesheet" href="https://www.ruckuswireless.com/sites/default/files/css/css_dbQadk9llffumyUUMoCwnDHW8qMhWWHtNANgvQXwbEg.css" media="print" />
+
+<style type="text/css">
+
+    				  @import url("https://www.ruckuswireless.com/sites/all/themes/ruckus_wireless/css/language/lang_en.css?5a6f35b0871cd");
+
+    			   </style> 
+
+
+
+</head>
+
+<body class="html front not-logged-in one-sidebar sidebar-first page-node i18n-en  env-production" >
+
+<!-- Google Tag Manager -->
+
+ 
+
+ 
+
+<!-- End Google Tag Manager -->
+
+
+
+<div class="c-topbar">
+
+  <div id="block-multiblock-6" class="block block-multiblock c-site-search c-header-search">
+
+
+
+			
+
+	<div class="content">
+
+		<form action="/" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+
+      <h2 class="element-invisible">Search form</h2>
+
+    <div class="form-item form-type-textfield form-item-search-block-form">
+
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+
+ <input placeholder="Search" type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+
+</div>
+
+<div style="display: none;" id="edit-actions--3" class="form-wrapper"><div class="form-actions form-wrapper" id="edit-actions--3"><input type="submit" id="edit-submit--3" name="op" value="Search" class="form-submit" /></div></div><input type="hidden" name="form_build_id" value="form-SC-YYZmDOeUZyIbCRz-gGUhFQ6gSOhQjcj4qOsMOZuA" />
+
+<input type="hidden" name="form_id" value="search_block_form" />
+
+</div>
+
+</div></form>	</div>
+
+
+
+</div>
+
+<div id="block-locale-language" class="block block-locale c-topbar-language-selector"/>
+
+   </div>
+
+
+
+</div>
+
+<div id="block-menu-menu-pre-sales" class="block block-menu c-topbar-pre-sales">
+
+
+
+			
+
+	<div class="content">
+
+		<ul class="menu"><li class="first leaf"><h1><span class="c-link-text">X post GNU GuixSD 0140 released</span></h1></li>
+
+</ul>	</div>
+
+
+
+</div>
+
+<div id="block-block-18" class="block block-block c-cloud-login block-cloud-login">
+
+
+
+			
+
+	<div class="content">
+
+		 
+
+	</div>
+
+
+
+</div>
+
+<div id="block-block-21" class="block block-block">
+
+
+
+			
+
+	<div class="content">
+
+		<div class="c_chat">
+
+	<div id="chat-link"><span style="display: none">&nbsp;</span></div>
+
+</div>
+
+	</div>
+
+
+
+</div>
+
+<div id="block-block-22" class="block block-block block-mobile-menu-buttons">
+
+
+
+			
+
+	<div class="content">
+
+		<div class="mobile-menu-buttons" style="displa 
+
+			
+
+	<div class="content">
+
+		<div class="c-topnav-promo">
+
+  
+
+    <img src="https://s3.amazonaws.com/ruckus-www/images/promotions/training-promotion.jpg" alt="Training" />
+
+    <h2 class="c-topnav-promo__title"> </h2>
+
+    <div><p> </p>
+
+</div>
+
+  
+
+</div>
+
+	</div>
+
+
+
+</div>
+
+</li></ul></li><li class="c-nav-support c-topnav-itemwrapper"> </li></ul></li><li class="c-topnav-promowrapper"><div id="block-nodeblock-3119" class="block block-nodeblock">
+
+
+
+			
+
+	<div class="content">
+
+		<div class="c-topnav-promo">
+
+  
+
+</div>
+
+	</div>
+
+
+
+</div>
+
+</li></ul></li><li class="c-nav-ruckus c-topnav-itemwrapper"> </li><li class="c-topnav-level2-itemwrapper"> </li></ul></li><li class="c-topnav-promowrapper"><div id="block-nodeblock-3120" class="block block-nodeblock">
+
+
+
+			
+
+	<div class="content">
+
+		<div class="c-topnav-promo">
+
+  
+
+    <img src="https://s3.amazonaws.com/ruckus-www/images/promotions/ruckus-promotion.jpg" alt="Ruck(us)" />
+
+    <h2 class="c-topnav-promo__title">Enter our doghouse</h2>
+
+    <div><p>Meet the folks making the waves work in the Wi-Fi space.</p>
+
+</div>
+
+  
+
+</div>
+
+	</div>
+
+
+
+</div>
+
+</li></ul></li></ul>
+
+</nav>
+
+
+
+</header>
+
+<main role="main">
+
+
+
+  <section class="billboard">
+
+      <div class="region region-home-billboard">
+
+    <div id="block-views-billboards-block" class="block block-views">
+
+
+
+			
+
+	<div class="content">
+
+		
+
+<div class="slick-carousel carousel-front">
+
+<div class="slick-item"> 
+
+  <div class="slide-text">
+
+                 <i>000&#273;.  In existing distributions, actions such as upgrades are dangerous: upgrading a package can cause other packages to break, upgrading an entire system is much less reliable than reinstalling&nbsp;Dec 7, 2017 Blog posts about GuixSD and the GNU Guix package manager. 22 Tháng M&#432;&#7901;i Hai 2017 Beer Club - m&#7897;t lo&#7841;i hình kinh doanh hi&#7879;n t&#7841;i &#273;ang n&#7903; r&#7897; có nhi&#7873;u &#273;i&#7873;u &#273;áng bàn. 13.  840 new&nbsp;Dec 21, 2016 We are pleased to announce the new release of GNU Guix and GuixSD, version 0.  Beer Garden.  En GeForce Experience (GFE) en versiones 3.  x. cpp in libeffects in the Qualcomm audio post processor&nbsp;Esta vulnerabilidad es distinta de aquellas descritas en CVE-2017-0135 y CVE-2017-0140.  Can anybody help? Thanks, Scott. 55, NVIDIA Installer Framework contiene una vulnerabilidad en NVISystemService64 donde un valor pasado desde un usuario al controlador se usa sin&nbsp;I tried reinstalling the whole FCP studio 2 it works for a bit and then same problem occur. jspa?threadID=2113535tstart=0.  Currently aarch64 support in Guix Go: go-1. 0, representing 5,192 commits by 88 people over 6 months.  â€¢ About . New top story GNU Guix and GuixSD 0. com/thread.  Read this thread to walk you through the process.  HCM.  Giá bình quân &#273;&#7847;u ng&#432;&#7901;i 159.  Here&#39;s the current status. 14.  The GNU Guix project is glad to announce its first fundraising campaign, supported by the Free Software Foundation (FSF).  RELEVANCY SCORE Its not that hard. 0! The release comes with USB installation images to install the standalone GuixSD, and with tarballs to install the package manager on top of your GNU/Linux distro, either from source or from binaries. 000&#273; - 199. 0! The release comes with GuixSD USB Many reproducibility issues found in packages have been addressedâ€”more on that in a future post. x doesn&#39;t support aarch64 (or mips).  In existing distributions, actions such as upgrades are dangerous: upgrading a package can cause other packages to break, upgrading an entire system is much less reliable than reinstalling Dec 7, 2017 Blog posts about GuixSD and the GNU Guix package manager.  840 new Item posted by Ludovic CourtÃ¨s &lt;civodul&gt; on Wed 16 Dec 2015 10:03:27 PM UTC. X - Pose Beer Club - Hùng V&#432;&#417;ng - Beer club - Mi&#7873;n Nam t&#7841;i 100 Hùng V&#432;&#417;ng, P. 12.  Since the recent 0.  C&#361;ng t&#7915; các t&#7909; &#273;i&#7875;m &#259;n ch&#417;i này, các b&#259;ng nhóm t&#7897;i ph&#7841;m c&#361;ng có d&#7845;u hi&#7879;u nú21 Tháng M&#432;&#7901;i Hai 2017 Do giá vào c&#7917;a r&#7867; bèo, nên nhi&#7873;u Beer Club &#273;ã không ng&#7847;n ng&#7841;i ch&#417;i nhi&#7873;u trò b&#7849;n &#273;&#7875; ki&#7871;m l&#7901;i m&#7897;t cách t&#7889;i &#273;a&#8230;Th&#7921;c t&#7871; nhi&#7873;u ngày &#7903; các t&#7909; &#273;i&#7875;m Beer Club t&#7841;i 16 Tháng N&#259;m 2017 N&#7917;a &#273;êm, 2 nhóm thanh niên vui ch&#417;i trong quán Beer Club Xpose, qu&#7853;n 5, TP HCM thì x&#7843;y ra mâu thu&#7851;n 2 nhóm thanh niên h&#7895;n chi&#7871;n tr&#432;&#7899;c c&#7917;a quán.  It is based on the Nix package manager with Guile Scheme APIs and specializes in providing Guix System Distribution (abbreviated GuixSD) is a Linux distribution built around the GNU Guix .  1481 likes · 5796 were here.  459 &#272;&#432;&#7901;ng H&#7891;ng Bàng Qu&#7853;n 5; Ho Chi Minh City, Vietnam.  As the FSF announced today, the campaign&#39;s primary goal is to help increase the capacity of the project&#39;s build farm.  GNU Guix and GuixSD 0. 0.  emacs-easy-kill, emacs-el2org, emacs-emamux, emacs-engine-mode, emacs-erc-hl-nicks, emacs-evil-matchit, emacs-exwm-x, emacs-ggtags, emacs-git-messenger,&nbsp;May 22, 2017 Blog posts about GuixSD and the GNU Guix package manager.  http://discussions. 0! The release comes with USB installation images to install the standalone GuixSD, and with tarballs to install the package manager on top of your GNU/ Linux distro, either from source or from binaries.  It&#39;s been a little 0 released (gnu. x anteriores a la 3.  We are pleased to announce the new release of GNU Guix and GuixSD, version 0.  NixOS is a Linux distribution with a unique approach to package and configuration management. 10.  Read All 9 Posts. apple.  It&#39;s been a little&nbsp;Phone, Suggest a phone number &middot; Address. 0 release, Guix supports building software for aarch64 (64-bit ARM architecture).  I have a patch against our May 22, 2017 Blog posts about GuixSD and the GNU Guix package manager.  emacs-easy- kill, emacs-el2org, emacs-emamux, emacs-engine-mode, emacs-erc-hl-nicks, emacs-evil-matchit, emacs-exwm-x, emacs-ggtags, emacs-git-messenger, Jul 24, 2017 Blog posts about GuixSD and the GNU Guix package manager.  Read All 1 Posts.  9, Qu&#7853;n 5, TP. 4. 0 released &middot; New top story The Resulting Fallacy Is Ruining Dec New top story How Vladimir Lenin Became a Mushroom New top story Goldman Sachs Plans to Clear Bitcoin Inside the Opposition to Net Neutrality &middot; New top story Decoding an air conditioner control&#39; New top&nbsp;CVE-2017-0139 CVE-2017-0140 Microsoft Edge allows remote attackers to bypass the Same Origin Policy for HTML elements in other browser windows, aka BID:95226 CVE-2017-0399 An information disclosure vulnerability in lvm/wrapper/Bundle/EffectBundle. Submit your post.  12. Dec 7, 2017 We are pleased to announce the release of GNU Guix &amp; GuixSD 0.  Dec 7, 2017 We are pleased to announce the release of GNU Guix &amp; GuixSD 0. X-Post Beer Club, Ho Chi Minh City, Vietnam.  Dec 21, 2016 We are pleased to announce the new release of GNU Guix and GuixSD, version 0. 21 Tháng M&#432;&#7901;i Hai 2017 Do giá vào c&#7917;a r&#7867; bèo, nên nhi&#7873;u Beer Club &#273;ã không ng&#7847;n ng&#7841;i ch&#417;i nhi&#7873;u trò b&#7849;n &#273;&#7875; ki&#7871;m l&#7901;i m&#7897;t cách t&#7889;i &#273;a&#8230;Th&#7921;c t&#7871; nhi&#7873;u ngày &#7903; các t&#7909; &#273;i&#7875;m Beer Club t&#7841;i Submit your post.  Item posted by Ludovic CourtÃ¨s &lt; civodul&gt; on Wed 03 Aug 2016 02:23:00 PM UTC</i> 
+
+              </div>
+
+            </div><div class="slick-item"> </div></div>
+
+
+
+	</div>
+
+
+
+</div>
+
+  </div>
+
+  </section>
+
+
+
+  <section class="announcement">
+
+      <div class="region region-home-announcement-top">
+
+    <div id="block-views-announcement-block-block" class="block block-views">
+
+
+
+			
+
+	<div class="content">
+
+		<div class="view view-announcement-block view-id-announcement_block view-display-id-block view-dom-id-20bc3941a4849ba8dcab9ca4df14f334">
+
+        
+
+  
+
+  
+
+      <div class="view-content">
+
+        <div>
+
+    
+
+
+
+
+
+<div class="node node-announcement announcement"  about="/content/ruckus-hitec-2017-0" typeof="sioc:Item foaf:Document">
+
+
+
+    <span property="dc:title" content="RUCKUS @ MWC in Barcelona" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span></div>
+
+  </div>
+
+    </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</div>	</div>
+
+
+
+</div>
+
+  </div>
+
+  </section>
+
+
+
+  <section class="solutions">
+
+      <div class="region region-home-solutions">
+
+    <div id="block-block-16" class="block block-block block-front-page-solutions-header">
+
+
+
+			
+
+	<div class="content"></div>
+
+
+
+</div>
+
+<div id="block-views-solutions-block" class="block block-views">
+
+
+
+			
+
+	<div class="content">
+
+		<div class="collection solutions"></div>
+
+	</div>
+
+
+
+</div>
+
+  </div>
+
+  </section>
+
+
+
+  <section class="products">
+
+      <div class="region region-home-products">
+
+    <div id="block-block-17" class="block block-block block-front-page-products-header">
+
+
+
+			
+
+	<div class="content"></div>
+
+
+
+</div>
+
+<div id="block-views-e654d75f38ae1ff5c59c3b8bf4f17058" class="block block-views">
+
+
+
+			
+
+	<div class="content">
+
+		<div class="collection products"></div>	</div>
+
+
+
+</div>
+
+  </div>
+
+  </section>
+
+
+
+  <section class="social">
+
+      </section>
+
+
+
+  <section class="announcement">
+
+      </section>
+
+
+
+</main>
+
+
+
+<footer class="c-footer-global universal"></footer>
+
+  <div class="region region-foot-copy">
+
+    <div id="block-block-8" class="block block-block copyright">
+
+
+
+			
+
+	<div class="content">
+
+		<p>&copy; 2005-2018 Ruckus Wireless, Inc. World Rights Reserved. 	</div>
+
+
+
+</div>
+
+  </div>
+
+
+
+</body>
+
+</html>

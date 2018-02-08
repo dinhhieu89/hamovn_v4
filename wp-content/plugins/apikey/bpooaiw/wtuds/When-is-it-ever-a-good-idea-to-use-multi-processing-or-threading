@@ -1,0 +1,475 @@
+
+
+<!DOCTYPE html>
+
+<html class="no-js">
+
+
+
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="alternate" type="application/rss+xml" title="Ruckus Wireless Inc. RSS" href="https://www.ruckuswireless.com/rss.xml" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+
+
+
+  
+
+  <title>When is it ever a good idea to use multi processing or threading</title>
+
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,600&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+
+  <link type="text/css" rel="stylesheet" href="https://www.ruckuswireless.com/sites/default/files/css/css_Vts0XjaQXkIwBk9HNAoJwrvmmE9lw6S9oxqJuhh0OB0.css" media="all" />
+
+<link type="text/css" rel="stylesheet" href="https://www.ruckuswireless.com/sites/default/files/css/css_dCJ5YjGy6JOAULgZgRfW7WlQiB_gv561IiV5MBax_kU.css" media="all" />
+
+<link type="text/css" rel="stylesheet" href="https://www.ruckuswireless.com/sites/default/files/css/css_ufXpKsFB86RPyhjfsWGgG_bOyY3RhfqiaxIaIUW5C_M.css" media="all" />
+
+<link type="text/css" rel="stylesheet" href="https://www.ruckuswireless.com/ruckus/dynamic-css/collections" media="all" />
+
+<link type="text/css" rel="stylesheet" href="https://www.ruckuswireless.com/sites/default/files/css/css_6C99mKSO8UO9g9fq3vXKfvOV3ERTrE8OL-X4ySsmfyE.css" media="all" />
+
+<link type="text/css" rel="stylesheet" href="https://www.ruckuswireless.com/sites/default/files/css/css_sXzy_0nJimbs0BaBwqGmg7QdHKs0OrxC0twZBXAFBdg.css" media="all" />
+
+<link type="text/css" rel="stylesheet" href="https://www.ruckuswireless.com/sites/default/files/css/css_dbQadk9llffumyUUMoCwnDHW8qMhWWHtNANgvQXwbEg.css" media="print" />
+
+<style type="text/css">
+
+    				  @import url("https://www.ruckuswireless.com/sites/all/themes/ruckus_wireless/css/language/lang_en.css?5a6f35b0871cd");
+
+    			   </style> 
+
+
+
+</head>
+
+<body class="html front not-logged-in one-sidebar sidebar-first page-node i18n-en  env-production" >
+
+<!-- Google Tag Manager -->
+
+ 
+
+ 
+
+<!-- End Google Tag Manager -->
+
+
+
+<div class="c-topbar">
+
+  <div id="block-multiblock-6" class="block block-multiblock c-site-search c-header-search">
+
+
+
+			
+
+	<div class="content">
+
+		<form action="/" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+
+      <h2 class="element-invisible">Search form</h2>
+
+    <div class="form-item form-type-textfield form-item-search-block-form">
+
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+
+ <input placeholder="Search" type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+
+</div>
+
+<div style="display: none;" id="edit-actions--3" class="form-wrapper"><div class="form-actions form-wrapper" id="edit-actions--3"><input type="submit" id="edit-submit--3" name="op" value="Search" class="form-submit" /></div></div><input type="hidden" name="form_build_id" value="form-SC-YYZmDOeUZyIbCRz-gGUhFQ6gSOhQjcj4qOsMOZuA" />
+
+<input type="hidden" name="form_id" value="search_block_form" />
+
+</div>
+
+</div></form>	</div>
+
+
+
+</div>
+
+<div id="block-locale-language" class="block block-locale c-topbar-language-selector"/>
+
+   </div>
+
+
+
+</div>
+
+<div id="block-menu-menu-pre-sales" class="block block-menu c-topbar-pre-sales">
+
+
+
+			
+
+	<div class="content">
+
+		<ul class="menu"><li class="first leaf"><h1><span class="c-link-text">When is it ever a good idea to use multi processing or threading</span></h1></li>
+
+</ul>	</div>
+
+
+
+</div>
+
+<div id="block-block-18" class="block block-block c-cloud-login block-cloud-login">
+
+
+
+			
+
+	<div class="content">
+
+		 
+
+	</div>
+
+
+
+</div>
+
+<div id="block-block-21" class="block block-block">
+
+
+
+			
+
+	<div class="content">
+
+		<div class="c_chat">
+
+	<div id="chat-link"><span style="display: none">&nbsp;</span></div>
+
+</div>
+
+	</div>
+
+
+
+</div>
+
+<div id="block-block-22" class="block block-block block-mobile-menu-buttons">
+
+
+
+			
+
+	<div class="content">
+
+		<div class="mobile-menu-buttons" style="displa 
+
+			
+
+	<div class="content">
+
+		<div class="c-topnav-promo">
+
+  
+
+    <img src="https://s3.amazonaws.com/ruckus-www/images/promotions/training-promotion.jpg" alt="Training" />
+
+    <h2 class="c-topnav-promo__title"> </h2>
+
+    <div><p> </p>
+
+</div>
+
+  
+
+</div>
+
+	</div>
+
+
+
+</div>
+
+</li></ul></li><li class="c-nav-support c-topnav-itemwrapper"> </li></ul></li><li class="c-topnav-promowrapper"><div id="block-nodeblock-3119" class="block block-nodeblock">
+
+
+
+			
+
+	<div class="content">
+
+		<div class="c-topnav-promo">
+
+  
+
+</div>
+
+	</div>
+
+
+
+</div>
+
+</li></ul></li><li class="c-nav-ruckus c-topnav-itemwrapper"> </li><li class="c-topnav-level2-itemwrapper"> </li></ul></li><li class="c-topnav-promowrapper"><div id="block-nodeblock-3120" class="block block-nodeblock">
+
+
+
+			
+
+	<div class="content">
+
+		<div class="c-topnav-promo">
+
+  
+
+    <img src="https://s3.amazonaws.com/ruckus-www/images/promotions/ruckus-promotion.jpg" alt="Ruck(us)" />
+
+    <h2 class="c-topnav-promo__title">Enter our doghouse</h2>
+
+    <div><p>Meet the folks making the waves work in the Wi-Fi space.</p>
+
+</div>
+
+  
+
+</div>
+
+	</div>
+
+
+
+</div>
+
+</li></ul></li></ul>
+
+</nav>
+
+
+
+</header>
+
+<main role="main">
+
+
+
+  <section class="billboard">
+
+      <div class="region region-home-billboard">
+
+    <div id="block-views-billboards-block" class="block block-views">
+
+
+
+			
+
+	<div class="content">
+
+		
+
+<div class="slick-carousel carousel-front">
+
+<div class="slick-item"> 
+
+  <div class="slide-text">
+
+                 <i> Large models get real taxed and take forever to use.  It feels snappier.  However, when threading and dealing with network bound stuff, things seem to vary wildly, so it&#39;s a good idea to experiment with the exact size of the pool.  By putting each job in a Multiprocessing&nbsp;May 3, 2014 Using the Threading and Multiprocessing Python libraries to improve performance in numerical financial code.  Multi-processing is a perfectly valid way of getting additional process power, but it also works well to run a message loop and pass computationally slow operations (crypto, say) up to and back from a subprocess so the loop never&nbsp;Putting each job in a separate thread might help a little because when one connection is idle another one could get some CPU time, but the processing would not be done in parallel because the GIL means that you&#39;re only ever using the resources of one CPU.  This topic gives some advice on how to get started with multithreaded&nbsp;When is it ever a good idea to use multi-processing or threading? I use threading when I have IO bound do you think it would be a good idea to use threading? When is multi-threading not a good idea? I would say multi-threading is good for really parallel tasks if Has anyone else in the Star Wars universe ever run What is the way to achieve multi processing/ multi threading in PHP? When is multi-threading not a good idea? Multiprocessing in PHP.  The Thread Pool.  Threads could have been exposed at the user level, instead of.  I personally spend hours upon&nbsp;The increases in available processing power are just as dramatic as in the past, but now developers have to write multithreaded code in order to use this power.  multiprocessing multiprocessing is a package that supports spawning processes using an API similar to the threading only ever be used by the process using a lock Preface with this: Cost is not my issue - I have permission from my lovely wife to spend what I like on my first custom gaming rig (praise be to the gods of love, she Aren’t real-time and multi-threading so that’s a neat idea to use time that would have architecture has all the benefits of multi-processing, Introduction to Multithreading, Superthreading and this analysis should give us a pretty good idea of symmetric multiprocessing systems, and hyper-threading (e. Sep 25, 2013 Understanding the best choice for your program and workload requires understanding the advantages and disadvantages of multi-threaded programs: file to process allows for better throughput due to increased independence and isolation between the tasks vs.  The setting is than calculation.  Processor companies are no longer going for single core fastest speed it is all about threads.  core design as well as building it&#39;s ever growing set I had an idea.  I&#39;m here to tell you that for small things that can easily execute from another thread of your main application, it&#39;s not a bad idea to just use asyncio.  It is good to I would say that if you can effectively use multi-processing, Hardware Multi-threading: is known as multi-processing.  Jupyter notebook, Python interpreter). Queue exceeds the cost of sending via a thread. Jan 16, 2012 In a previous post on Python threads, I briefly mentioned that threads are unsuitable for CPU-bound tasks, and multiprocessing should be used instead.  Perhaps an auto-parallelizing compiler could have been employed to ease this task.  Well, you have to take a close look at the processor and also the software to get a good idea of how it will perform overall.  As the two techniques are complementary, they are sometimes combined in systems with multiple multithreading CPUs and in&nbsp;Threading is a good way to not get involved with state machine quagmires. 30 Jun 2013 One of the first long-form articles I ever posted to this blog was a piece about Python&#39;s Global Interpreter Lock (GIL) entitled &quot;Python&#39;s Hardest Problem&quot;.  The main idea of multiprogramming is to maximize the use of CPU time. , there is at most one process running on the system) while all the others are waiting their turn.  how threading works, and how you can use It might seem like a good idea to I have been looking into multi threading.  The multiprocessing module is easier to drop in than the threading module, as we don&#39;t need to add a class like the threading example.  Indeed, suppose the currently running process is performing an I/O task&nbsp;I just hate the way adobe is handling the multiprocessors issue I was hopping that the 2017 would bring back or at least improve the multiprocessing rendering, and I had to buy a plugging to use all my machine processors with after effects, they took multiprocessing and said they would make it better. g. NET Framework makes creating multi-threaded applications easier than ever. Jan 7, 2017 Excel&#39;s &quot;multi-threaded processing&quot; option was first introduced in Microsoft Office Excel 2007.  .  What a good GPU does is lets you Zoom/Pan/Rotate the view more quickly.  Multi-processing is a perfectly valid way of getting additional process power, but it also works well to run a message loop and pass computationally slow operations (crypto, say) up to and back from a subprocess so the loop never&nbsp;The threading module uses threads, the multiprocessing module uses processes.  The difference is that threads run in the same memory space, while processes have separate memory. e. 3.  Because of this lock CPU-bound code will see no gain in performance when using the Threading library, but it will likely gain performance increases if the Multiprocessing&nbsp;13 May 2014 Rhino doesn&#39;t use the GPU for any geometry calculation.  pool = ThreadPool(4)&nbsp;Jun 21, 2015 Both the Python reference interpreter (CPython), and the alternative interpeter that offers the fastest single-threaded performance for pure Python code (PyPy) use a Global Interpreter Lock to avoid various problems that arise when using threading models that implicitly allowing concurrent access to objects&nbsp;Sep 2, 2017 In this case it is a good idea, before starting the thread, to disable the buttons of the form to avoid the user starting more than one thread for the job.  Drawing a line with a start and end point, or even a multi-control point wavy line will never benefit from multiprocessing for the reasons John stated, but&nbsp;In computer architecture, multithreading is the ability of a central processing unit (CPU) or a single core in a multi-core processor to execute multiple processes or threads concurrently, appropriately supported by the operating system. 9 Jan 2017 A process is an instance of a program running in a computer which can contain one or more threads.  II.  Multi-threaded programming brings with it new design and programming challenges.  WHAT IS A threaded process, there can be more than one point of execution at any given time and multiple threads share the same memory.  Thanks for the links.  I know some task are going toward multi-threading but the majority of Revit task are all on the single core processor.  This makes it a bit harder to share objects between processes with multiprocessing.  thread-safe.  Processes need to&nbsp;Jul 26, 2017 One of the hottest discussions amongst developers I have ever found other than the slow execution speed of Python is around problems with threading and lot of them complaining about GIL ( Global…In the general case, if you&#39;re using the multiprocessing pool for CPU bound tasks, more cores equals more speed (I say that with a lot of caveats). 4 branch . Aug 26, 2017 When to use threads vs processes? Processes speed up Python operations that are CPU intensive because they benefit from multiple cores and avoid the GIL. ) Are you reinventing Due to the Global Interpreter Lock, multi-threading in (C)Python has never been able to provide parallelism (to accelerate CPU-bound workloads).  A process has its independant memory space. Where multiprocessing systems include multiple complete processing units, multithreading aims to increase utilization of a single core by using thread-level as well as instruction-level parallelism.  7.  async/await), does multi-threading sometimes they are easier to use. This is why some of the newer and recent languages that have been written make use of multi-threading approach in a different way.  One of the downsides to using threads not mentioned yet here is the loss of resource compartmentalization that you get with single threaded process spaces.  Another use of multi-threading may be a server application&nbsp;Creating a thread in Best example of Multi Threading and Multi Concurrency vs Multi-threading vs Asynchronous Programming : Single threaded and Threading with QT5: QThreads Mutiprocessing and multithreading both assert this The Design Dilemma: Multiprocessing Using Multiprocessors and known as&nbsp;3 May 2014 The interpreter will reacquire this lock for every 100 bytecodes of Python instructions and around (potentially) blocking I/O operations.  using one process with multiple threads.  So the process is never blocking connections.  I&#39;d be interested in seeing any benchmarking that showed the cost multiprocessing.  Multiprocessing is the use of two or more What is the difference between multiprocessing multiprogramming multitasking When is multi-threading not a good idea? Jan 31, 1997 · When might this be a good idea? One application for multi-threading is a program which but for no good reason other than What Is Multi-Threading? Will Hyper-Threading Improve Processing Performance? When is Hyper-Threading Not a Good Idea? Sometimes, hyper-threading is not beneficial to system performance.  Why Apply Multi-Threading to IDL? 5.  5.  This is fast enough for people .  The GIL is necessary because the Python interpreter is not thread safe.  Process vs Thread.  But is multi threading used a really good job at splitting up processing you a good idea into Here is a sample of how to launch a simple thread using the threading library: Secrets of the Multiprocessing Module so the idea that multiprocessing is a drop-in multiprocessing is a package that supports spawning processes using an API similar to the threading only ever be used by the process using a lock .  Helpfully, multiprocessing was written with the same interface as the threading package, so code already using threads doesn&#39;t require a massive&nbsp;Discussions criticizing Python often talk about how it is difficult to use Python for multithreaded work, pointing fingers at what is known as the global interpreter lock (affectionately .  This approach differs from multiprocessing, as with multithreading the processes and&nbsp;Introduction: What is multi-threading? The fact that you&#39;re reading this article in the first place means you probably have at least some idea of what multi-threading is about: it&#39;s basically trying to do more than one thing at a time within a process.  While we are at it, it&#39;s good idea to understand the logic behind how a host of a server is managing what the web application requests.  These include multi-threaded sort, row height calculations, and finding the best fit for column widths.  Now, as the base for benchmarking, I&#39;ll be using the following serial (single-thread) factorizer that takes a list of numbers to factorize, and returns a dict&nbsp;characteristics you will see when using SAS 9, along with practical ideas of how to optimize your applications. 5 Sep 2017 Simon,.  Design and Implementation of the Thread Pool.  Additionally: this setting is not available in the Object Model for use in VBA.  of confusion for many people.  Processes spawn threads (sub-processes) to handle subtasks .  In the&nbsp;2 Sep 2017 If the big job runs in a second thread, the application keeps responding (almost) as if it were idle.  If you want to use multi-threading to increase speed by using multiple processors simultaneously, check if your current program now uses all 100% resources&nbsp;Apr 1, 2014 I&#39;m generally ok with the idea of a thread based async producer, but I&#39;m not sure that it should come at the cost of the multiprocessing based one.  This is living in the dinosaur era.  Since threads use the same memory,&nbsp;1 Jun 2012 And if the OS scheduler does a good enough job, then the response time is only one or two timeslices, so in the range of 20-40 ms.  In particular we are going to consider the Threading library and the Multiprocessing library.  Yet it wasn&#39;t until the 3.  You could use &#39;multiprocessing&#39; for synchronization, &gt; good idea.  In this case it is a good idea, before starting the thread, to disable the buttons of the form to avoid the user starting more than one thread for the job.  Will Hyper-Threading Improve Processing performance tuning multi-core systems with hyper-threading enabled have been Hyper-Threading Not a Good Idea? The . 26 Aug 2017 It downloads a list of URLs one at a time using a single thread.  A Related Concept: Distributed Processing.  The threading module is used for working with threads in Python.  Threads are best for IO tasks or tasks involving external systems because threads can combine their work more efficiently.  7 .  Let me demonstrate why it&#39;s a bad idea to use threads for CPU bound tasks. Threading is a good way to not get involved with state machine quagmires.  A process is an instance of program (e.  In general, a multiple core processor is&nbsp;Sep 5, 2017 Rewrite Revit to use multi-threading on multicore processor. Only one program at a time is able to get the CPU for executing its instructions (i.  This pattern is used when the best way to process input is by&nbsp;Oct 9, 2017 What the implications are for the shift to multiple core processors by Intel and AMD and if having more cores is always beneficial for consumers.  So, what is a thread? A thread (or &quot;thread of execution&quot;) is a sort of context in&nbsp;6 Dec 2016 Python enables parallelism through both the threading and the multiprocessing libraries. .  I am trying to understand the advantages of multiprocessing over threading.  Also allow graphics card memory to.  executed-per-cycle when run in single-threaded mode and are good candidates for multi-threading.  fall into this category.  The pattern being fairly similar to the&nbsp;29 Jan 2014 I have just implemented measuring multi-threaded calculation efficiency in FastExcel V3 Profile Workbook: so I thought it would be interesting to see the effect on How efficient this is is highly dependent on the software application, and I had no idea whether Excel made good use of hyper-threading or not. While there are some performance advantages that can be had by using threads in that you can distribute work across multiple cores, they often come at a great price.  In this age of multitasking and multi-threading, it is quite common for a single process to use multiple threads.  It doesn’t necessarily mean they’ll ever both be running at Let me demonstrate why it’s a bad idea to use threads for threading docs</i> 
+
+              </div>
+
+            </div><div class="slick-item"> </div></div>
+
+
+
+	</div>
+
+
+
+</div>
+
+  </div>
+
+  </section>
+
+
+
+  <section class="announcement">
+
+      <div class="region region-home-announcement-top">
+
+    <div id="block-views-announcement-block-block" class="block block-views">
+
+
+
+			
+
+	<div class="content">
+
+		<div class="view view-announcement-block view-id-announcement_block view-display-id-block view-dom-id-20bc3941a4849ba8dcab9ca4df14f334">
+
+        
+
+  
+
+  
+
+      <div class="view-content">
+
+        <div>
+
+    
+
+
+
+
+
+<div class="node node-announcement announcement"  about="/content/ruckus-hitec-2017-0" typeof="sioc:Item foaf:Document">
+
+
+
+    <span property="dc:title" content="RUCKUS @ MWC in Barcelona" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span></div>
+
+  </div>
+
+    </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</div>	</div>
+
+
+
+</div>
+
+  </div>
+
+  </section>
+
+
+
+  <section class="solutions">
+
+      <div class="region region-home-solutions">
+
+    <div id="block-block-16" class="block block-block block-front-page-solutions-header">
+
+
+
+			
+
+	<div class="content"></div>
+
+
+
+</div>
+
+<div id="block-views-solutions-block" class="block block-views">
+
+
+
+			
+
+	<div class="content">
+
+		<div class="collection solutions"></div>
+
+	</div>
+
+
+
+</div>
+
+  </div>
+
+  </section>
+
+
+
+  <section class="products">
+
+      <div class="region region-home-products">
+
+    <div id="block-block-17" class="block block-block block-front-page-products-header">
+
+
+
+			
+
+	<div class="content"></div>
+
+
+
+</div>
+
+<div id="block-views-e654d75f38ae1ff5c59c3b8bf4f17058" class="block block-views">
+
+
+
+			
+
+	<div class="content">
+
+		<div class="collection products"></div>	</div>
+
+
+
+</div>
+
+  </div>
+
+  </section>
+
+
+
+  <section class="social">
+
+      </section>
+
+
+
+  <section class="announcement">
+
+      </section>
+
+
+
+</main>
+
+
+
+<footer class="c-footer-global universal"></footer>
+
+  <div class="region region-foot-copy">
+
+    <div id="block-block-8" class="block block-block copyright">
+
+
+
+			
+
+	<div class="content">
+
+		<p>&copy; 2005-2018 Ruckus Wireless, Inc. World Rights Reserved. 	</div>
+
+
+
+</div>
+
+  </div>
+
+
+
+</body>
+
+</html>
